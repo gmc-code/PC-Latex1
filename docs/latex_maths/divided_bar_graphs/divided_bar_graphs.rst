@@ -154,7 +154,7 @@ Txt file
 | 3 lines store data:
 | line 1: the plot title
 | line 2: a comma separated sequence of numeric values
-| line 3: a comma separated sequence of double quoted labels for the values
+| line 3: a comma separated sequence of labels for the values
 
 | A maximum number of entries for line 2 and line 3 is 10.
 | Some characters need to be escaped manually such as \& for & and \% for % if used in line 1 or 3.

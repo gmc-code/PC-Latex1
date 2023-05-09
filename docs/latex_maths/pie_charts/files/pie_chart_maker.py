@@ -1,5 +1,3 @@
-# standard numpy and matplotlib library imports
-import numpy as np
 from pathlib import Path
 import subprocess
 from tkinter import filedialog
@@ -42,22 +40,35 @@ def get_list_nums_from_str(num_string_list):
     return num_list
 
 
+def get_data_string_from_lists(numbers_list, labels_list):
+    # process numbers_list and labels_list to build 53/monkeys, string
+    data = ""
+    for num, label in zip(numbers_list, labels_list):
+        data += f"{num}/{label},"
+    return data
+
+
+def get_substrings_from_string(data_string):
+    new_string = ""
+    for s in data_string.split(","):
+        new_string += f'"{s}",'
+    new_string = new_string[:-1]
+    print(new_string)
+
 def get_file_data(filename):
     # open the text file and read the numbers
     with open(filename) as f:
         # read the first line and store it in a variable
-        plot_title = f.readline().strip()
+        title = f.readline().strip()
         # read the second line and store it in a variable
         numbers_string = f.readline().strip()
-        numbers_strs = get_list_from_str(numbers_string)
+        numbers_list = get_list_from_str(numbers_string)
         # read the third line and store it in a variable
-        numbers_labels = f.readline().strip()
-        numbers_labels = get_list_from_str(numbers_labels)
-        # process numbers
-        numbers_loop_max = str(len(numbers_strs) - 1)
-        numbers_nums = get_list_nums_from_str(numbers_strs)
-        xmax = str(sum(numbers_nums))
-    return plot_title, numbers_strs, numbers_labels, numbers_loop_max, xmax
+        labels_string = f.readline().strip()
+        labels_list = get_list_from_str(labels_string)
+        # process numbers_list and labels_list to build 53/monkeys, string
+        data = get_data_string_from_lists(numbers_list, labels_list)
+    return title, data
 
 
 def main():
@@ -65,9 +76,7 @@ def main():
     if data_filename == "":
         print("Exited, by clicking Cancel")
         return
-    plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax = get_file_data(
-        data_filename
-    )
+    title, data = get_file_data(data_filename)
     # print(plot_title, numbers_string, numbers_labels, numbers_loop_max)
 
     # Create a Path object from the file path
@@ -89,13 +98,8 @@ def main():
 
     # Replace the placeholders in the LaTeX template
 
-    tex_template_txt = tex_template_txt.replace("<<plot_title>>", plot_title)
-    tex_template_txt = tex_template_txt.replace(
-        "<<numbers_loop_max>>", numbers_loop_max
-    )
-    tex_template_txt = tex_template_txt.replace("<<xmax>>", xmax)
-    tex_template_txt = tex_template_txt.replace("<<numbers_labels>>", numbers_labels)
-    tex_template_txt = tex_template_txt.replace("<<numbers_string>>", numbers_string)
+    tex_template_txt = tex_template_txt.replace("<<title>>", title)
+    tex_template_txt = tex_template_txt.replace("<<data>>", data)
 
     # Write the question tex to an output file
     with open(tex_output_path, "w") as outfile:

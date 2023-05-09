@@ -1,5 +1,3 @@
-# standard numpy and matplotlib library imports
-import numpy as np
 from pathlib import Path
 import subprocess
 from tkinter import filedialog
@@ -42,6 +40,14 @@ def get_list_nums_from_str(num_string_list):
     return num_list
 
 
+def get_substrings_from_string(data_string):
+    new_string = ""
+    for s in data_string.split(","):
+        new_string += f'"{s}",'
+    new_string = new_string[:-1]
+    return new_string
+
+
 def get_file_data(filename):
     # open the text file and read the numbers
     with open(filename) as f:
@@ -52,6 +58,7 @@ def get_file_data(filename):
         numbers_list = get_list_from_str(numbers_string)
         # read the third line and store it in a variable
         numbers_labels = f.readline().strip()
+        numbers_labels = get_substrings_from_string(numbers_labels)
         # process numbers
         numbers_loop_max = str(len(numbers_list) - 1)
         numbers_list = get_list_nums_from_str(numbers_list)
@@ -67,7 +74,7 @@ def main():
     plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax = get_file_data(
         data_filename
     )
-    # print(plot_title, numbers_string, numbers_labels, numbers_loop_max)
+    print(plot_title, numbers_string, numbers_labels, numbers_loop_max)
 
     # Create a Path object from the file path
     path_obj = Path(data_filename)
