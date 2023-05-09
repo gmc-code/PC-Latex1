@@ -1,4 +1,3 @@
-# standard numpy and matplotlib library imports
 import numpy as np
 from pathlib import Path
 import subprocess

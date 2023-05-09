@@ -1,33 +1,24 @@
 ====================================================
-Divided Bar graphs
+Pie charts
 ====================================================
 
-| Divided bar graphs are a bar graph in sections, which often total to 100. (100%)
+| Pie charts are a bar graph in sections, which often total to 100. (100%)
 
-| The python file to make divided bar graphs is below.
-| :download:`divided_bar_chart_maker.py<files/divided_bar_chart_maker.py>`
+| The python file to make pie charts is below.
+| :download:`pie_chart_maker.py<files/pie_chart_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`divided_bar_chart_template.tex<files/divided_bar_chart_template.tex>`
+| :download:`pie_chart_template.tex<files/pie_chart_template.tex>`
 
 | The custom python modules required are:
 | :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
 
 | A sample text file is below:
-| :download:`dbc_zoo.txt<files/dbc_zoo.txt>`
+| :download:`pc_zoo.txt<files/pc_zoo.txt>`
 
 ----
 
-Python tools
-------------------------
-
-| A small python script to generate percetages summing ot 100%:
-
-| :download:`num_sum_to_100_generator.py<python_tools/num_sum_to_100_generator.py>`
-
-----
-
-Example divided bar graphs
+Example pie charts
 -------------------------------------
 
 .. grid:: 2
@@ -39,30 +30,30 @@ Example divided bar graphs
 
       zoo
       ^^^
-      :download:`png<files/dbc_zoo.png>`
-      :download:`pdf<files/dbc_zoo.pdf>`
-      :download:`tex<files/dbc_zoo.tex>`
-      :download:`txt<files/dbc_zoo.txt>`
+      :download:`png<files/pc_zoo.png>`
+      :download:`pdf<files/pc_zoo.pdf>`
+      :download:`tex<files/pc_zoo.tex>`
+      :download:`txt<files/pc_zoo.txt>`
 
 
-      .. figure:: files/dbc_zoo.png
+      .. figure:: files/pc_zoo.png
          :width: 600
-         :alt: dbc_zoo
+         :alt: pc_zoo
          :figclass: align-center
 
    .. grid-item-card::
 
       participants
       ^^^
-      :download:`png<files/dbc_participants.png>`
-      :download:`pdf<files/dbc_participants.pdf>`
-      :download:`tex<files/dbc_participants.tex>`
-      :download:`txt<files/dbc_participants.txt>`
+      :download:`png<files/pc_participants.png>`
+      :download:`pdf<files/pc_participants.pdf>`
+      :download:`tex<files/pc_participants.tex>`
+      :download:`txt<files/pc_participants.txt>`
 
 
-      .. figure:: files/dbc_participants.png
+      .. figure:: files/pc_participants.png
          :width: 600
-         :alt: dbc_participants
+         :alt: pc_participants
          :figclass: align-center
 
 
@@ -75,30 +66,30 @@ Example divided bar graphs
 
       crust_elements
       ^^^
-      :download:`png<files/dbc_crust_elements.png>`
-      :download:`pdf<files/dbc_crust_elements.pdf>`
-      :download:`tex<files/dbc_crust_elements.tex>`
-      :download:`txt<files/dbc_crust_elements.txt>`
+      :download:`png<files/pc_crust_elements.png>`
+      :download:`pdf<files/pc_crust_elements.pdf>`
+      :download:`tex<files/pc_crust_elements.tex>`
+      :download:`txt<files/pc_crust_elements.txt>`
 
 
-      .. figure:: files/dbc_crust_elements.png
+      .. figure:: files/pc_crust_elements.png
          :width: 600
-         :alt: dbc_crust_elements
+         :alt: pc_crust_elements
          :figclass: align-center
 
    .. grid-item-card::
 
       icecream
       ^^^
-      :download:`png<files/dbc_icecream.png>`
-      :download:`pdf<files/dbc_icecream.pdf>`
-      :download:`tex<files/dbc_icecream.tex>`
-      :download:`txt<files/dbc_icecream.txt>`
+      :download:`png<files/pc_icecream.png>`
+      :download:`pdf<files/pc_icecream.pdf>`
+      :download:`tex<files/pc_icecream.tex>`
+      :download:`txt<files/pc_icecream.txt>`
 
 
-      .. figure:: files/dbc_icecream.png
+      .. figure:: files/pc_icecream.png
          :width: 600
-         :alt: dbc_icecream
+         :alt: pc_icecream
          :figclass: align-center
 
 
@@ -111,28 +102,28 @@ Example divided bar graphs
 
       outdoors
       ^^^
-      :download:`png<files/dbc_outdoors.png>`
-      :download:`pdf<files/dbc_outdoors.pdf>`
-      :download:`tex<files/dbc_outdoors.tex>`
-      :download:`txt<files/dbc_outdoors.txt>`
+      :download:`png<files/pc_outdoors.png>`
+      :download:`pdf<files/pc_outdoors.pdf>`
+      :download:`tex<files/pc_outdoors.tex>`
+      :download:`txt<files/pc_outdoors.txt>`
 
-      .. figure:: files/dbc_outdoors.png
+      .. figure:: files/pc_outdoors.png
          :width: 300
-         :alt: dbc_outdoors
+         :alt: pc_outdoors
          :figclass: align-center
 
    .. grid-item-card::  
       
       travel
       ^^^
-      :download:`png<files/dbc_travel.png>`
-      :download:`pdf<files/dbc_travel.pdf>`
-      :download:`tex<files/dbc_travel.tex>`
-      :download:`txt<files/dbc_travel.txt>`
+      :download:`png<files/pc_travel.png>`
+      :download:`pdf<files/pc_travel.pdf>`
+      :download:`tex<files/pc_travel.tex>`
+      :download:`txt<files/pc_travel.txt>`
 
-      .. figure:: files/dbc_travel.png
+      .. figure:: files/pc_travel.png
          :width: 300
-         :alt: dbc_travel
+         :alt: pc_travel
          :figclass: align-center
 
 ----
@@ -142,7 +133,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/divided_bar_chart_template.tex
+.. literalinclude:: files/pie_chart_template.tex
    :language: LaTeX
 
 ----
@@ -160,7 +151,7 @@ Txt file
 | Some characters need to be escaped manually such as \& for & and \% for % if used in line 1 or 3.
 
 
-.. literalinclude:: files/dbc_zoo.txt
+.. literalinclude:: files/pc_zoo.txt
    :language: text
 
 ----
@@ -170,7 +161,7 @@ Png file
 
 | The .png file is shown below.
 
-.. image:: files/dbc_zoo.png
+.. image:: files/pc_zoo.png
     :width: 600
 
 ----
@@ -180,5 +171,5 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/divided_bar_chart_maker.py
+.. literalinclude:: files/pie_chart_maker.py
    :language: python

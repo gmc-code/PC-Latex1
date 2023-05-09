@@ -44,8 +44,9 @@ def get_data_string_from_lists(numbers_list, labels_list):
     # process numbers_list and labels_list to build 53/monkeys, string
     data = ""
     for num, label in zip(numbers_list, labels_list):
-        data += f"{num}/{label},"
-    return data
+        data += f"{num}/{label},\n"
+    # strip last 2 chars
+    return data[:-2]
 
 
 def get_substrings_from_string(data_string):
@@ -54,6 +55,7 @@ def get_substrings_from_string(data_string):
         new_string += f'"{s}",'
     new_string = new_string[:-1]
     print(new_string)
+
 
 def get_file_data(filename):
     # open the text file and read the numbers
