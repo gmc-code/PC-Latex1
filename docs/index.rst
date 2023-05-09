@@ -56,20 +56,14 @@ PC-latex
     
 .. toctree::
     :maxdepth: 2
-    :caption: 📊 dot plots
+    :caption: 📊 charts
     :numbered:
 
     latex_maths/dot_plots/dot_plots.rst
     latex_maths/parallel_dot_plots/parallel_dot_plots.rst
     latex_maths/parallel_dot_plots/parallel_overlay_dot_plots.rst
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: 📊 divided bar graphs
-    :numbered:
-
     latex_maths/divided_bar_graphs/divided_bar_graphs.rst
+    latex_maths/pie_charts/pie_charts.rst
 
 
 .. toctree::
