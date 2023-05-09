@@ -24,9 +24,9 @@
 
 
 % Define list of x values
-\def\myxvalues{{54,41,25}}
+\def\myxvalues{{<<numbers_string>>}}
 % Define list of legend labels
-\def\mylegendlabels{{"Australia","Overseas","Home"}}
+\def\mylegendlabels{{<<numbers_labels>>}}
 
 \begin{document}
 \begin{tikzpicture}
@@ -35,10 +35,10 @@
         bar width=15pt,
         axis lines=none,
         xmin=0,
-        xmax=120,
+        xmax=<<xmax>>,
         height=2.2cm,
         width=10cm,
-        title={Holiday destinations},
+        title={<<plot_title>>},
         enlarge y limits={abs=0.1},
         nodes near coords,
         legend style={at={(0.5,-0.1)}, anchor=north, legend columns=5, yshift=-1mm},
@@ -47,7 +47,7 @@
         },
         \mycyclelist
     ]
-    \pgfplotsinvokeforeach{0,...,2}{
+    \pgfplotsinvokeforeach{0,...,<<numbers_loop_max>>}{
         \pgfmathparse{\mylegendlabels[#1]}
         \edef\tmp{\pgfmathresult}
         \pgfmathparse{\myxvalues[#1]}

@@ -16,6 +16,18 @@ Divided Bar graphs
 | A sample text file is below:
 | :download:`dbc_zoo.txt<files/dbc_zoo.txt>`
 
+
+patterns
+~~~~~~~~~~~~~~
+
+| For patterns instead of filled colours use:
+
+| The python file to make divided bar graphs is below.
+| :download:`divided_bar_chart_patterns_maker.py<files/divided_bar_chart_patterns_maker.py>`
+
+| The required LaTeX files are below.
+| :download:`divided_bar_chart_patterns_template.tex<files/divided_bar_chart_patterns_template.tex>`
+
 ----
 
 Python tools
@@ -145,6 +157,11 @@ LaTeX
 .. literalinclude:: files/divided_bar_chart_template.tex
    :language: LaTeX
 
+| The .tex file patterns template is shown below.
+
+.. literalinclude:: files/divided_bar_chart_patterns_template.tex
+   :language: LaTeX
+
 ----
 
 Txt file
@@ -181,4 +198,9 @@ Python code
 | The python code is shown below.
 
 .. literalinclude:: files/divided_bar_chart_maker.py
+   :language: python
+
+| The python code for patterns is shown below.
+
+.. literalinclude:: files/divided_bar_chart_patterns_maker.py
    :language: python

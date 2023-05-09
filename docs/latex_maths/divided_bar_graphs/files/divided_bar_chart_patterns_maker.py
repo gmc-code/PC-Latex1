@@ -5,7 +5,7 @@ import time
 import magick_pdf_to_png
 
 currfile_dir = Path(__file__).parent
-tex_template_path = currfile_dir / "divided_bar_chart_template.tex"
+tex_template_path = currfile_dir / "divided_bar_chart_patterns_template.tex"
 
 
 def convert_to_pdf(tex_path, currfile_dir, aux_path):
