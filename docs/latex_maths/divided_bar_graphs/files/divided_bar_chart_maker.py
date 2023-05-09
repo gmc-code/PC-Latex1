@@ -24,43 +24,39 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
     )
 
 
-def  get_file_data(filename):
+def get_list_from_str(data_string):
+    if ", " in data_string:
+        data_list = data_string.split(", ")
+    elif "," in data_string:
+        data_list = data_string.split(",")
+    else:
+        data_list = data_string.split(" ")
+    return data_list
+
+
+def get_list_nums_from_str(num_string_list):
+    if "." in num_string_list:
+        num_list = [float(n) for n in num_string_list]
+    else:
+        num_list = [int(n) for n in num_string_list]
+    return num_list
+
+
+def get_file_data(filename):
     # open the text file and read the numbers
     with open(filename) as f:
         # read the first line and store it in a variable
         plot_title = f.readline().strip()
-          # read the second line and store it in a variable
+        # read the second line and store it in a variable
         numbers_string = f.readline().strip()
-        if ", " in numbers_string:
-            numbers = numbers_string.split(", ")
-        elif "," in numbers_string:
-            numbers = numbers_string.split(",")
-        else:
-            numbers = numbers_string.split(" ")
+        numbers_list = get_list_from_str(numbers_string)
         # read the third line and store it in a variable
         numbers_labels = f.readline().strip()
-        # precess numbers
-        numbers_loop_max = str(len(numbers) -1)
-        if "." in numbers_string:
-            numbers = [float(n) for n in numbers]
-        else:
-            numbers = [int(n) for n in numbers]
-        xmax = str(sum(numbers))
+        # process numbers
+        numbers_loop_max = str(len(numbers_list) - 1)
+        numbers_list = get_list_nums_from_str(numbers_list)
+        xmax = str(sum(numbers_list))
     return plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax
-
-
-def dotplot(input_x):
-    # get 2 arrays in order with counts for each value
-    unique_values, counts = np.unique(input_x, return_counts=True)
-    # get max counts for pdf height
-    max_counts = np.max(counts)
-    # # Convert into coordinates space delimited for latex
-    coords = ""
-    for idx, value in enumerate(unique_values):
-        for counter in range(1, counts[idx] + 1):
-            coord = (value, counter)
-            coords += str(coord)
-    return coords, max_counts
 
 
 def main():
@@ -68,7 +64,9 @@ def main():
     if data_filename == "":
         print("Exited, by clicking Cancel")
         return
-    plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax =  get_file_data(data_filename)
+    plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax = get_file_data(
+        data_filename
+    )
     # print(plot_title, numbers_string, numbers_labels, numbers_loop_max)
 
     # Create a Path object from the file path
@@ -91,12 +89,12 @@ def main():
     # Replace the placeholders in the LaTeX template
 
     tex_template_txt = tex_template_txt.replace("<<plot_title>>", plot_title)
-    tex_template_txt = tex_template_txt.replace("<<numbers_loop_max>>", numbers_loop_max)
+    tex_template_txt = tex_template_txt.replace(
+        "<<numbers_loop_max>>", numbers_loop_max
+    )
     tex_template_txt = tex_template_txt.replace("<<xmax>>", xmax)
     tex_template_txt = tex_template_txt.replace("<<numbers_labels>>", numbers_labels)
     tex_template_txt = tex_template_txt.replace("<<numbers_string>>", numbers_string)
-
-
 
     # Write the question tex to an output file
     with open(tex_output_path, "w") as outfile:
