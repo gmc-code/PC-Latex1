@@ -200,7 +200,7 @@ Python code
 .. literalinclude:: files/divided_bar_chart_maker.py
    :language: python
 
-| The python code for patterns is shown below.
+| The python code for patterns is the same as above except for the template used within it.
 
 .. literalinclude:: files/divided_bar_chart_patterns_maker.py
    :language: python
