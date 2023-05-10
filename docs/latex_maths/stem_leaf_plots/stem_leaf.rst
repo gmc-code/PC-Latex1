@@ -37,7 +37,7 @@ Example stem and leaf plots
 
 
       .. figure:: files/sl_fruit.png
-         :width: 600
+         :width: 200
          :alt: sl_fruit
          :figclass: align-center
 
@@ -52,7 +52,7 @@ Example stem and leaf plots
 
 
       .. figure:: files/sl_lengths.png
-         :width: 600
+         :width: 300
          :alt: sl_lengths
          :figclass: align-center
 
@@ -73,7 +73,7 @@ Example stem and leaf plots
 
 
       .. figure:: files/sl_three_points.png
-         :width: 600
+         :width: 300
          :alt: sl_three_points
          :figclass: align-center
 
@@ -88,7 +88,7 @@ Example stem and leaf plots
 
 
       .. figure:: files/sl_runs.png
-         :width: 600
+         :width: 300
          :alt: sl_runs
          :figclass: align-center
 
@@ -124,7 +124,7 @@ Png file
 | The .png file is shown below.
 
 .. image:: files/sl_fruit.png
-    :width: 600
+    :width: 200
 
 ----
 
