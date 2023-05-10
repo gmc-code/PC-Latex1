@@ -3,9 +3,10 @@ import subprocess
 from tkinter import filedialog
 import time
 import magick_pdf_to_png
+from math import floor, log10
 
 currfile_dir = Path(__file__).parent
-tex_template_path = currfile_dir / "divided_bar_chart_patterns_template.tex"
+tex_template_path = currfile_dir / "stem_and_leaf_template.tex"
 
 
 def convert_to_pdf(tex_path, currfile_dir, aux_path):
@@ -41,6 +42,15 @@ def get_list_nums_from_str(num_string_list):
     return num_list
 
 
+def get_data_string_from_lists(numbers_list, labels_list):
+    # process numbers_list and labels_list to build 53/monkeys, string
+    data = ""
+    for num, label in zip(numbers_list, labels_list):
+        data += f"{num}/{label},\n"
+    # strip last 2 chars
+    return data[:-2]
+
+
 def get_substrings_from_string(data_string):
     new_string = ""
     for s in data_string.split(","):
@@ -49,22 +59,68 @@ def get_substrings_from_string(data_string):
     return new_string
 
 
+def stemplotdata(main_title, data, interval, multiplier, max_decimal_places):
+    d = []
+    for val in sorted(data):
+        val = int(floor(val))
+        stm, lf = divmod(val, interval)
+        d.append((int(stm), int(lf)))
+    stems, leafs = list(zip(*d))
+    # print(stems, leafs)
+    # stemwidth = max(len(str(x)) for x in stems)
+    # leafwidth = max(len(str(x)) for x in leafs)
+    laststemused = min(stems) - 1
+    data = ""
+    for s, l in d:
+        # first time with new stem
+        if laststemused < s:
+            laststemused += 1
+            data += f"\\\\ \n{s} & {l}"
+        else:
+            # jsut add leaf with same stem
+            data += f" {l}"
+    data += f"\\\\"
+    #
+
+    stem1, leaf1 = d[0]
+    key_value = int(str(stem1) + str(leaf1))
+    key_value_len = len(str(key_value))
+    if multiplier == 1:
+        real_key_value = key_value
+    else:
+        real_key_value = round(key_value / multiplier, max_decimal_places)
+
+    title_and_key = (
+        f"{main_title} \\\\ Key: {stem1} $\\vert$ {leaf1} = {real_key_value}"
+    )
+    return title_and_key, data[4:]
+
+
 def get_file_data(filename):
     # open the text file and read the numbers
     with open(filename) as f:
         # read the first line and store it in a variable
-        plot_title = f.readline().strip()
+        main_title = f.readline().strip()
         # read the second line and store it in a variable
         numbers_string = f.readline().strip()
         numbers_list = get_list_from_str(numbers_string)
-        # read the third line and store it in a variable
-        numbers_labels = f.readline().strip()
-        numbers_labels = get_substrings_from_string(numbers_labels)
-        # process numbers
-        numbers_loop_max = str(len(numbers_list) - 1)
         numbers_list = get_list_nums_from_str(numbers_list)
-        xmax = str(sum(numbers_list))
-    return plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax
+        # get rid of decimals by * by power of 10
+        max_decimal_places = max(
+            len(str(x).split(".")[1]) if "." in str(x) else 0 for x in numbers_list
+        )
+        multiplier = 10**max_decimal_places
+        new_numbers_list = [int(x * multiplier) for x in numbers_list]
+        # get interval based on no of digits
+        interval_multiplier = max(len(str(x)) for x in new_numbers_list) - 1
+        interval = 10**interval_multiplier
+        # only want 1 in the leaf
+        if interval > 10:
+            interval = 10
+        title_and_key, data = stemplotdata(
+            main_title, new_numbers_list, interval, multiplier, max_decimal_places
+        )
+    return title_and_key, data
 
 
 def main():
@@ -72,9 +128,7 @@ def main():
     if data_filename == "":
         print("Exited, by clicking Cancel")
         return
-    plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax = get_file_data(
-        data_filename
-    )
+    title_and_key, data = get_file_data(data_filename)
     # print(plot_title, numbers_string, numbers_labels, numbers_loop_max)
 
     # Create a Path object from the file path
@@ -96,13 +150,8 @@ def main():
 
     # Replace the placeholders in the LaTeX template
 
-    tex_template_txt = tex_template_txt.replace("<<plot_title>>", plot_title)
-    tex_template_txt = tex_template_txt.replace(
-        "<<numbers_loop_max>>", numbers_loop_max
-    )
-    tex_template_txt = tex_template_txt.replace("<<xmax>>", xmax)
-    tex_template_txt = tex_template_txt.replace("<<numbers_labels>>", numbers_labels)
-    tex_template_txt = tex_template_txt.replace("<<numbers_string>>", numbers_string)
+    tex_template_txt = tex_template_txt.replace("<<title_and_key>>", title_and_key)
+    tex_template_txt = tex_template_txt.replace("<<data>>", data)
 
     # Write the question tex to an output file
     with open(tex_output_path, "w") as outfile:

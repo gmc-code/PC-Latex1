@@ -33,7 +33,8 @@ def get_list_from_str(data_string):
 
 
 def get_list_nums_from_str(num_string_list):
-    if "." in num_string_list:
+    have_dec = any("." in s for s in num_string_list)
+    if have_dec:
         num_list = [float(n) for n in num_string_list]
     else:
         num_list = [int(n) for n in num_string_list]

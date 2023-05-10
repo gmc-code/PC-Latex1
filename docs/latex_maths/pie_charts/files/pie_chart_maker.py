@@ -33,7 +33,8 @@ def get_list_from_str(data_string):
 
 
 def get_list_nums_from_str(num_string_list):
-    if "." in num_string_list:
+    have_dec = any("." in s for s in num_string_list)
+    if have_dec:
         num_list = [float(n) for n in num_string_list]
     else:
         num_list = [int(n) for n in num_string_list]
@@ -54,7 +55,7 @@ def get_substrings_from_string(data_string):
     for s in data_string.split(","):
         new_string += f'"{s}",'
     new_string = new_string[:-1]
-    print(new_string)
+    return new_string
 
 
 def get_file_data(filename):

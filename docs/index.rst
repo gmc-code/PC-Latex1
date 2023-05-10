@@ -64,6 +64,7 @@ PC-latex
     latex_maths/parallel_dot_plots/parallel_overlay_dot_plots.rst
     latex_maths/divided_bar_graphs/divided_bar_graphs.rst
     latex_maths/pie_charts/pie_charts.rst
+    latex_maths/stem_leaf_plots/stem_leaf.rst
 
 
 .. toctree::
