@@ -42,23 +42,6 @@ def get_list_nums_from_str(num_string_list):
     return num_list
 
 
-def get_data_string_from_lists(numbers_list, labels_list):
-    # process numbers_list and labels_list to build 53/monkeys, string
-    data = ""
-    for num, label in zip(numbers_list, labels_list):
-        data += f"{num}/{label},\n"
-    # strip last 2 chars
-    return data[:-2]
-
-
-def get_substrings_from_string(data_string):
-    new_string = ""
-    for s in data_string.split(","):
-        new_string += f'"{s}",'
-    new_string = new_string[:-1]
-    return new_string
-
-
 def stemplotdata(main_title, data, interval, multiplier, max_decimal_places):
     d = []
     for val in sorted(data):
@@ -66,9 +49,6 @@ def stemplotdata(main_title, data, interval, multiplier, max_decimal_places):
         stm, lf = divmod(val, interval)
         d.append((int(stm), int(lf)))
     stems, leafs = list(zip(*d))
-    # print(stems, leafs)
-    # stemwidth = max(len(str(x)) for x in stems)
-    # leafwidth = max(len(str(x)) for x in leafs)
     laststemused = min(stems) - 1
     data = ""
     for s, l in d:
@@ -81,10 +61,8 @@ def stemplotdata(main_title, data, interval, multiplier, max_decimal_places):
             data += f" {l}"
     data += f"\\\\"
     #
-
     stem1, leaf1 = d[0]
     key_value = int(str(stem1) + str(leaf1))
-    key_value_len = len(str(key_value))
     if multiplier == 1:
         real_key_value = key_value
     else:
