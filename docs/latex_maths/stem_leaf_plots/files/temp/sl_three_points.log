@@ -3,10 +3,10 @@ entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"c:/Users/gmccarthy/OneDrive - Parade College/All DT/microbit for online/PC_l
-atex/docs/latex_maths/stem_leaf_plots/files/slbtb_heart_rates.tex"
+atex/docs/latex_maths/stem_leaf_plots/files/sl_three_points.tex"
 
 (c:/Users/gmccarthy/OneDrive - Parade College/All DT/microbit for online/PC_lat
-ex/docs/latex_maths/stem_leaf_plots/files/slbtb_heart_rates.tex
+ex/docs/latex_maths/stem_leaf_plots/files/sl_three_points.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-04-20>
 (C:\Users\gmccarthy\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalo
@@ -425,8 +425,8 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box63
 )
-No file slbtb_heart_rates.aux.
-\openout1 = `slbtb_heart_rates.aux'.
+No file sl_three_points.aux.
+\openout1 = `sl_three_points.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -478,25 +478,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {C:/Users/gmccarthy/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (c:\Users\gmccarthy\OneDrive - Parade College\All DT\microbit for online\PC_lat
-ex\docs\latex_maths\stem_leaf_plots\files\temp\slbtb_heart_rates.aux) ) 
+ex\docs\latex_maths\stem_leaf_plots\files\temp\sl_three_points.aux) ) 
 Here is how much of TeX's memory you used:
- 12412 strings out of 477340
- 264622 string characters out of 5809005
- 1855068 words of memory out of 5000000
- 32547 multiletter control sequences out of 15000+600000
- 515330 words of font info for 42 fonts, out of 8000000 for 9000
+ 12410 strings out of 477340
+ 264581 string characters out of 5809005
+ 1854068 words of memory out of 5000000
+ 32546 multiletter control sequences out of 15000+600000
+ 515023 words of font info for 41 fonts, out of 8000000 for 9000
  465 hyphenation exceptions out of 8191
- 102i,9n,104p,548b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/User
-s/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb>
+ 102i,9n,104p,546b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/
+gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb>
 Output written on "c:\Users\gmccarthy\OneDrive - Parade College\All DT\microbit
- for online\PC_latex\docs\latex_maths\stem_leaf_plots\files\slbtb_heart_rates.p
-df" (1 page, 34952 bytes).
+ for online\PC_latex\docs\latex_maths\stem_leaf_plots\files\sl_three_points.pdf
+" (1 page, 24139 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 19 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
