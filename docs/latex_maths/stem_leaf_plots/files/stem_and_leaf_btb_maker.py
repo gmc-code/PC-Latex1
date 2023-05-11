@@ -50,10 +50,10 @@ def make_stem_leaf_dict(num_list, interval):
     stem_leaves_dict = dict()
     for val in num_list:
         stem, leaf = divmod(val, interval)
-        if str(stem) not in stem_leaves_dict:
-            stem_leaves_dict[str(stem)] = str(leaf)
+        if stem not in stem_leaves_dict:
+            stem_leaves_dict[stem] = str(leaf)
         else:
-            stem_leaves_dict[str(stem)] += " " + str(leaf)
+            stem_leaves_dict[stem] += " " + str(leaf)
     return stem_leaves_dict
 
 

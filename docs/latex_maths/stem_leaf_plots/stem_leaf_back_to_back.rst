@@ -43,17 +43,17 @@ Example back-to-back stem and leaf plots
 
    .. grid-item-card::
 
-      wins_losses
+      heart_rates
       ^^^
-      :download:`png<files/slbtb_wins_losses.png>`
-      :download:`pdf<files/slbtb_wins_losses.pdf>`
-      :download:`tex<files/slbtb_wins_losses.tex>`
-      :download:`txt<files/slbtb_wins_losses.txt>`
+      :download:`png<files/slbtb_heart_rates.png>`
+      :download:`pdf<files/slbtb_heart_rates.pdf>`
+      :download:`tex<files/slbtb_heart_rates.tex>`
+      :download:`txt<files/slbtb_heart_rates.txt>`
 
 
-      .. figure:: files/slbtb_wins_losses.png
+      .. figure:: files/slbtb_heart_rates.png
          :width: 600
-         :alt: slbtb_wins_losses
+         :alt: slbtb_heart_rates
          :figclass: align-center
 
 ----
