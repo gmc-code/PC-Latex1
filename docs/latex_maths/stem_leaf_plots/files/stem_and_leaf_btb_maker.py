@@ -7,7 +7,7 @@ from collections import namedtuple
 
 
 currfile_dir = Path(__file__).parent
-tex_template_path = currfile_dir / "stem_and_leaf_template.tex"
+tex_template_path = currfile_dir / "stem_and_leaf_btb_template.tex"
 
 # named tuple for main data to be passed easily from one function to the next and used vai dot notation insetad of using a dictionary with keys.
 Keydata = namedtuple("Keydata", ["keystem", "keyleaf", "keyvalue"])
@@ -46,7 +46,7 @@ def get_list_nums_from_str(num_string_list):
     return num_list
 
 
-def make_stem_leaf_data(num_list, interval):
+def make_stem_leaf_dict(num_list, interval):
     stem_leaves_dict = dict()
     for val in num_list:
         stem, leaf = divmod(val, interval)
@@ -54,9 +54,16 @@ def make_stem_leaf_data(num_list, interval):
             stem_leaves_dict[str(stem)] = str(leaf)
         else:
             stem_leaves_dict[str(stem)] += " " + str(leaf)
+    return stem_leaves_dict
+
+
+def combine_stems(dict1, dict2):
+    stems1 = list(dict1.keys())
+    stems2 = list(dict2.keys())
+    full_stem_list = sorted(list(set(stems1 + stems2)))
     data = ""
-    for stem, leaves in stem_leaves_dict.items():
-        data += f"{stem} & {leaves} \\\\"
+    for stem in full_stem_list:
+        data += f"{dict1.get(stem, '')[::-1]} & {str(stem)} & {dict2.get(stem, '')} \\\\"
     return data
 
 
@@ -72,13 +79,13 @@ def get_key_data(num_list, interval, multiplier, max_dp):
     return key_data
 
 
-def stemplotdata(num_list, interval, multiplier, max_dp):
-    # new_num_list, new_num2_list, interval, multiplier, max_dp
-    # build dict with key=stem, value= built leaf string
-    # stem_leaves_dict = {}
+def stemplotdata_btb(num_list, num2_list, interval, multiplier, max_dp):
     num_list = sorted(num_list)
+    num2_list = sorted(num2_list)
     # get data
-    data = make_stem_leaf_data(num_list, interval)
+    data1 = make_stem_leaf_dict(num_list, interval)
+    data2 = make_stem_leaf_dict(num2_list, interval)
+    data = combine_stems(data1, data2)
     # get key_data for top of key
     key_data = get_key_data(num_list, interval, multiplier, max_dp)
     return key_data, data
@@ -90,24 +97,40 @@ def get_file_data(filename):
         # read the first line and store it in a variable
         main_title = f.readline().strip()
         # read the second line and store it in a variable
+        leaf1_title = f.readline().strip()
+        # read the third line and store it in a variable
         numbers_string = f.readline().strip()
+        # read the fourth line and store it in a variable
+        leaf2_title = f.readline().strip()
+        # read the fifth line and store it in a variable
+        numbers2_string = f.readline().strip()
+
+    #
+    numbers2_list = get_list_from_str(numbers2_string)
+    numbers2_list = get_list_nums_from_str(numbers2_list)
     #
     numbers_list = get_list_from_str(numbers_string)
     numbers_list = get_list_nums_from_str(numbers_list)
     # get rid of decimals by * by power of 10
+    # combine lists for factors
+    both_numbers_list = numbers_list + numbers2_list
     max_dp = max(
-        len(str(x).split(".")[1]) if "." in str(x) else 0 for x in numbers_list
+        len(str(x).split(".")[1]) if "." in str(x) else 0 for x in both_numbers_list
     )
     multiplier = 10**max_dp
     new_num_list = [int(x * multiplier) for x in numbers_list]
+    new_num2_list = [int(x * multiplier) for x in numbers2_list]
     # get interval based on no of digits
-    interval_multiplier = max(len(str(x)) for x in new_num_list) - 1
+    both_new_num_list = new_num_list + new_num2_list
+    interval_multiplier = max(len(str(x)) for x in both_new_num_list) - 1
     interval = 10**interval_multiplier
     # only want 1 in the leaf
     if interval > 10:
         interval = 10
-    key_data, data = stemplotdata(new_num_list, interval, multiplier, max_dp)
-    return main_title, key_data, data
+    key_data, data = stemplotdata_btb(
+        new_num_list, new_num2_list, interval, multiplier, max_dp
+    )
+    return main_title, key_data, leaf1_title, leaf2_title, data
 
 
 def main():
@@ -115,7 +138,7 @@ def main():
     if data_filename == "":
         print("Exited, by clicking Cancel")
         return
-    main_title, key_data, data = get_file_data(data_filename)
+    main_title, key_data, leaf1_title, leaf2_title, data = get_file_data(data_filename)
     # print(plot_title, numbers_string, numbers_labels, numbers_loop_max)
 
     # Create a Path object from the file path
@@ -141,6 +164,8 @@ def main():
     tex_template_txt = tex_template_txt.replace("<<keystem>>", key_data.keystem)
     tex_template_txt = tex_template_txt.replace("<<keyleaf>>", key_data.keyleaf)
     tex_template_txt = tex_template_txt.replace("<<keyvalue>>", key_data.keyvalue)
+    tex_template_txt = tex_template_txt.replace("<<leaf1_title>>", leaf1_title)
+    tex_template_txt = tex_template_txt.replace("<<leaf2_title>>", leaf2_title)
     tex_template_txt = tex_template_txt.replace("<<data>>", data)
 
     # Write the question tex to an output file

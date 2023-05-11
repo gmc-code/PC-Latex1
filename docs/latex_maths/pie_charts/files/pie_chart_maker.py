@@ -65,12 +65,13 @@ def get_file_data(filename):
         title = f.readline().strip()
         # read the second line and store it in a variable
         numbers_string = f.readline().strip()
-        numbers_list = get_list_from_str(numbers_string)
         # read the third line and store it in a variable
         labels_string = f.readline().strip()
-        labels_list = get_list_from_str(labels_string)
-        # process numbers_list and labels_list to build 53/monkeys, string
-        data = get_data_string_from_lists(numbers_list, labels_list)
+    #  
+    numbers_list = get_list_from_str(numbers_string)
+    labels_list = get_list_from_str(labels_string)
+    # process numbers_list and labels_list to build 53/monkeys, string
+    data = get_data_string_from_lists(numbers_list, labels_list)
     return title, data
 
 

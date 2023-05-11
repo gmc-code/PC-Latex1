@@ -56,14 +56,15 @@ def get_file_data(filename):
         plot_title = f.readline().strip()
         # read the second line and store it in a variable
         numbers_string = f.readline().strip()
-        numbers_list = get_list_from_str(numbers_string)
         # read the third line and store it in a variable
         numbers_labels = f.readline().strip()
-        numbers_labels = get_substrings_from_string(numbers_labels)
-        # process numbers
-        numbers_loop_max = str(len(numbers_list) - 1)
-        numbers_list = get_list_nums_from_str(numbers_list)
-        xmax = str(sum(numbers_list))
+    #
+    numbers_list = get_list_from_str(numbers_string)
+    numbers_labels = get_substrings_from_string(numbers_labels)
+    # process numbers
+    numbers_loop_max = str(len(numbers_list) - 1)
+    numbers_list = get_list_nums_from_str(numbers_list)
+    xmax = str(sum(numbers_list))
     return plot_title, numbers_string, numbers_labels, numbers_loop_max, xmax
 
 

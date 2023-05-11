@@ -5,16 +5,16 @@ Stem and Leaf plot: back-to-back
 | An example of a back-to-back stem and leaf plot is below.
 
 | The python file to make a back-to-back stem and leaf plot is below.
-| :download:`stem_and_leaf_maker.py<files/stem_and_leaf_maker.py>`
+| :download:`stem_and_leaf_btb_maker.py<files/stem_and_leaf_btb_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`stem_and_leaf_template.tex<files/stem_and_leaf_template.tex>`
+| :download:`stem_and_leaf_btb_template.tex<files/stem_and_leaf_btb_template.tex>`
 
 | The custom python modules required are:
 | :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
 
 | A sample text file is below:
-| :download:`sl_fruit.txt<files/sl_fruit.txt>`
+| :download:`slbtb_scores.txt<files/slbtb_scores.txt>`
 
 ----
 
@@ -28,70 +28,33 @@ Example back-to-back stem and leaf plots
 
    .. grid-item-card::  
 
-      fruit
+      scores
       ^^^
-      :download:`png<files/sl_fruit.png>`
-      :download:`pdf<files/sl_fruit.pdf>`
-      :download:`tex<files/sl_fruit.tex>`
-      :download:`txt<files/sl_fruit.txt>`
+      :download:`png<files/slbtb_scores.png>`
+      :download:`pdf<files/slbtb_scores.pdf>`
+      :download:`tex<files/slbtb_scores.tex>`
+      :download:`txt<files/slbtb_scores.txt>`
 
 
-      .. figure:: files/sl_fruit.png
+      .. figure:: files/slbtb_scores.png
          :width: 600
-         :alt: sl_fruit
+         :alt: slbtb_scores
          :figclass: align-center
 
    .. grid-item-card::
 
-      lengths
+      wins_losses
       ^^^
-      :download:`png<files/sl_lengths.png>`
-      :download:`pdf<files/sl_lengths.pdf>`
-      :download:`tex<files/sl_lengths.tex>`
-      :download:`txt<files/sl_lengths.txt>`
+      :download:`png<files/slbtb_wins_losses.png>`
+      :download:`pdf<files/slbtb_wins_losses.pdf>`
+      :download:`tex<files/slbtb_wins_losses.tex>`
+      :download:`txt<files/slbtb_wins_losses.txt>`
 
 
-      .. figure:: files/sl_lengths.png
+      .. figure:: files/slbtb_wins_losses.png
          :width: 600
-         :alt: sl_lengths
+         :alt: slbtb_wins_losses
          :figclass: align-center
-
-
-.. grid:: 2
-   :gutter: 0
-   :margin: 0
-   :padding: 0
-
-   .. grid-item-card::  
-
-     three_points
-      ^^^
-      :download:`png<files/sl_three_points.png>`
-      :download:`pdf<files/sl_three_points.pdf>`
-      :download:`tex<files/sl_three_points.tex>`
-      :download:`txt<files/sl_three_points.txt>`
-
-
-      .. figure:: files/sl_three_points.png
-         :width: 600
-         :alt: sl_three_points
-         :figclass: align-center
-
-   .. grid-item-card::
-
-      sl_runs
-      ^^^
-      :download:`png<files/sl_runs.png>`
-      :download:`pdf<files/sl_runs.pdf>`
-      :download:`tex<files/sl_runs.tex>`
-      :download:`txt<files/sl_runs.txt>`
-
-
-      .. figure:: files/sl_runs.png
-         :width: 600
-         :alt: sl_runs
-         :figclass: align-center
-
 
 ----
 
@@ -100,7 +63,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/stem_and_leaf_template.tex
+.. literalinclude:: files/stem_and_leaf_btb_template.tex
    :language: LaTeX
 
 ----
@@ -111,9 +74,13 @@ Txt file
 | The .txt file is shown below.
 | 2 lines store data:
 | line 1: the plot title
-| line 2: a comma separated sequence of numeric values
+| line 2: the label for the first group of values
+| line 3: a comma space separated list of numbers
+| line 4: the label for the second group of values
+| line 5: a comma space separated list of numbers
 
-.. literalinclude:: files/sl_fruit.txt
+
+.. literalinclude:: files/slbtb_scores.txt
    :language: text
 
 ----
@@ -123,7 +90,7 @@ Png file
 
 | The .png file is shown below.
 
-.. image:: files/sl_fruit.png
+.. image:: files/slbtb_scores.png
     :width: 600
 
 ----
@@ -133,6 +100,6 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/stem_and_leaf_maker.py
+.. literalinclude:: files/stem_and_leaf_btb_maker.py
    :language: python
 
