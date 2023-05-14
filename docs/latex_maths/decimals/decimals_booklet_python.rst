@@ -11,6 +11,9 @@ Decimals python
 | :download:`decimals_functions.py<makers/decimals_functions.py>`
 | :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
+.. literalinclude:: makers/decimals_functions.py
+   :linenos:
+
 | The Python to create booklets of questions involving the addition and subtraction of decimals, is below.
 | :download:`add_sub_decimals_booklet_maker.py<makers/add_sub_decimals_booklet_maker.py>`
 

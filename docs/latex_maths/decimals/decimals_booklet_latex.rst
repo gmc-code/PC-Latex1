@@ -8,37 +8,51 @@ Booklets
 Sample decimals booklets by process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. grid:: 3
+.. grid:: 6
    :gutter: 0
    :margin: 0
    :padding: 0
 
    .. grid-item-card::  
 
-      add 1dp
+      add 1dp q
       ^^^
       :download:`pdf<booklets/asd_add1dp_q.pdf>`
       :download:`tex<booklets/asd_add1dp_q.tex>`
+
+   .. grid-item-card::  
+
+      add 1dp ans
+      ^^^
       :download:`pdf<booklets/asd_add1dp_ans.pdf>`
       :download:`tex<booklets/asd_add1dp_ans.tex>`
 
-
    .. grid-item-card::  
       
-      sub 1dp
+      sub 1dp q
       ^^^
       :download:`pdf<booklets/asd_sub1dp_q.pdf>`
       :download:`tex<booklets/asd_sub1dp_q.tex>`
+
+   .. grid-item-card::  
+      
+      sub 1dp ans
+      ^^^
       :download:`pdf<booklets/asd_sub1dp_ans.pdf>`
       :download:`tex<booklets/asd_sub1dp_ans.tex>`
 
 
    .. grid-item-card::  
 
-      random 2dp
+      random 2dp q
       ^^^
       :download:`pdf<booklets/asd_addsub_q.pdf>`
       :download:`tex<booklets/asd_addsub_q.tex>`
+
+   .. grid-item-card::  
+
+      random 2dp ans
+      ^^^
       :download:`pdf<booklets/asd_addsub_ans.pdf>`
       :download:`tex<booklets/asd_addsub_ans.tex>`
 
