@@ -1,32 +1,28 @@
 """
 Paste in a full folder path to convert pdfs therewithin to pngs @GMC 2023
 """
-import pathlib
+from pathlib import Path
+from tkinter import filedialog
+
 
 import magick_pdf_to_png
 import wand_pdf_to_png
 
 
-def get_pdf_files(pdf_folder_path):
-    pdf_files = []
-    for file in pathlib.Path(pdf_folder_path).iterdir():
-        if file.is_file() and file.suffix == ".pdf":
-            pdf_files.append(file.name)
-    return pdf_files
+def main():
+    currfile_dir = Path(__file__).parent
+    pdf_dir = filedialog.askdirectory(initialdir=currfile_dir)
+    if pdf_dir == "":
+        print("Exited, by clicking Cancel")
+        return
 
 
-def convert_folder(pdf_folder_path, pdfs_files):
-    for filename in pdfs_files:
-        pdf_file_path = pdf_folder_path / filename
+    for pdf_file_path in Path(pdf_dir).glob("*.pdf"):
+        print(pdf_file_path)
         magick_pdf_to_png.pdf_to_png(pdf_file_path)
-        # comment out wand or magick
-        # wand_pdf_to_png.pdf_to_png(pdf_file_path)
 
 
-# a raw r string is used since backslashes are normally escape characters
-# paste in windows pdf full file path
-pasted_folder_path = r"C:\Users\gmccarthy\OneDrive - Parade College\All DT\microbit for online\PC_LaTeX\docs\Latex_maths\grid_papers\files"
-
-pdf_folder_path = pathlib.PureWindowsPath(pasted_folder_path)
-pdfs_files = get_pdf_files(pdf_folder_path)
-convert_folder(pdf_folder_path, pdfs_files)
+if __name__ == "__main__":
+    print("starting")
+    main()
+    print("finished")

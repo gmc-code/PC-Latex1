@@ -1,0 +1,26 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdftex 2023.5.14)  14 MAY 2023 21:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**C:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/backtracking_1step/booklets/bt1Bk_
++_ans.tex
+
+(C:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/backtracking_1step/booklets/bt1Bk_+
+_ans.tex
+! Undefined control sequence.
+l.2 \documentclass
+                  [leqno, 12pt]{article}
+? & C:/Users/gmccarthy/venv_rtd/Scripts/python.exe "c:/PC_RTD_GITHUB/PC_latex/d
+ocs/tex_tools/folder tex to pdf.py"
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? X
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

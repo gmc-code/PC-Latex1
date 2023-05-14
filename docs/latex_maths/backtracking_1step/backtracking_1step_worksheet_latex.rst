@@ -182,14 +182,14 @@ Worksheet template
 | ``\usepackage{multicol}`` is a LaTeX package that allows multi-column layouts in documents. It defines the ``multicols`` environment, which takes one argument that specifies the total number of columns, such as ``\begin{multicols}{2}``.
 
 | The page heading is set by: 
-`\def \HeadingQuestions {\section*{\Huge Name: \underline{\hspace{8cm}} \hfill Date: \underline{\hspace{3cm}}}
+`\def \HeadingQuestions {\section*{\Large Name: \underline{\hspace{8cm}} \hfill Date: \underline{\hspace{3cm}}} \vspace{-3mm}
 {1-step backtracking: Questions} \vspace{1pt}\hrule}`
 
 | The macro ``\HeadingQuestions`` creates a section heading with the text "Name: " in very large bold text with an underline, followed by an umderlined space of 8cm, followed by the text "Date: " in bold text with an underlined space of 3cm, followed by a horizontal line.
 
 | ``\def`` is a LaTeX command that defines a macro, which is a custom command that performs a specific set of actions.
 | ``\HeadingQuestions`` is the name of the macro being defined with the ``\def`` command.
-| The ``\section*`` command is used to create a section heading without a number, and the ``\Huge`` command is used to make the heading text very large.
+| The ``\section*`` command is used to create a section heading without a number, and the ``\Large`` command is used to make the heading text very large.
 | The ``\underline`` command is used to add a horizontal line under its text.
 | The ``\hspace`` command is used to add space on both sides of the heading text.
 | The ``\hrule`` command is used to create a horizontal line, which separates the heading from the remainder of the document.
