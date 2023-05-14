@@ -20,7 +20,7 @@ def convert_pdf_to_png(pdf_path, png_path):
         '-alpha','off' is used here so all transparency is removed
     """
     result=subprocess.run(
-        ['magick','-quiet','-density','600',pdf_path,'-quality','100','-alpha','off',png_path]
+        ['magick','-quiet','-density','1200',pdf_path,'-quality','100','-alpha','off',png_path]
     )
 
 

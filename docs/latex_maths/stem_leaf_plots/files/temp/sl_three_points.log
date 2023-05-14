@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  11 MAY 2023 20:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  11 MAY 2023 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,7 +425,8 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box63
 )
-No file sl_three_points.aux.
+(c:\Users\gmccarthy\OneDrive - Parade College\All DT\microbit for online\PC_lat
+ex\docs\latex_maths\stem_leaf_plots\files\temp\sl_three_points.aux)
 \openout1 = `sl_three_points.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -480,8 +481,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (c:\Users\gmccarthy\OneDrive - Parade College\All DT\microbit for online\PC_lat
 ex\docs\latex_maths\stem_leaf_plots\files\temp\sl_three_points.aux) ) 
 Here is how much of TeX's memory you used:
- 12410 strings out of 477340
- 264581 string characters out of 5809005
+ 12412 strings out of 477340
+ 264869 string characters out of 5809005
  1854068 words of memory out of 5000000
  32546 multiletter control sequences out of 15000+600000
  515023 words of font info for 41 fonts, out of 8000000 for 9000
