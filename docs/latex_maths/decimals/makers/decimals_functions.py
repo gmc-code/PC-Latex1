@@ -53,38 +53,4 @@ def sub_dict(numdp):
     return kv
 
 
-def times_dict():
-    # na + nb = nc
-    # Generate a random decimal number between 0.01 and 100
-    na = random.uniform(0.01, 100)
-    nb = random.uniform(0.01, 100 - na)
-    # Format the result to 2 decimal places
-    na = "{:.2f}".format(na)
-    nb = "{:.2f}".format(nb)
-    nc = float(na) + float(nb)
-    nc = "{:.2f}".format(nc)
-    kv = dict()
-    kv["num1"] = f"{na}"
-    kv["num2"] = f"{nb}"
-    kv["process"] = f"+"
-    kv["answer"] = f"{nc}"
-    return kv
-
-
-def div_dict():
-    # na + nb = nc
-    # Generate a random decimal number between 0.01 and 100
-    na = random.uniform(0.01, 100)
-    nb = random.uniform(0.01, 100 - na)
-    # Format the result to 2 decimal places
-    na = "{:.2f}".format(na)
-    nb = "{:.2f}".format(nb)
-    nc = float(na) + float(nb)
-    nc = "{:.2f}".format(nc)
-    kv = dict()
-    kv["num1"] = f"{na}"
-    kv["num2"] = f"{nb}"
-    kv["process"] = f"+"
-    kv["answer"] = f"{nc}"
-    return kv
 
