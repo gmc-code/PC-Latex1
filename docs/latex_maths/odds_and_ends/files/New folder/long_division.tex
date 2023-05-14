@@ -9,8 +9,8 @@
 
 
 \newcommand\Mydiv[2]{%
-$\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
- \overline{\enspace\strut#2}$}
+$\strut#1$\kern.5em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-5mu
+ \overline{\enspace\strut\enspace#2}$}
 
 \def \HeadingQuestions {\section*{\Huge Name: \underline{\hspace{8cm}} \hfill Date: \underline{\hspace{3cm}}}
 {Division with decimals: Questions} \vspace{1pt}\hrule}
@@ -39,22 +39,6 @@ $\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
         \begin{equation} \begin{tikzpicture}[baseline=(current bounding box.north)] \Mydiv{5}{34.8} \end{tikzpicture} \end{equation}
 
 
-        \begin{equation}
-            \\
-            \quad \Mydiv{5}{5415} \quad \\
-            \\
-        \end{equation}
-        \begin{equation}
-            \\
-            \quad \Mydiv{5}{5415} \quad \\
-            \\
-        \end{equation}
-        \begin{equation}
-            \begin{tikzpicture}[baseline={([yshift=-1pt]current bounding box.north)}]
-        
-            \Mydiv{5}{34.8}\\
-        
-        \end{tikzpicture}
-        \end{equation}
+
     \end{multicols}
 \end{document}

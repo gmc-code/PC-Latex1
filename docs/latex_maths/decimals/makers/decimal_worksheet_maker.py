@@ -28,7 +28,7 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
 
 
 # tex_keys = ['stepAB','stepABrev','boxA','boxB','boxBrev', 'boxArev' ]
-tex_keys_ans = ["stepAB", "boxA", "boxBrev"]
+tex_keys_q = ["stepAB", "boxA", "boxBrev"]
 
 
 def make1_diagram(tex_diagram_template_txt, num):
@@ -40,7 +40,7 @@ def make1_diagram(tex_diagram_template_txt, num):
             "<<" + key + ">>", value
         )
     for key, value in kv.items():
-        if key in tex_keys_ans:
+        if key in tex_keys_q:
             tex_diagram_template_txt = tex_diagram_template_txt.replace(
                 "<<" + key + ">>", value
             )

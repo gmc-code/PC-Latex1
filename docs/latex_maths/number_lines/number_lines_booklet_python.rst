@@ -16,10 +16,14 @@ The python below requires 3 .tex files:
 Python to create a 2 page booklet of number lines worksheets
 ------------------------------------------------------------
 
-| The Python to create a 2 page booklet of number lines worksheets, with 10 number line diagrams on one page, is below.
-| The key line is: ``for i in range(1,21):``. The `21` can be replaced to produce different amount of pages. e.g. 41 for 4 pages, 101 for 10 pages.
+| The python file, **number_lines_booklet_maker.py**, when run, will ask for these inputs:
+| Choose the arithmetic process: ``"Enter 1,2,3,4,5 or 6 for plus,minus_neg,minus,minus_pos,plus_neg,random"``.
+| Choose the number of questions form 1 to 100: ``"Enter the number of questions from 1 to 80"``
+| Choose the file name base: ``""Enter the base filename to be added to the prefix nlBk:"``.
+| The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
 
-:download:`2 page booklet python<makers/number_lines_booklet_maker.py>`
+
+:download:`number_lines_booklet_maker<makers/number_lines_booklet_maker.py>`
 
 .. literalinclude:: makers/number_lines_booklet_maker.py
    :linenos:
