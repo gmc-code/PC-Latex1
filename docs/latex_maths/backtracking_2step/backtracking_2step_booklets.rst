@@ -15,11 +15,11 @@ Backtracking 2-step booklet python
 | :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | The python file, **backtracking_2step_booklet_maker.py**, when run, will ask for these inputs:
-| Choose the first arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 1st process"``.
-| Choose the second arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 2nd process"``
-| Choose the number of questions form 1 to 100: ``"Enter the number of questions from 1 to 100"``
-| Choose the file name base: ``"Enter the base filename to be added to the prefix bt2Bk_:"``.
-| The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
+
+- Choose the first arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 1st process"``.
+- Choose the second arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 2nd process"``
+- Choose the number of questions form 1 to 100: ``"Enter the number of questions from 1 to 100"``
+- Choose the file name base: ``"Enter the base filename to be added to the prefix bt2Bk_:"``. The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
 
 ----
 
