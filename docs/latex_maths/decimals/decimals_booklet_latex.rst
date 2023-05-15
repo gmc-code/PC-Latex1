@@ -8,7 +8,7 @@ Booklets
 Sample decimals booklets by process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. grid:: 4
+.. grid:: 2
    :gutter: 0
    :margin: 0
    :padding: 0
@@ -26,6 +26,11 @@ Sample decimals booklets by process
       ^^^
       :download:`pdf<booklets/asd_add1dp_ans.pdf>`
       :download:`tex<booklets/asd_add1dp_ans.tex>`
+
+.. grid:: 2
+   :gutter: 0
+   :margin: 0
+   :padding: 0
 
    .. grid-item-card::  
       
