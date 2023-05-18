@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  19 MAY 2023 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  19 MAY 2023 00:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/decimals/makers/asd_sub_ans.tex
-(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/decimals/makers/asd_sub_ans.tex
+**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/decimals/makers/asd_sub1dp_ans.tex
+
+(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/decimals/makers/asd_sub1dp_ans.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-04-20>
 (C:\Users\gmccarthy\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -223,8 +224,8 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box100
 )
-No file asd_sub_ans.aux.
-\openout1 = `asd_sub_ans.aux'.
+No file asd_sub1dp_ans.aux.
+\openout1 = `asd_sub1dp_ans.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -277,23 +278,23 @@ LaTeX Font Info:    ... okay on input line 24.
 [1
 
 {C:/Users/gmccarthy/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\decimals\makers\temp\asd_sub_ans.au
-x) ) 
+(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\decimals\makers\temp\asd_sub1dp_ans
+.aux) ) 
 Here is how much of TeX's memory you used:
  2219 strings out of 477340
- 36220 string characters out of 5809005
- 1890068 words of memory out of 5000000
+ 36250 string characters out of 5809005
+ 1891068 words of memory out of 5000000
  22579 multiletter control sequences out of 15000+600000
  517142 words of font info for 49 fonts, out of 8000000 for 9000
  465 hyphenation exceptions out of 8191
- 57i,11n,62p,287b,238s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/gmccarthy/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+ 57i,11n,62p,290b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/gmccarthy/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\decimals\makers\as
-d_sub_ans.pdf (1 page, 43128 bytes).
+d_sub1dp_ans.pdf (1 page, 43154 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

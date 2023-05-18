@@ -1,18 +1,24 @@
 \documentclass{article}
+\usepackage{ulem}
 
 \newcommand{\wideunderline}[2][2em]{%
-  \underline{\makebox[\ifdim\width>#1\width\else#1\fi]{#2}}%
+  \dashuline{\makebox[\ifdim\width>#1\width\else#1\fi]{#2}}% 
 }
+
+% \newcommand{\wideunderline}[2][2em]{%
+%   \underline{\makebox[\ifdim\width>#1\width\else#1\fi]{#2}}%
+% }
 
 \begin{document}
 
-
+\begin{equation}
 $$\frac{3227}{555} = 5.8(144)$$
-
+\end{equation} 
 \begin{equation} 
 
 $$\frac{3227}{555} = \wideunderline[4em]{} $$
-
+\end{equation}
+\begin{equation} 
 $$\frac{3227}{555} = 5.8 \overline {144}$$
 
 \end{equation} 
