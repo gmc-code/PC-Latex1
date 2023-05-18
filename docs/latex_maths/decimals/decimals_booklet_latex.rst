@@ -56,15 +56,15 @@ Sample decimals booklets by process
 
       random 2dp q
       ^^^
-      :download:`pdf<booklets/asd_addsub_q.pdf>`
-      :download:`tex<booklets/asd_addsub_q.tex>`
+      :download:`pdf<booklets/asd_addsub2dp_q.pdf>`
+      :download:`tex<booklets/asd_addsub2dp_q.tex>`
 
    .. grid-item-card::  
 
       random 2dp ans
       ^^^
-      :download:`pdf<booklets/asd_addsub_ans.pdf>`
-      :download:`tex<booklets/asd_addsub_ans.tex>`
+      :download:`pdf<booklets/asd_addsub2dp_ans.pdf>`
+      :download:`tex<booklets/asd_addsub2dp_ans.tex>`
 
 
 ----
