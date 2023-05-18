@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\newcommand{\wideunderline}[2][2em]{%
+  \underline{\makebox[\ifdim\width>#1\width\else#1\fi]{#2}}%
+}
+
+\begin{document}
+
+
+$$\frac{3227}{555} = 5.8(144)$$
+
+\begin{equation} 
+
+$$\frac{3227}{555} = \wideunderline[4em]{} $$
+
+$$\frac{3227}{555} = 5.8 \overline {144}$$
+
+\end{equation} 
+
+\end{document}
