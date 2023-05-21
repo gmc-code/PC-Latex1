@@ -17,7 +17,8 @@ Decimals diagram - manual
     \def\decb{42.096}
     \def\answer{86.209}
 
-| The line ``\begin{tabular}{d{4.4}}`` set the spacing for up to 4 digits before and 4 digits after the decimal point.
+| The line ``\begin{tabular}{d{4.4}}`` sets the spacing for up to 4 digits before and 4 digits after the decimal point.
+| It uses the macro: ``\newcolumntype{d}[1]{D{.}{.}{#1}}`` which sets t
 
 ----
 

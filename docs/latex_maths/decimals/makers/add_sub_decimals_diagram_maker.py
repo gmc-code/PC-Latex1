@@ -61,10 +61,10 @@ def main():
     else:
         num = 3  # random by default
     #
-    numdp = input("Enter 1, 2 or 3 for the number of decimal places \n")
+    numdp = input("Enter 1, 2, 3, 4,  or 5 for the number of decimal places \n")
     if numdp.strip().isdigit():
         numdp = int(numdp)
-        if not numdp in [1, 2, 3]:
+        if not numdp in [1, 2, 3, 4, 5]:
             numdp = 1  # random by default
     else:
         numdp = 1  # random by default

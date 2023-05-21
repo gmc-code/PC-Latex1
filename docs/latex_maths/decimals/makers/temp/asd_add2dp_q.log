@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  21 MAY 2023 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.5) (preloaded format=pdflatex 2024.5.10)  21 MAY 2023 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -81,7 +81,8 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count196
 \l__pdf_internal_box=\box54
 )
-No file asd_add2dp_q.aux.
+(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\decimals\makers\temp\asd_add2dp_q.a
+ux)
 \openout1 = `asd_add2dp_q.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -102,14 +103,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 9.
-[1
+ [1
 
 {C:/Users/gmccarthy/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\decimals\makers\temp\asd_add2dp_q.a
 ux) ) 
 Here is how much of TeX's memory you used:
- 1135 strings out of 477340
- 22541 string characters out of 5809005
+ 1137 strings out of 477340
+ 22701 string characters out of 5809005
  1851068 words of memory out of 5000000
  21520 multiletter control sequences out of 15000+600000
  512287 words of font info for 32 fonts, out of 8000000 for 9000
@@ -119,7 +120,7 @@ Here is how much of TeX's memory you used:
 nts/cm/cmmi10.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmr10.pfb>
 Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\decimals\makers\as
-d_add2dp_q.pdf (1 page, 19346 bytes).
+d_add2dp_q.pdf (1 page, 19407 bytes).
 PDF statistics:
  16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
