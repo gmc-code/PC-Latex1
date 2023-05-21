@@ -6,7 +6,7 @@ Decimals diagram - manual
 | The values in the diagram can be entered manually into the LaTeX code.
 | The snippet below from the LaTeX file shows a block in the preamble of the .tex file where the values for the backtacking diagram can be manually edited.
 
-| The values in the braces, {}, can be altered.
+| The values in the braces, {}, can be manually set with up to 2 digits before the decimal point and up to 5 after it.
 | The processes, ``\addsub`` can be ``+`` or ``-``.
 
 .. code-block:: LaTeX
@@ -17,8 +17,9 @@ Decimals diagram - manual
     \def\decb{42.096}
     \def\answer{86.209}
 
-| The line ``\begin{tabular}{d{4.4}}`` sets the spacing for up to 4 digits before and 4 digits after the decimal point.
-| It uses the macro: ``\newcolumntype{d}[1]{D{.}{.}{#1}}`` which sets t
+| The line ``\begin{tabular}{d{3.5}}`` sets the spacing for up to 3 digits before and 5 digits after the decimal point.
+| If more digits are required then the ``3`` and the ``5`` can be changed to suit.
+| It uses the macro: ``\newcolumntype{d}[1]{D{.}{.}{#1}}`` which sets the decimal alignment and spacing.
 
 ----
 

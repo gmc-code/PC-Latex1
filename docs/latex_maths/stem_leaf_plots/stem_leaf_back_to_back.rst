@@ -37,7 +37,7 @@ Example back-to-back stem and leaf plots
 
 
       .. figure:: files/slbtb_scores.png
-         :width: 600
+         :width: 200
          :alt: slbtb_scores
          :figclass: align-center
 
@@ -52,7 +52,7 @@ Example back-to-back stem and leaf plots
 
 
       .. figure:: files/slbtb_heart_rates.png
-         :width: 600
+         :width: 400
          :alt: slbtb_heart_rates
          :figclass: align-center
 
