@@ -21,6 +21,8 @@ PC-latex
     :numbered:
 
     latex_maths/decimals/decimals_intro.rst
+    latex_maths/decimals/decimals_diagram_automated.rst
+    latex_maths/decimals/decimals_diagram_manual.rst
     latex_maths/decimals/decimals_booklet_latex.rst
     latex_maths/decimals/decimals_booklet_python.rst
 

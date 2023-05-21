@@ -192,7 +192,3 @@ Python LaTeX_pdf_to_png.py
 - `-density 600`: sets the resolution of the input PDF file to 600 DPI.
 - `pdf_path`: is the path of the input PDF file.
 - `png_path`: is the path of the output PNG file.
-
-
-
-

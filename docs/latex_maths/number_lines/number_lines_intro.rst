@@ -53,7 +53,3 @@ Approach
 
 | For use of python to build LaTeX files see:
 | https://tug.org/tug2019/slides/slides-ziegenhagen-python.pdf
-
-
-
-
