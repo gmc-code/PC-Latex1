@@ -2,16 +2,16 @@
 \documentclass[border = 1mm]{standalone}
 \usepackage{dcolumn}
     
-\newcolumntype{d}[1]{D{.}{.}{#1}}
+\newcolumntype{d}[1]{cD{.}{.}{#1}}
 
 \begin{document}
     
 \begin{tabular}{d{4.5}}
-    96.12 \\
-    -\enspace44.54 \\
+     &85.59 \tabularnewline
+    $-$&73.65 \tabularnewline
     \hline
-     \\
-    \hline\\
+     & \tabularnewline
+    \hline
 \end{tabular}
 
 \end{document}

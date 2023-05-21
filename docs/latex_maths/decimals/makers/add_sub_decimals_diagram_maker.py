@@ -29,9 +29,9 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
 tex_keys_q = ["answer"]
 
 
-def make1_diagram(tex_diagram_template_txt, num, numdp):
+def make1_diagram(tex_diagram_template_txt, nump, numip, numdp):
     tex_diagram_template_txt_ans = tex_diagram_template_txt
-    kv = decf.get_add_sub_dec_dict(num, numdp)
+    kv = decf.get_add_sub_dec_dict(nump, numip, numdp)
 
     for key, value in kv.items():
         tex_diagram_template_txt_ans = tex_diagram_template_txt_ans.replace(
@@ -53,21 +53,29 @@ def make1_diagram(tex_diagram_template_txt, num, numdp):
 
 
 def main():
-    num = input("Enter 1, 2, or 3 for +, -, random for the process \n")
-    if num.strip().isdigit():
-        num = int(num)
-        if not num in [1, 2, 3]:
-            num = 3  # random by default
+    nump = input("Enter 1, 2, or 3 for +, -, random for the process \n")
+    if nump.strip().isdigit():
+        nump = int(nump)
+        if not nump in [1, 2, 3]:
+            nump = 3  # random by default
     else:
-        num = 3  # random by default
+        nump = 3  # random by default
+    #
+    numip = input("Enter 1, 2, 3, or 4 for the number of places before the decimal point \n")
+    if numip.strip().isdigit():
+        numip = int(numip)
+        if not numip in [1, 2, 3, 4, 5]:
+            numip = 1  # 1 by default
+    else:
+        numip = 1  # 1 by default
     #
     numdp = input("Enter 1, 2, 3, 4,  or 5 for the number of decimal places \n")
     if numdp.strip().isdigit():
         numdp = int(numdp)
         if not numdp in [1, 2, 3, 4, 5]:
-            numdp = 1  # random by default
+            numdp = 1  # 1 by default
     else:
-        numdp = 1  # random by default
+        numdp = 1  # 1 by default
     #
     filename = input("Enter the base filename to be added to the prefix asd_: \n")
     if not filename:
@@ -95,7 +103,7 @@ def main():
         tex_diagram_template_txt = infile.read()
 
     # Generate the <<diagram>> replacement tex
-    diagram_text, diagram_text_ans = make1_diagram(tex_diagram_template_txt, num, numdp)
+    diagram_text, diagram_text_ans = make1_diagram(tex_diagram_template_txt, nump, numip, numdp)
     # Replace the <<diagram>> placeholder in the LaTeX template
     tex_template_txt = tex_template_txt.replace("<<diagram>>", diagram_text)
     tex_template_txt_ans = tex_template_txt_ans.replace("<<diagram>>", diagram_text_ans)

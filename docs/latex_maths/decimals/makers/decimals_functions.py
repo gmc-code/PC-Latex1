@@ -4,21 +4,21 @@ Module of functions to return decimals dictionary for LaTeX
 import random
 
 
-def get_add_sub_dec_dict(num, numdp):
-    if num is None or num == 3:
-        num = random.randint(1, 2)
-    match num:
+def get_add_sub_dec_dict(nump, numip, numdp):
+    if nump is None or nump == 3:
+        nump = random.randint(1, 2)
+    match nump:
         case 1:
-            return add_dict(numdp)
+            return add_dict(numip, numdp)
         case 2:
-            return sub_dict(numdp)
+            return sub_dict(numip, numdp)
     
 
-def add_dict(numdp):
+def add_dict(numip, numdp):
     # na + nb = nc
-    # Generate a random decimal number between 0.01 and 100
-    na = random.uniform(0.001, 100)
-    nb = random.uniform(0.001, 100 - na)
+    # Generate a random decimal number between 0.00001 and 9999
+    na = random.uniform(10**-numdp, (10**numip)-0.1)
+    nb = random.uniform(10**-numdp, (10**numip)-0.1 - na)
     # Format the result to 1,2 or 3 decimal places
     format_string = "{:." + str(numdp) + "f}"
     na = format_string.format(na)
@@ -33,11 +33,11 @@ def add_dict(numdp):
     return kv
 
 
-def sub_dict(numdp):
+def sub_dict(numip, numdp):
     # na + nb = nc
     # Generate a random decimal number between 0.01 and 100
-    nc = random.uniform(0.001, 100)
-    nb = random.uniform(0.001, 100 - nc)
+    nc = random.uniform(10**-numdp, (10**numip)-0.1)
+    nb = random.uniform(10**-numdp, (10**numip)-0.1- nc)
     # Format the result to 1,2 or 3 decimal places
     format_string = "{:." + str(numdp) + "f}"
     nc = format_string.format(nc)

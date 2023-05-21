@@ -34,17 +34,17 @@ Sample decimals booklets by process
 
    .. grid-item-card::  
       
-      sub 1dp q
+      sub 2dp q
       ^^^
-      :download:`pdf<booklets/asdBk_sub1dp_q.pdf>`
-      :download:`tex<booklets/asdBk_sub1dp_q.tex>`
+      :download:`pdf<booklets/asdBk_sub2dp_q.pdf>`
+      :download:`tex<booklets/asdBk_sub2dp_q.tex>`
 
    .. grid-item-card::  
       
-      sub 1dp ans
+      sub 2dp ans
       ^^^
-      :download:`pdf<booklets/asdBk_sub1dp_ans.pdf>`
-      :download:`tex<booklets/asdBk_sub1dp_ans.tex>`
+      :download:`pdf<booklets/asdBk_sub2dp_ans.pdf>`
+      :download:`tex<booklets/asdBk_sub2dp_ans.tex>`
 
 
 .. grid:: 2

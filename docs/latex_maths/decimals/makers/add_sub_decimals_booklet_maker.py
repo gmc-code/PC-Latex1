@@ -31,11 +31,10 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
 # tex_keys = ["num1", "num2", "process"]
 tex_keys_q = ["answer"]
 
-
-def make1_diagram(tex_diagram_template_txt, num, numdp):
+def make1_diagram(tex_diagram_template_txt, nump, numip, numdp):
     tex_diagram_template_txt_ans = tex_diagram_template_txt
+    kv = decf.get_add_sub_dec_dict(nump, numip, numdp)
     posttext = r"\vspace{-2pt}"
-    kv = decf.get_add_sub_dec_dict(num, numdp)
 
     for key, value in kv.items():
         tex_diagram_template_txt_ans = tex_diagram_template_txt_ans.replace(
@@ -56,8 +55,8 @@ def make1_diagram(tex_diagram_template_txt, num, numdp):
     return tex_diagram_template_txt + posttext, tex_diagram_template_txt_ans + posttext
 
 
-def get_title(num):
-    match num:
+def get_title(nump):
+    match nump:
         case 1:
             return "Addition"
         case 2:
@@ -67,32 +66,40 @@ def get_title(num):
 
 
 def main():
-    num = input("Enter 1, 2, or 3 for +, -, random for the process \n")
-    if num.strip().isdigit():
-        num = int(num)
-        if not num in [1, 2, 3]:
-            num = 3  # random by default
+    nump = input("Enter 1, 2, or 3 for +, -, random for the process \n")
+    if nump.strip().isdigit():
+        nump = int(nump)
+        if not nump in [1, 2, 3]:
+            nump = 3  # random by default
     else:
-        num = 3  # random by default
-    # egt title for part of heading indicating which process/es
-    title = get_title(num)
+        nump = 3  # random by default
+    # get title for part of heading indicating which process/es
+    title = get_title(nump)
+    #
+    numip = input("Enter 1, 2, 3, or 4 for the number of places before the decimal point \n")
+    if numip.strip().isdigit():
+        numip = int(numip)
+        if not numip in [1, 2, 3, 4, 5]:
+            numip = 1  # 1 by default
+    else:
+        numip = 1  # 1 by default
     #
     numdp = input("Enter 1, 2, 3, 4,  or 5 for the number of decimal places \n")
     if numdp.strip().isdigit():
         numdp = int(numdp)
         if not numdp in [1, 2, 3, 4, 5]:
-            numdp = 1  # random by default
+            numdp = 1  # 1 by default
     else:
-        numdp = 1  # random by default
+        numdp = 1  # 1 by default
     #
     #
     numq = input("Enter the number of questions from 1 to 100 \n")
     if numq.strip().isdigit():
         numq = int(numq)
         if not numq in range(1, 101):
-            numq = 20  # random by default
+            numq = 25  # 25 by default
     else:
-        numq = 20  # random by default
+        numq = 25  # 25 by default
     #
     filename = input("Enter the base filename to be added to the prefix asd_: \n")
     if not filename:
@@ -120,7 +127,7 @@ def main():
     col1_text_ans = ""
     rmax = numq + 1
     for _ in range(1, rmax):
-        img_tex, img_tex_ans = make1_diagram(tex_diagram_template_txt, num, numdp)
+        img_tex, img_tex_ans = make1_diagram(tex_diagram_template_txt, nump, numip, numdp)
         col1_text += img_tex
         col1_text_ans += img_tex_ans
 

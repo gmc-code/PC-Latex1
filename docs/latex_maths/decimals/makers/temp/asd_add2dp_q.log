@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.5) (preloaded format=pdflatex 2024.5.10)  21 MAY 2023 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  21 MAY 2023 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -111,7 +111,7 @@ ux) )
 Here is how much of TeX's memory you used:
  1137 strings out of 477340
  22701 string characters out of 5809005
- 1851068 words of memory out of 5000000
+ 1852068 words of memory out of 5000000
  21520 multiletter control sequences out of 15000+600000
  512287 words of font info for 32 fonts, out of 8000000 for 9000
  465 hyphenation exceptions out of 8191
@@ -120,7 +120,7 @@ Here is how much of TeX's memory you used:
 nts/cm/cmmi10.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmr10.pfb>
 Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\decimals\makers\as
-d_add2dp_q.pdf (1 page, 19407 bytes).
+d_add2dp_q.pdf (1 page, 19170 bytes).
 PDF statistics:
  16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

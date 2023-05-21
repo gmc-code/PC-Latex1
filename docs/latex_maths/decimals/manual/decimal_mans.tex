@@ -2,21 +2,21 @@
 \documentclass[border = 1mm]{standalone}
 \usepackage{dcolumn}
     
-\newcolumntype{d}[1]{D{.}{.}{#1}}
+\newcolumntype{d}[1]{cD{.}{.}{#1}}
 
 % modify values 
-\def\addsub{+} 
-\def\deca{44.113}
-\def\decb{42.096}
-\def\answer{86.209}
+\def\addsub{-} 
+\def\deca{70.25}
+\def\decb{16.36}
+\def\answer{53.89}
 
 
 \begin{document}
 \begin{tabular}{d{4.5}}
-    \deca \\
-    \addsub\enspace\decb \\
+     &\deca \tabularnewline
+    $\addsub$&\decb \tabularnewline
     \hline
-    \answer \\
-    \hline\\
+     &\answer \tabularnewline
+    \hline
 \end{tabular}
 \end{document}
