@@ -29,7 +29,7 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
 
 # % end modify values for backtracking
 # tex_keys = ['stepAB','stepABrev','stepBC', 'stepBCrev', boxA','boxB', 'boxC', 'boxCrev, 'boxBrev', 'boxArev' ]
-tex_keys_ans = ["stepAB", "stepBC", "boxA", "boxCrev"]
+tex_keys_q = ["stepAB", "stepBC", "boxA", "boxCrev"]
 
 
 def make1_diagram(tex_diagram_template_txt, num1, num2):
@@ -41,7 +41,7 @@ def make1_diagram(tex_diagram_template_txt, num1, num2):
             "<<" + key + ">>", value
         )
     for key, value in kv.items():
-        if key in tex_keys_ans:
+        if key in tex_keys_q:
             tex_diagram_template_txt = tex_diagram_template_txt.replace(
                 "<<" + key + ">>", value
             )

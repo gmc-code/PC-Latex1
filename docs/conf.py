@@ -179,8 +179,8 @@ LaTeX_elements['preamble'] = r'''
 
     %%% mycode chapter heading colour \fontsize{48}{50}
     \makeatletter
-        \ChTitleVar{\centering \color{NavyBlue} \Huge\py@HeaderFamily}
-        \ChNameVar{\centering \color{NavyBlue} \Huge\py@HeaderFamily}
+        \ChTitleVar{\centering \color{NavyBlue} \Large\py@HeaderFamily}
+        \ChNameVar{\centering \color{NavyBlue} \Large\py@HeaderFamily}
         \ChNumVar{\centering \color{NavyBlue} \Large\py@HeaderFamily}
         \ChRuleWidth{2pt}
     \makeatother
@@ -200,7 +200,7 @@ LaTeX_elements['maketitle'] = r'''
         \centering
 
         \vspace*{40mm} %%% * is used to force space from top since first time is normally ignored
-        \textbf{\color{NavyBlue} \Huge {PC-LaTeX}}
+        \textbf{\color{NavyBlue} \Large {PC-LaTeX}}
 
         \vspace{10mm}
         \begin{figure}[!h]

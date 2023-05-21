@@ -160,12 +160,19 @@ def main():
             num = 6  # random by default
     else:
         num = 6  # random by default
+    #
+    numq = input("Enter the number of questions from 1 to 80 \n")
+    if numq.strip().isdigit():
+        numq = int(numq)
+        if not numq in range(1,81):
+            numq = 16  # random by default
+    else:
+        numq = 16  # random by default
+    #
     filename = input("Enter the base filename to be added to the prefix nlBk_: \n")
     if not filename:
         filename = "nlBk_1st"  # "nlBk_1st_q and nlBk_1st_ans as default file"
     # set names of files that are made
-    # questions
-    # questions
     tex_output_path = currfile_dir / f"nlBk_{filename}_q.tex"
     pdf_path = currfile_dir / f"nlBk_{filename}_q.pdf"
     aux_path = currfile_dir / "temp"
@@ -189,7 +196,8 @@ def main():
     diagrams_text_ans = ""
     # add the headtext
     headtext = r"\pagebreak ~ \newline ~ \newline"
-    for i in range(1, 17):
+    rmax = numq + 1
+    for i in range(1, rmax):
         img_tex, img_tex_ans = make1_diagram(tex_diagram_template_txt, num)
         if i > 8 and i % 8 == 1:
             diagrams_text += headtext

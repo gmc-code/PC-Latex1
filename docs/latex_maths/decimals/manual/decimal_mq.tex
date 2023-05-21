@@ -1,0 +1,22 @@
+% asd worksheet template
+\documentclass[border = 1mm]{standalone}
+\usepackage{dcolumn}
+    
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+% modify values 
+\def\addsub{+} 
+\def\deca{44.113}
+\def\decb{42.096}
+\def\answer{}
+
+
+\begin{document}
+\begin{tabular}{d{4.4}}
+    \deca \\
+    \addsub\enspace\decb \\
+    \hline
+    \answer \\
+    \hline\\
+\end{tabular}
+\end{document}

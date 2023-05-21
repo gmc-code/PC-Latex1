@@ -14,6 +14,11 @@ Backtracking 1-step worksheet python
 | The Python code that creates a 1 step worksheet, with 10 backtracking diagrams on one page, is below.
 | :download:`backtracking_1step_worksheet_maker.py<makers/backtracking_1step_worksheet_maker.py>`
 
+| The python file, **backtracking_1step_worksheet_maker.py**, when run, will ask for these inputs:
+
+- Choose the arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random"``.
+- Choose the file name base: ``"Enter the base filename to be added to the prefix bt1Bk_:"``. The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
+
 .. literalinclude:: makers/backtracking_1step_worksheet_maker.py
    :linenos:
 

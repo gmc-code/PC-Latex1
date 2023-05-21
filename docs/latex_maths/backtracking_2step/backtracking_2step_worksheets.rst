@@ -15,10 +15,10 @@ Backtracking 2-step worksheets
 | :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | The python file, **backtracking_2step_diagram_maker.py**, when run, will ask for 3 inputs:
-| Choose the first arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 1st process"``.
-| Choose the second arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 2nd process"``
-| Choose the file name base: ``"Enter the base filename to be added to the prefix bt2WS_:"``.
-| The filename will have "_q" added for the question worksheet and "_ans" for the answer worksheet.
+
+- Choose the first arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 1st process"``.
+- Choose the second arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for the 2nd process"``
+- Choose the file name base: ``"Enter the base filename to be added to the prefix bt2WS_:"``. The filename will have "_q" added for the question worksheet and "_ans" for the answer worksheet.
 
 ----
 

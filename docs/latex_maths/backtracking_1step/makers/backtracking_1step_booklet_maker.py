@@ -28,7 +28,7 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
 
 
 # tex_keys = ['stepAB','stepABrev','boxA','boxB','boxBrev', 'boxArev' ]
-tex_keys_ans = ["stepAB", "boxA", "boxBrev"]
+tex_keys_q = ["stepAB", "boxA", "boxBrev"]
 
 
 def make1_diagram(tex_diagram_template_txt, num):
@@ -42,7 +42,7 @@ def make1_diagram(tex_diagram_template_txt, num):
         )
 
     for key, value in kv.items():
-        if key in tex_keys_ans:
+        if key in tex_keys_q:
             tex_diagram_template_txt = tex_diagram_template_txt.replace(
                 "<<" + key + ">>", value
             )
@@ -63,6 +63,15 @@ def main():
             num = 5  # random by default
     else:
         num = 5  # random by default
+    #
+    numq = input("Enter the number of questions from 1 to 100 \n")
+    if numq.strip().isdigit():
+        numq = int(numq)
+        if not numq in range(1,101):
+            numq = 20  # random by default
+    else:
+        numq = 20  # random by default
+    #
     filename = input("Enter the base filename to be added to the prefix bt1WS_: \n")
     if not filename:
         filename = "bt1Bk_1st"  # "bt1Bk_1st_q and bt1Bk_1st_ans as default file"
@@ -87,7 +96,8 @@ def main():
     # generate column text and column text for answers
     col1_text = ""
     col1_text_ans = ""
-    for i in range(1, 21):
+    rmax = numq + 1
+    for _ in range(1, rmax):
         img_tex, img_tex_ans = make1_diagram(tex_diagram_template_txt, num)
         col1_text += img_tex
         col1_text_ans += img_tex_ans

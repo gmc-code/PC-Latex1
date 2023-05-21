@@ -17,6 +17,16 @@ PC-latex
 
 .. toctree::
     :maxdepth: 2
+    :caption: ⚈ decimals
+    :numbered:
+
+    latex_maths/decimals/decimals_intro.rst
+    latex_maths/decimals/decimals_booklet_latex.rst
+    latex_maths/decimals/decimals_booklet_python.rst
+
+
+.. toctree::
+    :maxdepth: 2
     :caption: 🔁 backtracking - 1step
     :numbered:
 

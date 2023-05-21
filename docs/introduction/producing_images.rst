@@ -174,7 +174,7 @@ Python LaTeX_pdf_to_png.py
    pdf_path = f'{tex_filename}.pdf'
    png_path = f'{tex_filename}.png'
 
-   subprocess.run(['magick', 'convert', '-quiet', '-background', 'white', '-alpha', 'off', '-quality', '100', '-density', '600', pdf_path, png_path])
+   subprocess.run(['magick', '-quiet', '-background', 'white', '-alpha', 'off', '-quality', '100', '-density', '600', pdf_path, png_path])
 
 
 | ``sys.argv`` is a list in Python that contains the command-line arguments passed to the script. |
@@ -185,7 +185,6 @@ Python LaTeX_pdf_to_png.py
 | Here is what each argument in the command does:
 
 - `magick`: This is the ImageMagick command line tool.
-- `convert`: This is the subcommand for converting files.
 - `-quiet`: suppresses all output except for errors and warnings.
 - `-background white`: sets the background color of the output image to white.
 - `-alpha off`: removes any transparency from the input image.
