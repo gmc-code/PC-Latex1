@@ -14,7 +14,7 @@ chemfig
 
 
 .. figure:: files/methane.png
-   :width: 600
+   :width: 300
    :alt: methane
    :figclass: align-center
 
@@ -24,7 +24,7 @@ chemfig
 
 
 .. figure:: files/ethanol.png
-   :width: 600
+   :width: 300
    :alt: ethanol
    :figclass: align-center
 
@@ -34,7 +34,7 @@ chemfig
 
 
 .. figure:: files/acetaldehyde.png
-   :width: 600
+   :width: 300
    :alt: acetaldehyde
    :figclass: align-center
 
@@ -44,7 +44,7 @@ chemfig
 
 
 .. figure:: files/benzene.png
-   :width: 600
+   :width: 300
    :alt: benzene
    :figclass: align-center
 
@@ -54,7 +54,7 @@ chemfig
 
 
 .. figure:: files/pentane.png
-   :width: 600
+   :width: 300
    :alt: pentane
    :figclass: align-center
 
