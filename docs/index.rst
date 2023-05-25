@@ -109,6 +109,6 @@ PC-latex
     :caption: 🧪 chemistry
     :numbered:
 
-    latex_science/chemistry.rst
+    latex_science/chemistry/chemistry_mhchem.rst
+    latex_science/chemistry/chemistry_chemfig.rst
 
-    

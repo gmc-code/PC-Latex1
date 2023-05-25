@@ -1,5 +1,5 @@
 ====================================================
-Chemistry LaTeX
+Chemistry chemfig LaTeX
 ====================================================
 
 See: https://www.overleaf.com/learn/latex/Chemistry_formulae
@@ -7,11 +7,10 @@ See: https://mirror.aarnet.edu.au/pub/CTAN/macros/generic/chemfig/chemfig-en.pdf
 
 ----
 
-
-mh_chem
+mhchem
 ---------------
 
-| The mh_chem packages makes it easy to write chemical reactions.
+| The mhchem package makes it easy to write chemical reactions.
 
 
 .. figure:: files/mhchem_examples.png
