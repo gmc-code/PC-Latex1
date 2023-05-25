@@ -2,8 +2,7 @@
 Chemistry mhchem LaTeX
 ====================================================
 
-See: https://www.overleaf.com/learn/latex/Chemistry_formulae
-See: https://mirror.aarnet.edu.au/pub/CTAN/macros/generic/chemfig/chemfig-en.pdf
+See: https://mirror.cse.unsw.edu.au/pub/CTAN/macros/latex/contrib/mhchem/mhchem.pdf
 
 ----
 

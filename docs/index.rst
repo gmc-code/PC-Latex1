@@ -111,4 +111,7 @@ PC-latex
 
     latex_science/chemistry/chemistry_mhchem.rst
     latex_science/chemistry/chemistry_chemfig.rst
+    latex_science/chemistry/chemistry_bohr_atoms.rst
 
+
+    
