@@ -3,7 +3,7 @@ import magick_pdf_to_png
 import wand_pdf_to_png
 
 # paste in windows path to the raw string
-raw_string =  r'C:\Users\gmccarthy\OneDrive - Parade College\All DT\microbit for online\PC_LaTeX\docs\Latex_maths\backtracking\files\backtrack_2step.pdf'
+raw_string =  r'C:\PC_RTD_GITHUB\PC_latex\docs\latex_science\chemistry\files\bohr.pdf'
 
 forward_slash_string = raw_string.replace('\\', '/')
 pdf_file_path = Path(forward_slash_string)
