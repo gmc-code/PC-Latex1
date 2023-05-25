@@ -2,8 +2,13 @@
 Recurring Decimals
 ====================================================
 
+| Recurring decimals ae limited here to denominators of 3, 6, 7, 9. 
+| This limits the number of possible recurring decimals to a total of 16.
+| The worksheet can have up to 16 recurring decimal questions.
 
-Sample decimals booklets by process
+----
+
+Sample recurring decimals worksheets
 -------------------------------------
 
 .. grid:: 2
@@ -13,17 +18,17 @@ Sample decimals booklets by process
 
    .. grid-item-card::  
 
-      add 1dp q
+      recdec_1_q
       ^^^
-      :download:`pdf<booklets/asd_add1dp_q.pdf>`
-      :download:`tex<booklets/asd_add1dp_q.tex>`
+      :download:`pdf<worksheets/recdec_1_q.pdf>`
+      :download:`tex<worksheets/recdec_1_q.tex>`
 
    .. grid-item-card::  
 
-      add 1dp ans
+      recdec_1_ans
       ^^^
-      :download:`pdf<booklets/asd_add1dp_ans.pdf>`
-      :download:`tex<booklets/asd_add1dp_ans.tex>`
+      :download:`pdf<worksheets/recdec_1_ans.pdf>`
+      :download:`tex<worksheets/recdec_1_ans.tex>`
 
 .. grid:: 2
    :gutter: 0
@@ -32,82 +37,64 @@ Sample decimals booklets by process
 
    .. grid-item-card::  
       
-      sub 1dp q
+      recdec_2_q
       ^^^
-      :download:`pdf<booklets/asd_sub1dp_q.pdf>`
-      :download:`tex<booklets/asd_sub1dp_q.tex>`
+      :download:`pdf<worksheets/recdec_2_q.pdf>`
+      :download:`tex<worksheets/recdec_2_q.tex>`
 
    .. grid-item-card::  
       
-      sub 1dp ans
+      recdec_2_ans
       ^^^
-      :download:`pdf<booklets/asd_sub1dp_ans.pdf>`
-      :download:`tex<booklets/asd_sub1dp_ans.tex>`
-
-
-.. grid:: 2
-   :gutter: 0
-   :margin: 0
-   :padding: 0
-
-   .. grid-item-card::  
-
-      random 2dp q
-      ^^^
-      :download:`pdf<booklets/asd_addsub_q.pdf>`
-      :download:`tex<booklets/asd_addsub_q.tex>`
-
-   .. grid-item-card::  
-
-      random 2dp ans
-      ^^^
-      :download:`pdf<booklets/asd_addsub_ans.pdf>`
-      :download:`tex<booklets/asd_addsub_ans.tex>`
+      :download:`pdf<worksheets/recdec_2_ans.pdf>`
+      :download:`tex<worksheets/recdec_2_ans.tex>`
 
 
 ----
 
-Latex  templates
+Latex templates
 --------------------
 
-| The multi page LaTeX decimals **question** template is below.
-| :download:`add_sub_decimals_booklet_template<makers/add_sub_decimals_booklet_template.tex>`
+| The LaTeX recurring decimals **question** template is below.
+| :download:`recurring_decimals_worksheet_template<makers/recurring_decimals_worksheet_template.tex>`
 
-.. literalinclude:: makers/add_sub_decimals_booklet_template.tex
+.. literalinclude:: makers/recurring_decimals_worksheet_template.tex
    :linenos:
    
-| The multi page LaTeX decimals **answer** template is below.
-| :download:`add_sub_decimals_booklet_ans_template<makers/add_sub_decimals_booklet_ans_template.tex>`
+| The LaTeX recurring decimals **answer** template is below.
+| :download:`recurring_decimals_worksheet_ans_template<makers/recurring_decimals_worksheet_ans_template.tex>`
 
-.. literalinclude:: makers/add_sub_decimals_booklet_ans_template.tex
+.. literalinclude:: makers/recurring_decimals_worksheet_ans_template.tex
    :linenos:
 
 | The diagram template is below.
-| :download:`add_sub_decimals_booklet_diagram_template<makers/add_sub_decimals_booklet_diagram_template.tex>`
+| :download:`recurring_decimals_worksheet_diagram_template<makers/recurring_decimals_worksheet_diagram_template.tex>`
 
-.. literalinclude:: makers/add_sub_decimals_booklet_diagram_template.tex
+.. literalinclude:: makers/recurring_decimals_worksheet_diagram_template.tex
    :linenos:
 
+| The diagram answer template is below.
+| :download:`recurring_decimals_worksheet_diagram_ans_template<makers/recurring_decimals_worksheet_diagram_ans_template.tex>`
+
+.. literalinclude:: makers/recurring_decimals_worksheet_diagram_ans_template.tex
+   :linenos:
 
 ----
 
 Decimals python
 -------------------
 
-| The python below requires the following .tex files:
-| :download:`add_sub_decimals_booklet_template.tex<makers/add_sub_decimals_booklet_template.tex>`
-| :download:`add_sub_decimals_booklet_ans_template.tex<makers/add_sub_decimals_booklet_ans_template.tex>`
-| :download:`add_sub_decimals_booklet_diagram_template.tex<makers/add_sub_decimals_booklet_diagram_template.tex>`
+| The python below requires the 4 .tex files listed above.
 
 | The 2 custom python modules required are:
-| :download:`decimals_functions.py<makers/decimals_functions.py>`
+| :download:`recurring_decimals_functions.py<makers/recurring_decimals_functions.py>`
 | :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
-.. literalinclude:: makers/decimals_functions.py
+.. literalinclude:: makers/recurring_decimals_functions.py
    :linenos:
 
-| The Python to create booklets of questions involving the addition and subtraction of decimals, is below.
-| :download:`add_sub_decimals_booklet_maker.py<makers/add_sub_decimals_booklet_maker.py>`
+| The Python to create worksheets of questions involving recurring decimals, is below.
+| :download:`recurring_decimals_worksheet_maker.py<makers/recurring_decimals_worksheet_maker.py>`
 
-.. literalinclude:: makers/add_sub_decimals_booklet_maker.py
+.. literalinclude:: makers/recurring_decimals_worksheet_maker.py
    :linenos:

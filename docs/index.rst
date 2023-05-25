@@ -103,4 +103,12 @@ PC-latex
 
     latex_maths/lined_paper/lined_paper.rst
 
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 🧪 chemistry
+    :numbered:
+
+    latex_science/chemistry.rst
+
     
