@@ -28,7 +28,7 @@ def add_dict(numip, numdp):
     kv = dict()
     kv["num1"] = f"{na}"
     kv["num2"] = f"{nb}"
-    kv["process"] = f"+"
+    kv["process"] = "+"
     kv["answer"] = f"{nc}"
     return kv
 
@@ -48,7 +48,7 @@ def sub_dict(numip, numdp):
     kv = dict()
     kv["num1"] = f"{na}"
     kv["num2"] = f"{nb}"
-    kv["process"] = f"-"
+    kv["process"] = "-"
     kv["answer"] = f"{nc}"
     return kv
 

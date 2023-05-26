@@ -47,7 +47,10 @@ def make1_diagram(tex_diagram_template_txt, nump, numip, numdp):
             tex_diagram_template_txt = tex_diagram_template_txt.replace(
                 "<<" + key + ">>", value
             )
-
+    tex_diagram_template_txt = tex_diagram_template_txt.replace("<<numip>>", str(numip))
+    tex_diagram_template_txt = tex_diagram_template_txt.replace("<<numdp>>", str(numdp))
+    tex_diagram_template_txt_ans = tex_diagram_template_txt_ans.replace("<<numip>>", str(numip))
+    tex_diagram_template_txt_ans = tex_diagram_template_txt_ans.replace("<<numdp>>", str(numdp))
     # return tex_diagram_template_txt
     return tex_diagram_template_txt, tex_diagram_template_txt_ans
 
@@ -69,7 +72,7 @@ def main():
     else:
         numip = 1  # 1 by default
     #
-    numdp = input("Enter 1, 2, 3, 4,  or 5 for the number of decimal places \n")
+    numdp = input("Enter 1, 2, 3, 4, or 5 for the number of decimal places \n")
     if numdp.strip().isdigit():
         numdp = int(numdp)
         if not numdp in [1, 2, 3, 4, 5]:
