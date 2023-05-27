@@ -17,7 +17,7 @@ chemfig
    :width: 300
    :alt: methane
    :figclass: align-center
-
+   :caption: methane
 
 .. literalinclude:: files/methane.tex
    :linenos:
@@ -27,7 +27,7 @@ chemfig
    :width: 300
    :alt: ethanol
    :figclass: align-center
-
+   :caption: methane
 
 .. literalinclude:: files/ethanol.tex
    :linenos:
@@ -37,7 +37,7 @@ chemfig
    :width: 300
    :alt: acetaldehyde
    :figclass: align-center
-
+   :caption: acetaldehyde
 
 .. literalinclude:: files/acetaldehyde.tex
    :linenos:
@@ -47,7 +47,7 @@ chemfig
    :width: 300
    :alt: benzene
    :figclass: align-center
-
+   :caption: benzene
 
 .. literalinclude:: files/benzene.tex
    :linenos:
@@ -57,7 +57,7 @@ chemfig
    :width: 300
    :alt: pentane
    :figclass: align-center
-
+   :caption: pentane
 
 .. literalinclude:: files/pentane.tex
    :linenos:
