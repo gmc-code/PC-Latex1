@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  23 MAY 2023 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  27 MAY 2023 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/recurring_decimals/makers/recdec_1
-2_q.tex
+**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/recurring_decimals/makers/recdec_r
+ec_q.tex
 
-(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/recurring_decimals/makers/recdec_12
-_q.tex
+(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/recurring_decimals/makers/recdec_re
+c_q.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-04-20>
 (C:\Users\gmccarthy\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -226,8 +226,8 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box100
 )
-No file recdec_12_q.aux.
-\openout1 = `recdec_12_q.aux'.
+No file recdec_rec_q.aux.
+\openout1 = `recdec_rec_q.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -281,20 +281,20 @@ LaTeX Font Info:    ... okay on input line 24.
 
 {C:/Users/gmccarthy/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\recurring_decimals\makers\temp\recd
-ec_12_q.aux) ) 
+ec_rec_q.aux) ) 
 Here is how much of TeX's memory you used:
  2219 strings out of 477340
- 36322 string characters out of 5809005
- 1874068 words of memory out of 5000000
+ 36332 string characters out of 5809005
+ 1890068 words of memory out of 5000000
  22579 multiletter control sequences out of 15000+600000
  517142 words of font info for 49 fonts, out of 8000000 for 9000
  465 hyphenation exceptions out of 8191
- 57i,11n,62p,297b,213s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb>
+ 57i,11n,62p,298b,213s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr12.pfb>
 Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\recurring_decimals
-\makers\recdec_12_q.pdf (1 page, 25389 bytes).
+\makers\recdec_rec_q.pdf (1 page, 25669 bytes).
 PDF statistics:
  16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

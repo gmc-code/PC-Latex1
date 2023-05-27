@@ -25,6 +25,7 @@ PC-latex
     latex_maths/decimals/decimals_diagram_automated.rst
     latex_maths/decimals/decimals_booklet_latex.rst
     latex_maths/decimals/decimals_booklet_python.rst
+    latex_maths/recurring_decimals/recurring_decimals.rst
 
 
 .. toctree::

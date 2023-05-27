@@ -67,7 +67,7 @@ def main():
         numq = 26  # 16 by default
     #
     #
-    shuffle_bool = input("Enter T of F to shuffle the order \n").capitalize
+    shuffle_bool = input("Enter T of F to shuffle the order \n").capitalize()
     if shuffle_bool == "T":
         shuffle_bool = True
     else:
