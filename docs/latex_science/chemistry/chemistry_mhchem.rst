@@ -6,7 +6,7 @@ See: https://mirror.cse.unsw.edu.au/pub/CTAN/macros/latex/contrib/mhchem/mhchem.
 
 ----
 
-mhchem exxample usage
+mhchem example usage
 -------------------------
 
 | The mhchem package makes it easy to write chemical reactions.
