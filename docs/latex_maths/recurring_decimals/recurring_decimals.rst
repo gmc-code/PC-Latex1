@@ -20,15 +20,15 @@ Sample recurring decimals worksheets
 
       recdec_1_q
       ^^^
-      :download:`pdf<worksheets/recdec_1_q.pdf>`
-      :download:`tex<worksheets/recdec_1_q.tex>`
+      :download:`pdf<worksheets/recdec_q.pdf>`
+      :download:`tex<worksheets/recdec_q.tex>`
 
    .. grid-item-card::  
 
       recdec_1_ans
       ^^^
-      :download:`pdf<worksheets/recdec_1_ans.pdf>`
-      :download:`tex<worksheets/recdec_1_ans.tex>`
+      :download:`pdf<worksheets/recdec_ans.pdf>`
+      :download:`tex<worksheets/recdec_ans.tex>`
 
 .. grid:: 2
    :gutter: 0
@@ -39,15 +39,15 @@ Sample recurring decimals worksheets
       
       recdec_2_q
       ^^^
-      :download:`pdf<worksheets/recdec_2_q.pdf>`
-      :download:`tex<worksheets/recdec_2_q.tex>`
+      :download:`pdf<worksheets/recdec_shuffled_q.pdf>`
+      :download:`tex<worksheets/recdec_shuffled_q.tex>`
 
    .. grid-item-card::  
       
       recdec_2_ans
       ^^^
-      :download:`pdf<worksheets/recdec_2_ans.pdf>`
-      :download:`tex<worksheets/recdec_2_ans.tex>`
+      :download:`pdf<worksheets/recdec_shuffled_ans.pdf>`
+      :download:`tex<worksheets/recdec_shuffled_ans.tex>`
 
 
 ----
