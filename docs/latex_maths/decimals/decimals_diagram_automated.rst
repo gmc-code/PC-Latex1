@@ -14,8 +14,9 @@ Decimals diagram - automated
 | :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | The python file, **add_sub_decimals_diagram_maker**, when run, will ask for 3 inputs:
-| Choose the arithmetic process: ``"Enter 1, 2, or 3 for +, -, random for the process"``
-| Choose the number of decimal places: ``"Enter 1, 2 or 3 for the number of decimal placess"``
+| Choose the arithmetic process: ``"Enter 1, 2, or 3 for +, -, random for the process"``.
+| Choose the number of integer places: ``"Enter 1, 2, 3, or 4 for the number of places before the decimal point"``.
+| Choose the number of decimal places: ``"Enter 1, 2, 3, 4, or 5 for the number of decimal places "``.
 | Choose the file name base: ``"Enter the base filename to be added to the prefix asd_:"``.
 | The filename will have "_q" added for the question diagram and "_ans" for the answer diagram. 
 
