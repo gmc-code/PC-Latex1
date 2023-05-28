@@ -2,10 +2,8 @@
 \usepackage{bohr}
 \begin{document}
 \setbohr{distribution-method=quantum,insert-missing,nucleus-options-set={black},shell-options-set={black},electron-options-set={black}}
-Li \elconf{Li} \\
-\bohr{}{Li}
-\\
-\\
-F \elconf{F} \\
-\bohr{}{F}
+\setbohr{nucleus-radius=1.5em}
+{Li } \elconf{3} \qquad \bohr{3}{Li}\qquad {Li+ } \elconf{2} \qquad \bohr{2}{Li+}\\
+\vspace{24pt}\\
+{F } \elconf{9} \qquad \bohr{9}{F} \qquad {F- } \elconf{10} \qquad \bohr{10}{F-}\\
 \end{document}
