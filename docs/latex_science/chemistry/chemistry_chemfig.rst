@@ -167,6 +167,22 @@ Lewis dot diagram
    :linenos:
 
 
+
+----
+
+Lewis equation
+--------------------
+
+.. figure:: files/lewis_equation.png
+   :width: 600
+   :alt: lewis_equation
+   :figclass: align-center
+   
+   lewis_equation
+
+.. literalinclude:: files/lewis_equation.tex
+   :linenos:
+
 ----
 
 Molecular equation
