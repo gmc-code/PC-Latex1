@@ -1,9 +1,13 @@
 \documentclass[varwidth,border = 5mm]{standalone}
 \usepackage{bohr}
+\usepackage{array}
 \begin{document}
+\renewcommand{\arraystretch}{1.5} % Set the row height to 1.5 times the default value
+\setlength{\extrarowheight}{24pt} % Set the row padding to 24 points
 \setbohr{distribution-method=quantum,insert-missing,nucleus-options-set={black},shell-options-set={black},electron-options-set={black}}
 \setbohr{nucleus-radius=1.5em}
-{Li } \elconf{3} \qquad \bohr{3}{Li}\qquad {Li+ } \elconf{2} \qquad \bohr{2}{Li+}\\
-\vspace{24pt}\\
-{F } \elconf{9} \qquad \bohr{9}{F} \qquad {F- } \elconf{10} \qquad \bohr{10}{F-}\\
+\begin{tabular}{cc|cc}
+{Li } \elconf{3} & \bohr{3}{Li} & {Li+ } \elconf{2} & \bohr{2}{Li+} \\[36pt] \hline
+{F } \elconf{9} & \bohr{9}{F} & {F- } \elconf{10} & \bohr{10}{F^{-}} \\
+\end{tabular}
 \end{document}
