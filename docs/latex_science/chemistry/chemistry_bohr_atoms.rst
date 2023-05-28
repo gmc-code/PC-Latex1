@@ -3,7 +3,7 @@ Chemistry bohr LaTeX
 ====================================================
 
 See: https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/bohr/bohr_en.pdf
-
+See: https://mirror.aarnet.edu.au/pub/CTAN/macros/latex/contrib/bohr/bohr_en.pdf
 ----
 
 bohr

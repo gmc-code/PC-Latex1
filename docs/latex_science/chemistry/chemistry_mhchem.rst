@@ -12,7 +12,7 @@ mhchem example usage
 | The mhchem package makes it easy to write chemical reactions.
 
 
-.. figure:: files/mhchem_examples2.png
+.. figure:: files/mhchem_examples.png
    :width: 600
    :alt: mhchem_examples
    :figclass: align-center
