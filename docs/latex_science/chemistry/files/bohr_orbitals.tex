@@ -1,7 +1,11 @@
-\documentclass[border = 5mm]{standalone}
+\documentclass[varwidth,border = 5mm]{standalone}
 \usepackage{bohr}
 \begin{document}
-\setbohr{distribution-method=quantum,insert-missing}
-\elconf{Ca} \\ % provided by `elements'
-\bohr{}{Ca}
+\setbohr{distribution-method=quantum,insert-missing,nucleus-options-set={black},shell-options-set={black},electron-options-set={black}}
+Li \elconf{Li} \\
+\bohr{}{Li}
+\\
+\\
+F \elconf{F} \\
+\bohr{}{F}
 \end{document}
