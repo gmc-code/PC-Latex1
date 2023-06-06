@@ -125,3 +125,14 @@ PC-latex
     :numbered:
 
     latex_science/physics/circuits.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 🦘 biology
+    :numbered:
+
+    latex_science/biology/classification_keys.rst
+
+
+    
