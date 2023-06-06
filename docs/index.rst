@@ -110,9 +110,18 @@ PC-latex
     :caption: 🧪 chemistry
     :numbered:
 
-    latex_science/chemistry/chemistry_mhchem.rst
+    latex_science/chemistry/chemistry_types_of_reactions.rst
+    latex_science/chemistry/chemistry_acid_base_reactions.rst
+    latex_science/chemistry/chemistry_balancing_equations.rst
+    latex_science/chemistry/chemistry_isotope_equations.rst
     latex_science/chemistry/chemistry_chemfig.rst
     latex_science/chemistry/chemistry_bohr_atoms.rst
+    latex_science/chemistry/chemistry_periodic_table.rst
 
 
-    
+.. toctree::
+    :maxdepth: 2
+    :caption: 💡 physics
+    :numbered:
+
+latex_science/physics/circuits.rst
