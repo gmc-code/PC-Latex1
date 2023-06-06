@@ -1,15 +1,12 @@
-\documentclass[12pt]{standalone}
-\usepackage{tikz}
+\documentclass[12pt, varwidth, border=5mm]{standalone}
 \usepackage{circuitikz}
-
+\usepackage{tikz}
 \begin{document}
-\begin{figure} [h!]
 \begin{circuitikz}
 \draw (0,0) to[battery={$12V$}] (0,2) % The voltage source
 to[short] (2,2)
 to[bulb, l=$3\Omega$] (2,0) % The bulb
 to[short] (0,0);
-\end{circuitikz}
-\caption{Series circuit with one globe.}
-\end{figure}
+\end{circuitikz}\\
+Circuit 1.
 \end{document}

@@ -124,4 +124,4 @@ PC-latex
     :caption: 💡 physics
     :numbered:
 
-latex_science/physics/circuits.rst
+    latex_science/physics/circuits.rst

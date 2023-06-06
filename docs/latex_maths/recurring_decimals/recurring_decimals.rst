@@ -2,9 +2,9 @@
 Recurring Decimals
 ====================================================
 
-| Recurring decimals ae limited here to denominators of 3, 6, 7, 9. 
-| This limits the number of possible recurring decimals to a total of 16.
-| The worksheet can have up to 16 recurring decimal questions.
+| Recurring decimals ae limited here to denominators of 3, 6, 7, 9, 11. 
+| This limits the number of possible recurring decimals to a total of 26.
+| The worksheet can have up to 26 recurring decimal questions.
 
 ----
 

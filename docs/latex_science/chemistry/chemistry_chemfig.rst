@@ -5,7 +5,8 @@ Chemistry chemfig LaTeX
 See: https://www.overleaf.com/learn/latex/Chemistry_formulae
 See: https://mirror.aarnet.edu.au/pub/CTAN/macros/generic/chemfig/chemfig-en.pdf
 
-| ingAi can be used to quickly get chemfig.
+| BingAi can be used to quickly get structural diagrams of chemicals by inlcuding "chemfig latex" in the prompt.
+| Output latex can be copied and pasted into overleaf so that a pdf can be produced.
 | e.g prompt: write latex with chemfig for 20 organic compounds
 
 ----
@@ -70,6 +71,21 @@ chemfig
 
 .. literalinclude:: files/benzene.tex
    :linenos:
+
+
+----
+
+
+.. figure:: files/alanine.png
+   :width: 150
+   :alt: alanine
+   :figclass: align-center
+   
+   alanine
+
+.. literalinclude:: files/alanine.tex
+   :linenos:
+
 
 ----
 
