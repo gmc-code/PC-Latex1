@@ -2,6 +2,10 @@
 Classification keys
 ====================================================
 
+
+Tabular keys
+---------------------
+
 | Dichotomous tabular classification keys can be created in LaTeX using the tabular environment.
 
 .. figure:: files/vertebrates_key.png

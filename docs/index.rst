@@ -125,6 +125,7 @@ PC-latex
     :numbered:
 
     latex_science/physics/circuits.rst
+    latex_science/physics/optics.rst
 
 
 .. toctree::
