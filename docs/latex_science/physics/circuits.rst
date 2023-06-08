@@ -3,11 +3,12 @@ Circuit LaTeX
 ====================================================
 
 | See https://www.youtube.com/watch?v=WRTELZP1l0Y
+| See: https://www.youtube.com/watch?v=eX3RTV97iZo
 | See: https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ%3A_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz
 
 ----
 
-Simple series sircuit
+Simple series circuit
 -------------------------
 
 | A simple circuit is shown below.
