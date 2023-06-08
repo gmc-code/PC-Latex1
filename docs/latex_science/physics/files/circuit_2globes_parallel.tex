@@ -6,14 +6,14 @@
 \begin{circuitikz}
 % define coordinates for points in circuit from bot left
 \coordinate (A) at (0,0);
-\coordinate (B) at (0,2);
-\coordinate (C) at (2,2);
-\coordinate (D) at (4,2);
-\coordinate (E) at (4,0);
-\coordinate (F) at (2,0);
+\coordinate (B) at ($(A)+(0,2)$);
+\coordinate (C) at ($(B)+(2,0)$);
+\coordinate (D) at ($(C)+(2,0)$);
+\coordinate (E) at ($(D)+(0,-2)$);
+\coordinate (F) at ($(E)+(-2,0)$);
 
 \draw
-(A) to[battery={$12V$}] (B) % The voltage source
+(A) to[battery, l={$12V$}] (B) % The voltage source
 to[short] (C)
 to[bulb, l=$3\Omega$] (F) % The first bulb
 to[short] (A)
