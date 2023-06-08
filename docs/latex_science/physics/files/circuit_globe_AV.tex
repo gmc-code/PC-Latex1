@@ -1,0 +1,26 @@
+\documentclass[12pt, varwidth, border=5mm]{standalone}
+\usepackage{circuitikz}
+\usepackage{tikz}
+
+\begin{document}
+\begin{circuitikz}
+% define coordinates for points in circuit form bot left of main loop
+\coordinate (A) at (0,0);
+\coordinate (B) at (0,4);
+\coordinate (C) at (4,4);
+\coordinate (D) at (4,0);
+\coordinate (E) at (0.5,0);
+\coordinate (F) at (0.5,-2);
+\coordinate (G) at (3.5,-2);
+\coordinate (H) at (3.5,0);
+
+\draw
+(A) to[battery] (B)
+to[ammeter] (C) -- (D)
+to[bulb] (A)
+(E) -- (F)
+to[voltmeter] (G) -- (H)
+;
+ \end{circuitikz}\\
+Series circuit with one globe and an ammeter and voltmeter.
+\end{document}

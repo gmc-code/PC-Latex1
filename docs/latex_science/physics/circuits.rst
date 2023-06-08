@@ -3,6 +3,12 @@ Circuits LaTeX
 ====================================================
 
 | See https://www.youtube.com/watch?v=WRTELZP1l0Y
+| See: https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ%3A_A_Tutorial_for_Beginners_(Part_4)%E2%80%94Circuit_Diagrams_Using_Circuitikz
+
+----
+
+Simple series sircuit
+-------------------------
 
 | A simple circuit is shown below.
 
@@ -28,3 +34,53 @@ In the code you provided, the `to` keyword is used four times to connect circuit
 | The fourth `to` connects the bottom of the bulb back to the bottom of the battery using a short wire `to[short] (0,0)`.
 
 
+----
+
+Series circuit with Ammeter and Voltmeter
+-----------------------------------------
+
+| A simple circuit is shown below.
+
+.. figure:: files/circuit_globe_AV.png
+   :width: 600
+   :alt: circuit_globe_AV.png
+   :figclass: align-center
+
+
+.. literalinclude:: files/circuit_globe_AV.tex
+   :linenos:
+
+----
+
+Series circuit with 2 globes
+-----------------------------------------
+
+| A series circuit with 2 globes.
+
+.. figure:: files/circuit_2globes_series.png
+   :width: 600
+   :alt: circuit_2globes_series.png
+   :figclass: align-center
+
+
+.. literalinclude:: files/circuit_2globes_series.tex
+   :linenos:
+
+----
+
+
+Parallel circuit with 2 globes
+-----------------------------------------
+
+| A parallel circuit with 2 globes.
+
+.. figure:: files/circuit_2globes_parallel.png
+   :width: 600
+   :alt: circuit_2globes_parallel.png
+   :figclass: align-center
+
+
+.. literalinclude:: files/circuit_2globes_parallel.tex
+   :linenos:
+
+   

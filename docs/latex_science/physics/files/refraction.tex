@@ -12,17 +12,19 @@
 
     % define coordinates
     \coordinate (O) at (0,0) ;
-    \coordinate (A) at (0,4) ;
-    \coordinate (B) at (0,-4) ;
+    \coordinate (normal_top) at (0,4) ;
+    \coordinate (normal_bottom) at (0,-4) ;
+    \coordinate (boundary_left) at (-4,0) ;
+    \coordinate (boundary_right) at (4,0) ;
     
-    % media
-    \fill[blue!25!,opacity=.3] (-4,0) rectangle (4,4);
-    \fill[blue!60!,opacity=.3] (-4,0) rectangle (4,-4);
-    \node[right] at (2,2) {Air};
-    \node[left] at (-2,-2) {Water};
-
-    % axis
-    \draw[dash pattern=on5pt off3pt] (A) -- (B) ;
+    % boundary
+    \draw[black] (boundary_left) -- (boundary_right);
+    \node[above left] at (boundary_right) {Air};
+    \node[below left] at (boundary_right) {Water};
+        
+    % normal
+    \draw[dash pattern=on5pt off3pt] (normal_top) -- (normal_bottom) ;
+    \node[left] at (normal_top) {Normal};
 
     % rays
     \draw[red,ultra thick,reverse directed] (O) -- (130:5.2);

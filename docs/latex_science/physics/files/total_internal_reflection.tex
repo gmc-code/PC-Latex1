@@ -54,11 +54,15 @@
   \coordinate (B) at (0,-\h);
   
   % MEDIUM
-  \fill[glass] (L) rectangle++ (\L,-\t);
-  \fill[glasscol] (-\f*\L,-0.99*\t) rectangle ({1-\f)*\L},-\h);
+  % \fill[glass] (L) rectangle++ (\L,-\t);
+  % \fill[glasscol] (-\f*\L,-0.99*\t) rectangle ({1-\f)*\L},-\h);
   %\fill[glass] (L) rectangle (\L/2,-\h);
+  \draw[] (L) -- (R);
   \node[above right=1] at (L) {$n_2$};
   \node[below right=1] at (L) {$n_1>n_2$};
+  \node[above left=1] at (R) {$air$};
+  \node[below left=1] at (R) {$water$};
+
   
   % LINES
   \draw[dashed] (T) -- (B);
