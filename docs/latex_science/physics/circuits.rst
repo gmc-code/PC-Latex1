@@ -1,5 +1,5 @@
 ====================================================
-Circuits LaTeX
+Circuit LaTeX
 ====================================================
 
 | See https://www.youtube.com/watch?v=WRTELZP1l0Y
@@ -13,7 +13,7 @@ Simple series sircuit
 | A simple circuit is shown below.
 
 .. figure:: files/circuit.png
-   :width: 600
+   :width: 300
    :alt: circuit.png
    :figclass: align-center
 
@@ -42,7 +42,7 @@ Series circuit with Ammeter and Voltmeter
 | A simple circuit is shown below.
 
 .. figure:: files/circuit_globe_AV.png
-   :width: 600
+   :width: 300
    :alt: circuit_globe_AV.png
    :figclass: align-center
 
@@ -58,7 +58,7 @@ Series circuit with 2 globes
 | A series circuit with 2 globes.
 
 .. figure:: files/circuit_2globes_series.png
-   :width: 600
+   :width: 300
    :alt: circuit_2globes_series.png
    :figclass: align-center
 
@@ -75,7 +75,7 @@ Parallel circuit with 2 globes
 | A parallel circuit with 2 globes.
 
 .. figure:: files/circuit_2globes_parallel.png
-   :width: 600
+   :width: 300
    :alt: circuit_2globes_parallel.png
    :figclass: align-center
 
