@@ -11,7 +11,7 @@ Decimals diagram - manual
 
 .. code-block:: LaTeX
 
-    % modify values 
+   % modify values 
    \def\addsub{-} 
    \def\deca{70.256}
    \def\decb{16.362}
@@ -62,10 +62,12 @@ A decimals diagram with answers
 A decimals diagram LaTeX
 -------------------------------------------- 
 
+| The manual question:
 
-.. literalinclude:: manual/decimal_manq.tex
+.. literalinclude:: manual/decimal_mq.tex
    :linenos:
 
+| The manual answer:
 
 .. literalinclude:: manual/decimal_mans.tex
    :linenos:
