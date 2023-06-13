@@ -126,6 +126,7 @@ PC-latex
 
     latex_science/physics/circuits.rst
     latex_science/physics/optics.rst
+    latex_science/physics/levers.rst
 
 
 .. toctree::

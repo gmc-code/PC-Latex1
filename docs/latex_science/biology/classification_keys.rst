@@ -72,35 +72,35 @@ Branching keys
 
 | Some of the LaTeX usage is below.
 
-- `\usepackage[edges]{forest}`: This line loads the `forest` package with the `edges` option. The `forest` package provides tools for creating tree diagrams, and the `edges` option enables additional features for customizing the appearance of edges in trees.
+- ``\usepackage[edges]{forest}``: This line loads the ``forest`` package with the ``edges`` option. The ``forest`` package provides tools for creating tree diagrams, and the ``edges`` option enables additional features for customizing the appearance of edges in trees.
 
-- `\usetikzlibrary{arrows.meta,shadows.blur}`: This line loads two libraries from the `tikz` package: `arrows.meta` and `shadows.blur`. The `arrows.meta` library provides additional arrow tip styles that can be used when drawing edges in trees, and the `shadows.blur` library provides a blur shadow effect that can be applied to nodes in trees.
+- ``\usetikzlibrary{arrows.meta,shadows.blur}``: This line loads two libraries from the ``tikz`` package: ``arrows.meta`` and ``shadows.blur``. The ``arrows.meta`` library provides additional arrow tip styles that can be used when drawing edges in trees, and the ``shadows.blur`` library provides a blur shadow effect that can be applied to nodes in trees.
 
-- `\begin{document}`: This line marks the beginning of the document content. Everything between this line and the corresponding `\end{document}` line will be processed by the LaTeX compiler and included in the output document.
+- ``\begin{document}``: This line marks the beginning of the document content. Everything between this line and the corresponding ``\end{document}`` line will be processed by the LaTeX compiler and included in the output document.
 
-- `\begin{forest}`: This line begins a `forest` environment, which is used to create a tree diagram.
+- ``\begin{forest}``: This line begins a ``forest`` environment, which is used to create a tree diagram.
 
-- `forked edges,`: This option specifies that the edges connecting the nodes in the tree should be forked.
+- ``forked edges,``: This option specifies that the edges connecting the nodes in the tree should be forked.
 
-- `for tree={...},`: This option allows you to specify formatting options that apply to all nodes in the tree. The options specified within the `for tree` block will apply to all nodes in the tree.
+- ``for tree={...},``: This option allows you to specify formatting options that apply to all nodes in the tree. The options specified within the ``for tree`` block will apply to all nodes in the tree.
 
-    - `s sep=0.5cm,`: This option sets the distance between siblings (nodes that share the same parent) to 0.5 centimeters. This means that sibling nodes will be separated by a horizontal distance of 0.5 centimeters.
+    - ``s sep=0.5cm,``: This option sets the distance between siblings (nodes that share the same parent) to 0.5 centimeters. This means that sibling nodes will be separated by a horizontal distance of 0.5 centimeters.
 
-    - `l sep=0.8cm,`: This option sets the distance between levels (nodes that are one level apart in the tree hierarchy) to 0.8 centimeters. This means that nodes that are one level apart will be separated by a vertical distance of 0.8 centimeters.
+    - ``l sep=0.8cm,``: This option sets the distance between levels (nodes that are one level apart in the tree hierarchy) to 0.8 centimeters. This means that nodes that are one level apart will be separated by a vertical distance of 0.8 centimeters.
 
-    - `draw=blue!80!darkgray,`: This option sets the draw color for all nodes in the tree to a mixture of blue and dark gray.
+    - ``draw=blue!80!darkgray,``: This option sets the draw color for all nodes in the tree to a mixture of blue and dark gray.
 
-    - `fill=blue!10!white,`: This option sets the fill color for all nodes in the tree to a mixture of blue and white.
+    - ``fill=blue!10!white,``: This option sets the fill color for all nodes in the tree to a mixture of blue and white.
 
-    - `rounded corners,`: This option specifies that all nodes in the tree should have rounded corners.
+    - ``rounded corners,``: This option specifies that all nodes in the tree should have rounded corners.
 
-    - `text width=(\textwidth)/5,`: This option sets the text width for all nodes in the tree. The text width is calculated based on the value of `\textwidth` and a scaling factor of 5.
+    - ``text width=(\textwidth)/5,``: This option sets the text width for all nodes in the tree. The text width is calculated based on the value of ``\textwidth`` and a scaling factor of 5.
 
-    - `edge={-Latex},`: This option sets the style of the edges connecting the nodes in the tree. In this case, the edges are drawn with an arrowhead at the end using the `-Latex` arrow tip.
+    - ``edge={-Latex},``: This option sets the style of the edges connecting the nodes in the tree. In this case, the edges are drawn with an arrowhead at the end using the ``-Latex`` arrow tip.
 
-    - `font=\sffamily,`: This option sets the font for all text within the tree to be sans-serif.
+    - ``font=\sffamily,``: This option sets the font for all text within the tree to be sans-serif.
 
-    - `text centered,`: This option specifies that text within all nodes in the tree should be centered.
+    - ``text centered,``: This option specifies that text within all nodes in the tree should be centered.
 
-    - `blur shadow,`: This option adds a blurred shadow effect behind all nodes in the tree.
+    - ``blur shadow,``: This option adds a blurred shadow effect behind all nodes in the tree.
 

@@ -1,5 +1,5 @@
 ====================================================
-Circuit LaTeX
+Circuit circuitikz
 ====================================================
 
 | See https://www.youtube.com/watch?v=WRTELZP1l0Y

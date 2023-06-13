@@ -57,3 +57,17 @@ A decimals diagram with answers
          :width: 300
          :alt: decimal_mans
          :figclass: align-center
+
+
+A decimals diagram LaTeX
+-------------------------------------------- 
+
+
+.. literalinclude:: manual/decimal_manq.tex
+   :linenos:
+
+
+.. literalinclude:: manual/decimal_mans.tex
+   :linenos:
+
+
