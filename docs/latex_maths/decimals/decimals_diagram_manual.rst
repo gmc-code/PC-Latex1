@@ -58,9 +58,10 @@ A decimals diagram with answers
          :alt: decimal_mans
          :figclass: align-center
 
+----
 
 A decimals diagram LaTeX
--------------------------------------------- 
+------------------------------
 
 | The manual question:
 
