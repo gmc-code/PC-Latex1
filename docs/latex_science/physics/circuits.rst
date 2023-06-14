@@ -24,6 +24,8 @@ Simple series circuit
    :linenos:
 
 
+
+
 | The `circuitikz` package is used to create circuit diagrams in LaTeX.
 | It provides a set of macros and commands to draw circuit elements such as batteries, resistors, and capacitors.
 | The `\draw` command is used to draw the circuit elements.

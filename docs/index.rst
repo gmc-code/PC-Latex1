@@ -83,7 +83,7 @@ PC-latex
 
 .. toctree::
     :maxdepth: 2
-    :caption: 📊 graphs
+    :caption: 📊 graph_paper
     :numbered:
 
     latex_maths/graph_paper/graph_paper.rst

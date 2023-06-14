@@ -111,7 +111,7 @@ Code explanations
 geometry options
 ~~~~~~~~~~~~~~~~~~~~~~
 
-| The code ``\usepackage[paperheight=70pt, paperwidth=17cm]{geometry}`` is used to set paper height to **70pt** and the paper width to **17cm**¹.
+| The code ``\usepackage[paperheight=70pt, paperwidth=17cm]{geometry}`` is used to set paper height to **70pt** and the paper width to **17cm**.
 | See:The geometry package. http://web.mit.edu/texsrc/source/LaTeX/geometry/manual.pdf
 
 pagestyle

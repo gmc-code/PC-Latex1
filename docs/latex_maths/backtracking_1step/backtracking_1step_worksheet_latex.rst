@@ -55,7 +55,7 @@ Sample 1-step backtracking worksheets by process
       
       subtraction_ans
       ^^^
-      :download:`png<worksheets/bt1WS_-_ans.png>`
+      :download:`png<worksheets/bt1WS_-_ans.png>` 
       :download:`pdf<worksheets/bt1WS_-_ans.pdf>`
       :download:`tex<worksheets/bt1WS_-_ans.tex>`
 
