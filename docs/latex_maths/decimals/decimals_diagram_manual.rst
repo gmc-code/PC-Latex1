@@ -20,6 +20,7 @@ Decimals diagram - manual
 | The line ``\begin{tabular}{d{2.3}}`` sets the spacing for up to 2 digits before and 3 digits after the decimal point.
 | If more digits are required then the ``2`` and the ``3`` can be changed to suit.
 | It uses the macro: ``\newcolumntype{d}[1]{D{.}{.}{#1}}`` which sets the decimal alignment and spacing.
+| The command ``\newcolumntype{d}[1]{cD{.}{.}{#1}}`` defines a new column type `d` that takes a single argument specifying the number of decimal places. The `D` column type is defined by the `dcolumn` package and is used to align numeric columns on a decimal point. The first two arguments of `D` specify the input and output decimal separators, respectively. In this case, both are set to `.`. The third argument specifies the number of decimal places.
 
 ----
 

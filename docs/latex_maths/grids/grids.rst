@@ -152,3 +152,6 @@ graph paper grids 16 by 25cm
 
 .. image:: files/grids_16by25cm.png
     :width: 600
+
+
+   
