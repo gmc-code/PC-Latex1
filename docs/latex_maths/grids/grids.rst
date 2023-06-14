@@ -59,7 +59,7 @@ Grids
       grids_16by25cm
       ^^^
       :download:`png<files/grids_16by25cm.png>`
-      :download:`pdf <files/grids_16by25cm.pdf>`
+      :download:`pdf<files/grids_16by25cm.pdf>`
       :download:`tex<files/grids_16by25cm.tex>`
 
       .. figure:: files/grids_16by25cm.png
