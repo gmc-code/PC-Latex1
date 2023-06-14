@@ -29,9 +29,9 @@ First Class levers Fd=Fd
 
 | A question diagrma of a First Class lever is shown below with a force distance calculation.
 
-.. figure:: levers_diagrams/lever_fcl1_q.pdf
+.. figure:: levers_diagrams/lever_fcl1_q.png
    :width: 300
-   :alt: levers.png
+   :alt: lever_fcl1_q.png
    :figclass: align-center
 
 | The LaTeX:
@@ -41,9 +41,9 @@ First Class levers Fd=Fd
 
 | An answer diagrma of a First Class lever is shown below with a force distance calculation.
 
-.. figure:: levers_diagrams/lever_fcl1_ans.pdf
+.. figure:: levers_diagrams/lever_fcl1_ans.png
    :width: 300
-   :alt: levers.png
+   :alt: lever_fcl1_ans.png
    :figclass: align-center
 
 | The LaTeX:
