@@ -62,7 +62,7 @@ Graph paper
       10by10_labels_nos_2
       ^^^
       :download:`png<files/graph_paper_10by10_labels_nos_2.png>`
-      :download:`pdf <files/graph_paper_10by10_labels_nos_2.pdf>`
+      :download:`pdf<files/graph_paper_10by10_labels_nos_2.pdf>`
       :download:`tex<files/graph_paper_10by10_labels_nos_2.tex>`
  
       .. figure:: files/graph_paper_10by10_labels_nos_2.png

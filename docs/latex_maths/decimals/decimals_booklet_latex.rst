@@ -57,7 +57,7 @@ Sample decimals booklets by process
       random 5dp q
       ^^^
       :download:`pdf<booklets/asdBk_addsub5dp_q.pdf>`
-      :download:`tex<booklets/asdBk_addsub2dp_q.tex>`
+      :download:`tex<booklets/asdBk_addsub5dp_q.tex>`
 
    .. grid-item-card::  
 
