@@ -51,4 +51,13 @@ First Class levers Fd=Fd
 .. literalinclude:: levers_diagrams/lever_fcl1_ans.tex
    :linenos:
      
+----
+ 
+Booklet: First Class levers Fd=Fd
+---------------------------------------
+
+| A booklet of random first class levers can be created.
+
+
+
 
