@@ -57,7 +57,7 @@ Booklet: First Class levers Fd=Fd
 ---------------------------------------
 
 | A booklet of random first class levers can be created.
-
+  
 
 
 
