@@ -39,7 +39,7 @@ First Class levers Fd=Fd
 .. literalinclude:: levers_diagrams/lever_fcl1_q.tex
    :linenos:
 
-| An **answer** diagrma of a First Class lever is shown below with a **completed** force distance calculation.
+| An **answer** diagram of a First Class lever is shown below with a **completed** force distance calculation.
 
 .. figure:: levers_diagrams/lever_fcl1_ans.png
    :width: 600
@@ -57,7 +57,18 @@ Booklet: First Class levers Fd=Fd
 ---------------------------------------
 
 | A booklet of random first class levers can be created.
-  
+
+:download:`Questions  pdf<levers_booklets/lever_Bk_fcl1_q.pdf>`
+:download:`Questions tex<levers_booklets/lever_Bk_fcl1_q.tex>`
+
+:download:`Answers pdf<levers_booklets/lever_Bk_fcl1_ans.pdf>`
+:download:`Answerstex<levers_booklets/lever_Bk_fcl1_ans.tex>`
+
+----
+
+Maker files
+-------------
+
  The python below requires the following .tex files:
 | :download:`lever_booklet_template<levers_makers/lever_booklet_template.tex>`
 | :download:`lever_booklet_ans_template<levers_makers/lever_booklet_ans_template.tex>`
