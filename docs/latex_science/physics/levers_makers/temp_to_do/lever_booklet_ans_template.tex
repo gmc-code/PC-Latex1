@@ -1,15 +1,13 @@
-% Division with decimals worksheet template
-\documentclass[leqno, 12pt]{article}
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+% Underlining package
+\usepackage{ulem}
 \usepackage[a4paper, portrait, margin=1cm]{geometry}
-\usepackage{multicol}
 \usepackage{fancyhdr}
 
-\newcommand\Mydiv[2]{%
-$\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
- \overline{\enspace\strut#2}$}
-
 \def \HeadingAnswers {\section*{\Large Name: \underline{\hspace{8cm}} \hfill Date: \underline{\hspace{3cm}}} \vspace{-3mm}
-{Division with decimals: Answers} \vspace{1pt}\hrule}
+{Levers: Answers} \vspace{1pt}\hrule}
 
 % raise footer with page number; no header
 \fancypagestyle{myfancypagestyle}{
@@ -19,10 +17,12 @@ $\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
 }
 \pagestyle{myfancypagestyle}  % apply myfancypagestyle
 
+\newcounter{minipagecount}
+
 \begin{document}
-    \HeadingAnswers
-    \vspace{-5mm}
-    \begin{multicols}{2}
-        <<cols>>
-    \end{multicols}
+\HeadingAnswers
+\vspace{8mm}
+
+<<diagrams>>
+
 \end{document}

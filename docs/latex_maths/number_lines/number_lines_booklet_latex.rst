@@ -103,19 +103,19 @@ Number Lines booklet LaTeX
 
 ----
 
-Worksheet template
+Boolet template
 ~~~~~~~~~~~~~~~~~~~~
 
-| The multi page LaTeX number lines worksheet template is below.
-| :download:`worksheet_template<makers/number_lines_worksheet_template.tex>`
+| The multi page LaTeX number lines booklet template is below.
+| :download:`booklet_template<makers/number_lines_booklet_template.tex>`
 
-.. literalinclude:: makers/number_lines_worksheet_template.tex
+.. literalinclude:: makers/number_lines_booklet_template.tex
    :linenos:
    
-| The multi page LaTeX number lines worksheet answer template is below.
-| :download:`worksheet_template<makers/number_lines_worksheet_ans_template.tex>`
+| The multi page LaTeX number lines booklet answer template is below.
+| :download:`booklet_ans_template<makers/number_lines_booklet_ans_template.tex>`
 
-.. literalinclude:: makers/number_lines_worksheet_ans_template.tex
+.. literalinclude:: makers/number_lines_booklet_ans_template.tex
    :linenos:
 
 Modifications
@@ -134,12 +134,4 @@ Modifications
    }
    \pagestyle{myfancypagestyle}
 
-| The diagram placeholder has been simplified from two to just one.
-| The diagrams will still flow with 5 to a column since there is only just  room for 5, not 6.
-
-.. code-block:: LaTeX
-
-   \begin{multicols}{2}
-      <<cols>>
-   \end{multicols}
 

@@ -27,7 +27,7 @@ First Class levers mechanical advantage
 First Class levers Fd=Fd
 -------------------------
 
-| A question diagrma of a First Class lever is shown below with a force distance calculation.
+| A **question** diagram of a First Class lever is shown below with an **incomplete** force distance calculation.
 
 .. figure:: levers_diagrams/lever_fcl1_q.png
    :width: 600
@@ -39,7 +39,7 @@ First Class levers Fd=Fd
 .. literalinclude:: levers_diagrams/lever_fcl1_q.tex
    :linenos:
 
-| An answer diagrma of a First Class lever is shown below with a force distance calculation.
+| An **answer** diagrma of a First Class lever is shown below with a **completed** force distance calculation.
 
 .. figure:: levers_diagrams/lever_fcl1_ans.png
    :width: 600

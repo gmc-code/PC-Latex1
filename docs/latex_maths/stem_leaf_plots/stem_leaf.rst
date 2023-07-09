@@ -5,13 +5,13 @@ Stem and Leaf plots
 | An example of a stem and leaf plot is below.
 
 | The python file to make a stem and leaf plot is below.
-| :download:`stem_and_leaf_maker.py<files/stem_and_leaf_maker.py>`
+| :download:`stem_and_leaf_maker.py<makers/stem_and_leaf_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`stem_and_leaf_template.tex<files/stem_and_leaf_template.tex>`
+| :download:`stem_and_leaf_template.tex<makers/stem_and_leaf_template.tex>`
 
 | The custom python modules required are:
-| :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
+| :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | A sample text file is below:
 | :download:`sl_fruit.txt<files/sl_fruit.txt>`
@@ -100,7 +100,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/stem_and_leaf_template.tex
+.. literalinclude:: makers/stem_and_leaf_template.tex
    :language: LaTeX
 
 ----
@@ -133,6 +133,6 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/stem_and_leaf_maker.py
+.. literalinclude:: makers/stem_and_leaf_maker.py
    :language: python
 

@@ -5,13 +5,13 @@ Stem and Leaf plot: back-to-back
 | An example of a back-to-back stem and leaf plot is below.
 
 | The python file to make a back-to-back stem and leaf plot is below.
-| :download:`stem_and_leaf_btb_maker.py<files/stem_and_leaf_btb_maker.py>`
+| :download:`stem_and_leaf_btb_maker.py<makers/stem_and_leaf_btb_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`stem_and_leaf_btb_template.tex<files/stem_and_leaf_btb_template.tex>`
+| :download:`stem_and_leaf_btb_template.tex<makers/stem_and_leaf_btb_template.tex>`
 
 | The custom python modules required are:
-| :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
+| :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | A sample text file is below:
 | :download:`slbtb_scores.txt<files/slbtb_scores.txt>`
@@ -100,6 +100,6 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/stem_and_leaf_btb_maker.py
+.. literalinclude:: makers/stem_and_leaf_btb_maker.py
    :language: python
 

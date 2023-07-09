@@ -1,6 +1,8 @@
 \documentclass[12pt, varwidth, border={5mm 5mm 5mm 5mm}]{standalone}
 \usepackage{tikz}
 \usepackage{amsmath}
+% Underlining package
+\usepackage{ulem}
 % \usepackage[a4paper, portrait, margin=1cm]{geometry}
 \begin{document}
 \section*{First Class Levers}
@@ -13,7 +15,7 @@
         \draw[fill=black] (0.8,-0.5) -- (1.2,-0.5) node[below,xshift=2mm] {fulcrum} -- (1.0,0) -- cycle;
         %load
         \draw[fill=red] (-0.25,0.1) rectangle (0.25,0.6);
-        \draw[->,thick] (0.0,0.35) -- (0.0,-2.15) node[midway,left,yshift=-0.5cm,align=center] {Load \\\\[-3ex] $F_L = 10N$};
+        \draw[->,thick] (0.0,0.35) -- (0.0,-2.15) node[midway,left,yshift=-0.5cm,align=center] {Load \\\\[-3ex] $F_L = 10.0N$};
         %effort
         \draw[->,thick] (6,0.0) -- (6,-0.5) node[midway,right,align=center] {Effort \\\\[-3ex] $F_E = 2.0N$};
 
@@ -27,7 +29,7 @@
     \begin{align*}
         F_E \times d_E &= F_L \times d_L \\
         F_E &= \frac{F_L \times d_L}{d_E} \\
-        F_E &= \frac{10 \times 10.0}{50.0} \\
+        F_E &= \frac{10.0 \times 10.0}{50.0} \\
         F_E &= 2.0N
     \end{align*}
 \end{minipage}

@@ -15,6 +15,39 @@ PC-latex
     introduction/producing_images.rst
 
 
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 🦘 biology
+    :numbered:
+
+    latex_science/biology/classification_keys.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 🧪 chemistry
+    :numbered:
+
+    latex_science/chemistry/chemistry_types_of_reactions.rst
+    latex_science/chemistry/chemistry_acid_base_reactions.rst
+    latex_science/chemistry/chemistry_balancing_equations.rst
+    latex_science/chemistry/chemistry_isotope_equations.rst
+    latex_science/chemistry/chemistry_chemfig.rst
+    latex_science/chemistry/chemistry_bohr_atoms.rst
+    latex_science/chemistry/chemistry_periodic_table.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 💡 physics
+    :numbered:
+
+    latex_science/physics/circuits.rst
+    latex_science/physics/optics.rst
+    latex_science/physics/levers.rst
+
+
 .. toctree::
     :maxdepth: 2
     :caption: ⚈ decimals
@@ -103,38 +136,6 @@ PC-latex
     :numbered:
 
     latex_maths/lined_paper/lined_paper.rst
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: 🧪 chemistry
-    :numbered:
-
-    latex_science/chemistry/chemistry_types_of_reactions.rst
-    latex_science/chemistry/chemistry_acid_base_reactions.rst
-    latex_science/chemistry/chemistry_balancing_equations.rst
-    latex_science/chemistry/chemistry_isotope_equations.rst
-    latex_science/chemistry/chemistry_chemfig.rst
-    latex_science/chemistry/chemistry_bohr_atoms.rst
-    latex_science/chemistry/chemistry_periodic_table.rst
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: 💡 physics
-    :numbered:
-
-    latex_science/physics/circuits.rst
-    latex_science/physics/optics.rst
-    latex_science/physics/levers.rst
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: 🦘 biology
-    :numbered:
-
-    latex_science/biology/classification_keys.rst
 
 
     

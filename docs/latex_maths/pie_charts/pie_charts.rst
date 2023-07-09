@@ -5,13 +5,13 @@ Pie charts
 | Pie charts are a bar graph in sections, which often total to 100. (100%)
 
 | The python file to make pie charts is below.
-| :download:`pie_chart_maker.py<files/pie_chart_maker.py>`
+| :download:`pie_chart_maker.py<makers/pie_chart_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`pie_chart_template.tex<files/pie_chart_template.tex>`
+| :download:`pie_chart_template.tex<makers/pie_chart_template.tex>`
 
 | The custom python modules required are:
-| :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
+| :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | A sample text file is below:
 | :download:`pc_zoo.txt<files/pc_zoo.txt>`

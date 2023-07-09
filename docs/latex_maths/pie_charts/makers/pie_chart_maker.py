@@ -81,8 +81,6 @@ def main():
         print("Exited, by clicking Cancel")
         return
     title, data = get_file_data(data_filename)
-    # print(plot_title, numbers_string, numbers_labels, numbers_loop_max)
-
     # Create a Path object from the file path
     path_obj = Path(data_filename)
 
