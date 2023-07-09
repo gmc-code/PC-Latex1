@@ -1,13 +1,13 @@
 from pathlib import Path
 import subprocess
 import time
-import magick_pdf_to_png
+# import magick_pdf_to_png
 import lever_functions as levf
 
 currfile_dir = Path(__file__).parent
-tex_template_path = currfile_dir / "lever_template.tex"
-texans_template_path = currfile_dir / "lever_template.tex"
-tex_diagram_template_path = currfile_dir / "lever_diagram_template.tex"
+tex_template_path = currfile_dir / "lever_booklet_template.tex"
+texans_template_path = currfile_dir / "lever_booklet_ans_template.tex"
+tex_diagram_template_path = currfile_dir / "lever_booklet_diagram_template.tex"
 
 
 def convert_to_pdf(tex_path, currfile_dir, aux_path):
@@ -56,21 +56,27 @@ def main():
             num1 = 4  # random by default
     else:
         num1 = 4  # random by default
-
-    filename = input("Enter the base filename to be added to the prefix lever_: \n")
+    #
+    numq = input("Enter the number of questions from 1 to 20 \n")
+    if numq.strip().isdigit():
+        numq = int(numq)
+        if not numq in range(1,21):
+            numq = 6  # random by default
+    else:
+        numq = 6  # random by default
+    #
+    filename = input("Enter the base filename to be added to the prefix lever_Bk_: \n")
     if not filename:
-        filename = "1st"  # "lever_1st_q and lever_1st_ans as default file"
+        filename = "1"  # "lever_Bk_1_q and lever_Bk_1_ans as default file"
     # set names of files that are made
     # questions
-    tex_output_path = currfile_dir / f"lever_{filename}_q.tex"
-    pdf_path = currfile_dir / f"lever_{filename}_q.pdf"
-    png_path = currfile_dir / f"lever_{filename}_q.png"
+    tex_output_path = currfile_dir / f"lever_Bk_{filename}_q.tex"
+    pdf_path = currfile_dir / f"lever_Bk_{filename}_q.pdf"
     aux_path = currfile_dir / "temp"
     # answers
-    tex_output_path_ans = currfile_dir / f"lever_{filename}_ans.tex"
-    pdf_path_ans = currfile_dir / f"lever_{filename}_ans.pdf"
-    png_path_ans = currfile_dir / f"lever_{filename}_ans.png"
-
+    tex_output_path_ans = currfile_dir / f"lever_Bk_{filename}_ans.tex"
+    pdf_path_ans = currfile_dir / f"lever_Bk_{filename}_ans.pdf"
+  
     # Read in the LaTeX template file
     with open(tex_template_path, "r") as infile:
         tex_template_txt = infile.read()
@@ -82,14 +88,30 @@ def main():
         tex_diagram_template_txt = infile.read()
 
     # Generate the <<diagram>> replacement tex
-    diagram_text, diagram_text_ans = make1_diagram(tex_diagram_template_txt, num1)
-    # Replace the <<diagram>> placeholder in the LaTeX template
-    tex_template_txt = tex_template_txt.replace("<<diagram>>", diagram_text)
-    tex_template_txt_ans = tex_template_txt_ans.replace("<<diagram>>", diagram_text_ans)
-    # Write the question diagram tex to an output file
+    # diagram_text, diagram_text_ans = make1_diagram(tex_diagram_template_txt, num1)
+
+    # <<diagrams>>
+    # generate diagrams text and text for answers
+    diagrams_text = ""
+    diagrams_text_ans = ""
+    # add the headtext
+    headtext = r"\pagebreak ~ \newline ~ \newline"
+    rmax = numq + 1
+    for i in range(1, rmax):
+        img_tex, img_tex_ans = make1_diagram(tex_diagram_template_txt, num1)
+        if i > 5 and i % 5 == 1:
+            diagrams_text += headtext
+            diagrams_text_ans += headtext
+        diagrams_text += img_tex
+        diagrams_text_ans += img_tex_ans
+
+    # Replace the <<diagrams>> placeholder in the LaTeX template
+    tex_template_txt = tex_template_txt.replace("<<diagrams>>", diagrams_text)
+    tex_template_txt_ans = tex_template_txt_ans.replace("<<diagrams>>", diagrams_text_ans)
+    # Write the question diagrams tex to an output file
     with open(tex_output_path, "w") as outfile:
         outfile.write(tex_template_txt)
-    # Write the answer diagram tex to an output file
+    # Write the answer diagrams tex to an output file
     with open(tex_output_path_ans, "w") as outfile:
         outfile.write(tex_template_txt_ans)
 
@@ -100,7 +122,7 @@ def main():
     convert_to_pdf(tex_output_path_ans, currfile_dir, aux_path)
 
     # Wait for the files to be created
-    time.sleep(1)
+    # time.sleep(1)
     # convert to png
     # magick_pdf_to_png.convert_pdf_to_png(pdf_path, png_path)
     # magick_pdf_to_png.convert_pdf_to_png(pdf_path_ans, png_path_ans)

@@ -58,6 +58,26 @@ Booklet: First Class levers Fd=Fd
 
 | A booklet of random first class levers can be created.
   
+ The python below requires the following .tex files:
+| :download:`lever_booklet_template<levers_makers/lever_booklet_template.tex>`
+| :download:`lever_booklet_ans_template<levers_makers/lever_booklet_ans_template.tex>`
+| :download:`lever_booklet_diagram_template<levers_makers/lever_booklet_diagram_template.tex>`
 
+| The 2 custom python modules required are:
+| :download:`lever_functions.py<levers_makers/lever_functions.py>`
+| :download:`magick_pdf_to_png.py<levers_makers/magick_pdf_to_png.py>`
+
+| The Python code that creates a booklet of 5 lever diagrams and calculations per page is:
+| :download:`lever_booklet_diagram_maker.py<levers_makers/lever_booklet_diagram_maker.py>`
+
+| The python file, **lever_booklet_diagram_maker.py**, when run, will ask for these inputs:
+
+- Choose the lever class: ``"Enter 1, 2, 3 or 4 for 1st, 2nd, 3rd class levers or random "``.
+- Choose the numnber of questions: ``"- Choose the numnber of questions: "``
+- Choose the file name base: ``"Enter the base filename to be added to the prefix lever_Bk_:"``. 
+- The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
+
+.. literalinclude:: makers/lever_booklet_diagram_maker.py
+   :linenos:
 
 
