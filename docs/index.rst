@@ -48,6 +48,17 @@ PC-latex
     latex_science/physics/levers.rst
 
 
+
+    
+.. toctree::
+    :maxdepth: 2
+    :caption: 🛆 geometry
+    :numbered:
+
+    latex_maths/geometry/measuring_angles.rst
+
+    
+
 .. toctree::
     :maxdepth: 2
     :caption: ⚈ decimals
