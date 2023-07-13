@@ -55,7 +55,7 @@ PC-latex
     :caption: 🛆 geometry
     :numbered:
 
-    latex_maths/geometry/measuring_angles.rst
+    latex_maths/measuring_angles/measuring_angles.rst
 
     
 

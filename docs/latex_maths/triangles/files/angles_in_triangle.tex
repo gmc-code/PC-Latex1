@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.2, baseline=(current bounding box.south)]
+  \pgfmathsetmacro{\angleA}{int(rnd*50+20)}
+  \pgfmathsetmacro{\angleB}{int(rnd*50+20)}
+  \pgfmathsetmacro{\sideC}{rnd*2+3}
+  \pgfmathsetmacro{\rotationAngle}{rnd*20}
+  \begin{scope}[rotate=\rotationAngle]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (\sideC,0);
+    \coordinate (C) at (intersection cs: first line={(A)--($(A)+(\angleA:8cm)$)}, second line={(B)--($(B)+(180-\angleB:8cm)$)});
+    \draw (A) -- (B) -- (C) -- cycle;
+    
+    % Mark angles with arcs
+    \draw ($(A)!0.3cm!(B)$) arc [start angle=0, end angle=\angleA, radius=0.3cm];
+    \draw ($(B)!0.3cm!(C)$) arc [start angle=180-\angleB, end angle=180, radius=0.3cm];
+    \draw ($(C)!0.3cm!(A)$) arc [start angle=180+\angleA, end angle=360-\angleB, radius=0.3cm];
+    
+    % Label angles
+    \node at ($(A)!-0.25cm!(B)$) {A};
+    \node at ($(B)!-0.25cm!(C)$) {B};
+    \node at ($(C)!-0.25cm!(A)$) {C};
+    
+    % Mark angles in degrees
+    \node at ($(A)!0.35cm!(B)+({\angleA/1.6}:0.3cm)$) {\pgfmathprintnumber{\angleA}$^\circ$};
+    \node at ($(B)!0.35cm!(C)+({180 - \angleB/3.5}:0.3cm)$) {\pgfmathprintnumber{\angleB}$^\circ$};
+    \pgfmathsetmacro{\angleC}{int(180-\angleA-\angleB)}
+    \node at ($(C)!0.45cm!(A)+({270+\angleC/2}:0.3cm)$) {\pgfmathprintnumber{\angleC}$^\circ$};
+  \end{scope}
+\end{tikzpicture}
+\end{document}
