@@ -5,15 +5,29 @@ Measuring angles
 | Diagrams of acute, obtues and reflex angels are below.
 | These are LaTeX generated only with the answer sheet first followed by the question sheet in the pdfs.
 
+----
+
+Question page
+------------------
 | A sample question page file is shown below.
 
 .. image:: files/measuring_angles_acute_ws_q.png
     :width: 600
 
+----
+
+Answer page
+------------------
+
 | A sample answer page file is shown below.
 
-.. image:: =files/measuring_angles_acute_ws_ans.png
+.. image:: files/measuring_angles_acute_ws_ans.png
     :width: 600
+
+----
+
+Tex and pdf files
+--------------------
 
 | A 2 page worksheet for acute angles:
 | :download:`measuring_angles_acute_ws2.tex<files/measuring_angles_acute_ws2.tex>`
