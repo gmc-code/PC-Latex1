@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes}
+
+% Acute angle
+\newcommand{\acuteangle}{
+  \begin{minipage}{\textwidth}
+    \begin{tikzpicture}[scale=2]
+      \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (1,1) coordinate (C);
+      \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+      \node at (0.5,-0.5) {Acute angle};
+    \end{tikzpicture}
+  \end{minipage}
+}
+
+% Right angle
+\newcommand{\rightangle}{
+  \begin{minipage}{\textwidth}
+    \begin{tikzpicture}[scale=2]
+      \draw (0,1) coordinate (B) -- (0,0) coordinate (A) -- (1,0) coordinate (C);
+      \pic [draw, "$\theta$", angle eccentricity=-1.5] {right angle = B--A--C};
+      \node at (0.5,-0.5) {Right angle};
+    \end{tikzpicture}
+  \end{minipage}
+}
+
+% Obtuse angle
+\newcommand{\obtuseangle}{
+  \begin{minipage}{\textwidth}
+    \begin{tikzpicture}[scale=2]
+      \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (-0.4,1) coordinate (C);
+      \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+      \node at (0.5,-0.5) {Obtuse angle};
+    \end{tikzpicture}
+  \end{minipage}
+}
+
+% Straight angle
+\newcommand{\straightangle}{
+  \begin{minipage}{\textwidth}
+    \begin{tikzpicture}[scale=2]
+      \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (-1,0) coordinate (C);
+      \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+      \node at (0.5,-0.5) {Straight angle};
+    \end{tikzpicture}
+  \end{minipage}
+}
+
+% Reflex angle
+\newcommand{\reflexangle}{
+  \begin{minipage}{\textwidth}
+    \begin{tikzpicture}[scale=2]
+      \draw (-0.4,1) coordinate (B) -- (0,0) coordinate (A) -- (1,0) coordinate (C);
+      \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+      \node at (0.5,-0.5) {Reflex angle};
+    \end{tikzpicture}
+  \end{minipage}
+}
+
+% Revolution
+\newcommand{\revolution}{
+  \begin{minipage}{\textwidth}
+    \begin{tikzpicture}[scale=2]
+      \draw (0,0) coordinate (A) -- (1,0) coordinate (B);
+      \draw (A) +(0:0.2) arc [start angle=0, end angle=360, radius=0.2];
+      \node at (0.3,0.2) {$\theta$};
+      \node at (0.5,-0.5) {Revolution};
+    \end{tikzpicture}
+  \end{minipage}
+}
+
+% Array of macros
+\newcommand{\diagrams}{{acuteangle},{rightangle},{obtuseangle},{straightangle},{reflexangle},{revolution}}
+\newcommand{\applyMacro}[1]{\csname #1\endcsname}
+
+\newcounter{index}
+\setcounter{index}{1}
+\pgfmathsetseed{\pdfuniformdeviate 10000000}
+
+\pgfmathdeclarerandomlist{numbers}{{1}{2}{3}{4}{5}{6}}
+\foreach \x in {1,...,6}{
+    \pgfmathrandomitem{\randNum}{numbers}
+    \xdef\randNum{\randNum}
+    \pgfmathsetmacro{\macroName}{diagrams[\randNum]}
+    \applyMacro{\macroName}
+    \pgfmathremovefromlist{numbers}{\randNum}
+}
+
+
+\begin{document}
+
+    % Display the diagrams in a column with numbers.
+    {\Large Diagrams:}\par\bigskip
+    
+    {\displaydiagrams}
+
+\end{document}

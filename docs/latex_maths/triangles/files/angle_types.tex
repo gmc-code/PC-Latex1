@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+% Underlining package
+\usepackage{ulem}
+\usepackage[a4paper, portrait, margin=1cm]{geometry}
+\usepackage{fancyhdr}
+\usetikzlibrary{calc}
+\usetikzlibrary{angles,quotes}
+
+% Acute angle
+\newcommand{\acuteangle}{
+  \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (1,1) coordinate (C);
+  \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+  \node at (0.5,-0.5) {Acute angle};
+}
+
+% Right angle
+\newcommand{\rightangle}{
+  \draw (0,1) coordinate (B) -- (0,0) coordinate (A) -- (1,0) coordinate (C);
+  \pic [draw, "$\theta$", angle eccentricity=-1.5] {right angle = B--A--C};
+  \node at (0.5,-0.5) {Right angle};
+}
+
+% Obtuse angle
+\newcommand{\obtuseangle}{
+  \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (-0.4,1) coordinate (C);
+  \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+  \node at (0.5,-0.5) {Obtuse angle};
+}
+
+% Randomly draw all three angles
+% Randomly draw all three angles
+\newcommand{\randomallangles}{
+    % Generate a random list of the numbers 1, 2, and 3
+    \pgfmathdeclarerandomlist{angles}{{1}{2}{3}}
+    \pgfmathrandomitem{\first}{angles}
+    \pgfmathrandomitem{\second}{angles}
+    \pgfmathrandomitem{\third}{angles}
+    
+    % Draw the angles in the order determined by the random list
+    \foreach \i/\angle in {0/\first,3/\second,6/\third}{
+        \begin{minipage}[t]{0.1\linewidth}
+            Q \i)
+        \end{minipage}
+        \hspace{0.1cm}
+        \begin{minipage}[]{0.8\linewidth}
+            \begin{tikzpicture}
+                \ifnum\angle=1
+                    \acuteangle{\i}
+                \else
+                    \ifnum\angle=2
+                        \rightangle{\i}
+                    \else
+                        \obtuseangle{\i}
+                    \fi
+                \fi
+            \end{tikzpicture}
+        \end{minipage}
+        \vspace{1cm}
+        % Uncomment the following lines if you want to use multicolumn layout
+        %\ifnum\i=\coldiag
+        %    \vfill\null
+        %    \columnbreak
+        %\fi
+    }
+}
+
+
+
+\begin{document}
+    % Draw all three angles in random order
+    \begin{tikzpicture}
+        \randomallangles
+    \end{tikzpicture}
+    
+    
+\end{document}

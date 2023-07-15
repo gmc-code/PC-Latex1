@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{amsmath}
+% Underlining package
+\usepackage{ulem}
+\usepackage[a4paper, portrait, margin=1cm]{geometry}
+\usepackage{fancyhdr}
+\usetikzlibrary{calc}
+\usetikzlibrary{angles,quotes}
+
+\begin{document}
+\begin{tikzpicture}[scale=2]
+  % Acute angle
+  \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (1,1) coordinate (C);
+  \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+  \node at (0.5,-0.5) {Acute angle};
+  
+  % Right angle
+  \begin{scope}[xshift=2cm]
+    \draw (0,1) coordinate (B) -- (0,0) coordinate (A) -- (1,0) coordinate (C);
+    \pic [draw, "$\theta$", angle eccentricity=-1.5] {right angle = B--A--C};
+    \node at (0.5,-0.5) {Right angle};
+  \end{scope}
+  
+  % Obtuse angle
+  \begin{scope}[xshift=4cm]
+    \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (-0.4,1) coordinate (C);
+    \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+    \node at (0.5,-0.5) {Obtuse angle};
+  \end{scope}
+  
+  % Straight angle
+  \begin{scope}[yshift=-2cm,xshift=1cm]
+    \draw (1,0) coordinate (B) -- (0,0) coordinate (A) -- (-1,0) coordinate (C);
+    \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+    \node at (0.5,-0.5) {Straight angle};
+  \end{scope}
+  
+  % Reflex angle
+  \begin{scope}[yshift=-2cm,xshift=3cm]
+    \draw (-0.4,1) coordinate (B) -- (0,0) coordinate (A) -- (1,0) coordinate (C);
+    \pic [draw, "$\theta$", angle eccentricity=1.5] {angle = B--A--C};
+    \node at (0.5,-0.5) {Reflex angle};
+  \end{scope}
+
+% Revolution
+\begin{scope}[yshift=-2cm,xshift=5cm]
+  \draw (0,0) coordinate (A) -- (1,0) coordinate (B);
+  \draw (A) +(0:0.2) arc [start angle=0, end angle=360, radius=0.2];
+  \node at (0.3,0.2) {$\theta$};
+  \node at (0.5,-0.5) {Revolution};
+\end{scope}
+
+\end{tikzpicture}
+\end{document}
