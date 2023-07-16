@@ -3,7 +3,7 @@ Angle types
 ====================================================
 
 | Diagrams of angle types are below.
-| These are LaTeX generated only with the seperate question and answer sheet pdfs.
+| These are LaTeX generated only with the separate question and answer sheet pdfs.
 
 ----
 
@@ -21,7 +21,7 @@ Answer page
 
 | A sample answer page file is shown below.
 
-.. image:: files/angle_types_ans.tex
+.. image:: files/angle_types_ans.png
     :width: 600
 
 ----
