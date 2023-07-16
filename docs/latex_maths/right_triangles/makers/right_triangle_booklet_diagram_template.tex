@@ -16,14 +16,17 @@
         \draw (A) -- (B) -- (C) -- cycle;
         
         % Mark angles with arcs
-        \draw ($(A)!0.3cm!(B)$) arc [start angle=0, end angle=\angleA, radius=0.3cm];
+        % \draw ($(A)!0.3cm!(B)$) arc [start angle=0, end angle=\angleA, radius=0.3cm];
+        % Add a right angle symbol at vertex A
+        \draw ($(A)!0.3cm!(B)$) -- ++(90:0.3cm) -- ++(180:0.3cm);
         \draw ($(B)!0.3cm!(C)$) arc [start angle=180-\angleB, end angle=180, radius=0.3cm];
         \draw ($(C)!0.3cm!(A)$) arc [start angle=180+\angleA, end angle=360-\angleB, radius=0.3cm];
-        
+
+
         % Label angles
-        \node at ($(A)!-0.15cm!(B)$) {A};
-        \node at ($(B)!-0.15cm!(C)$) {B};
-        \node at ($(C)!-0.15cm!(A)$) {C};
+        \node at ($(A)!-0.15cm!(B)$) {<<angleALabel>>};
+        \node at ($(B)!-0.15cm!(C)$) {<<angleBLabel>>};
+        \node at ($(C)!-0.15cm!(A)$) {<<angleCLabel>>};
         
         % Mark angles in degrees
         \coordinate (midBC) at ($(B)!0.5!(C)$);
@@ -41,7 +44,7 @@
 \hfill
 \begin{minipage}{0.4\textwidth}
     \begin{align*}
-        \angle \text{A} &= 180^\circ - (\angle \text{B} + \angle \text{C}) \\
+      \angle \text{<<angleALabel>>} &= 180^\circ - (\angle \text{<<angleBLabel>>} + \angle \text{<<angleCLabel>>}) \\
         &= 180^\circ - (<<angleCalcBValue>>^\circ + <<angleCalcCValue>>^\circ) \\
         &= 180^\circ - <<angleCalcBCValue>>^\circ \\
         &= <<angleCalcAValue>>^\circ

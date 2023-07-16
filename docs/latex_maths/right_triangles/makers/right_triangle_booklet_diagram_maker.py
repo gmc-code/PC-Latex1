@@ -2,12 +2,12 @@ from pathlib import Path
 import subprocess
 import time
 import magick_pdf_to_png
-import angles_in_triangle_functions as aitf
+import right_triangle_functions as aitf
 
 currfile_dir = Path(__file__).parent
-tex_template_path = currfile_dir / "angles_in_triangle_booklet_template.tex"
-texans_template_path = currfile_dir / "angles_in_triangle_booklet_ans_template.tex"
-tex_diagram_template_path = currfile_dir / "angles_in_triangle_booklet_diagram_template.tex"
+tex_template_path = currfile_dir / "right_triangle_booklet_template.tex"
+texans_template_path = currfile_dir / "right_triangle_booklet_ans_template.tex"
+tex_diagram_template_path = currfile_dir / "right_triangle_booklet_diagram_template.tex"
 
 
 def convert_to_pdf(tex_path, currfile_dir, aux_path):
@@ -26,13 +26,14 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
 
 # % end modify values for angles in triangle 
 # tex_keys_q = ['angleCalcAValue', 'angleCalcBValue', 'angleCalcCValue', 'angleCalcBCValue']
-tex_keys_q = ['angleAValue', 'angleBValue', 'angleCValue', 'angleBCValue', 'sideCValue', 'rotationAngleValue']
+tex_keys_q = ['angleAValue', 'angleBValue', 'angleCValue', 'angleBCValue', 
+              'sideCValue', 'rotationAngleValue', 'angleALabel','angleBLabel', 'angleCLabel']
 
 
 def make1_diagram(tex_diagram_template_txt):
     tex_diagram_template_txt_ans = tex_diagram_template_txt
     posttext = r"\vspace{1cm}"  #  ~ \newline
-    kv = aitf.get_angles_in_triangle_dict()
+    kv = aitf.get_right_triangle_dict()
     for key, value in kv.items():
         tex_diagram_template_txt_ans = tex_diagram_template_txt_ans.replace(
             "<<" + key + ">>", value
@@ -59,17 +60,17 @@ def main():
         numq = 4  # random by default
     #
     
-    filename = input("Enter the base filename to be added to the prefix angles_in_triangle_Bk_: \n")
+    filename = input("Enter the base filename to be added to the prefix right_triangle_Bk_: \n")
     if not filename:
-        filename = "1"  # "angles_in_triangle_Bk_1_q and angles_in_triangle_Bk_1_ans as default file"
+        filename = "1"  # "right_triangle_Bk_1_q and right_triangle_Bk_1_ans as default file"
     # set names of files that are made
     # questions
-    tex_output_path = currfile_dir / f"angles_in_triangle_Bk_{filename}_q.tex"
-    pdf_path = currfile_dir / f"angles_in_triangle_Bk_{filename}_q.pdf"
+    tex_output_path = currfile_dir / f"right_triangle_Bk_{filename}_q.tex"
+    pdf_path = currfile_dir / f"right_triangle_Bk_{filename}_q.pdf"
     aux_path = currfile_dir / "temp"
     # answers
-    tex_output_path_ans = currfile_dir / f"angles_in_triangle_Bk_{filename}_ans.tex"
-    pdf_path_ans = currfile_dir / f"angles_in_triangle_Bk_{filename}_ans.pdf"
+    tex_output_path_ans = currfile_dir / f"right_triangle_Bk_{filename}_ans.tex"
+    pdf_path_ans = currfile_dir / f"right_triangle_Bk_{filename}_ans.pdf"
   
     # Read in the LaTeX template file
     with open(tex_template_path, "r") as infile:
