@@ -2,7 +2,7 @@
 Measuring angles
 ====================================================
 
-| Diagrams of acute, obtues and reflex angles are below.
+| Diagrams of acute, obtuse and reflex angles are below.
 | These are LaTeX generated only with the answer sheet first followed by the question sheet in the pdfs.
 
 ----

@@ -56,7 +56,8 @@ PC-latex
     :numbered:
 
     latex_maths/measuring_angles/measuring_angles.rst
-
+    latex_maths/angle_types/angle_types.rst
+    
     
 
 .. toctree::
