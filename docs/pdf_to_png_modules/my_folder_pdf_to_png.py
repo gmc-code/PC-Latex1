@@ -25,7 +25,7 @@ def convert_folder(pdf_folder_path, pdfs_files):
 
 # a raw r string is used since backslashes are normally escape characters
 # paste in windows pdf full file path
-pasted_folder_path = r"C:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\angle_types\files"
+pasted_folder_path = r"docs/latex_maths/triangles/files"
 
 pdf_folder_path = pathlib.PureWindowsPath(pasted_folder_path)
 pdfs_files = get_pdf_files(pdf_folder_path)
