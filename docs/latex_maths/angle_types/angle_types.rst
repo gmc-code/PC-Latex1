@@ -47,7 +47,7 @@ Angle types in random order
 
 | The required LaTeX files are below.
 | :download:`angle_types_q_template.tex<makers/angle_types_q_template.tex>`
-| :download:`angle_types_q_template.tex<makers/angle_types_q_template.tex>`
+| :download:`angle_types_ans_template.tex<makers/angle_types_ans_template.tex>`
 
 | The python file, **angles_types_maker.py**, when run, will ask for these inputs:
 
