@@ -7,8 +7,8 @@ Angles in triangles
 
 ----
 
-Question page
-------------------
+Sample Question diagram
+-----------------------------
 | A sample question diagram is shown below.
 
 .. image:: files/angles_in_triangle_q.png
@@ -16,8 +16,8 @@ Question page
 
 ----
 
-Answer page
-------------------
+Sample Answer diagram
+----------------------------
 
 | A sample answer diagram is shown below.
 
@@ -26,8 +26,8 @@ Answer page
 
 ----
 
-Tex and pdf files
---------------------
+Sample Tex and pdf files
+--------------------------------
 
 | Angles in a triangle question sheet:
 | :download:`angles_in_triangle_q.tex<files/angles_in_triangle_q.tex>`
@@ -39,7 +39,7 @@ Tex and pdf files
 
 -----
 
-Boolklets using python
+Booklets using python
 -----------------------------
 
 | The booklet files below are generated using python and LaTeX templates.

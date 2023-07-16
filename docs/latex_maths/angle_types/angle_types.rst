@@ -7,8 +7,9 @@ Angle types
 
 ----
 
-Question page
-------------------
+Sample Question page
+---------------------
+
 | A sample question page file is shown below.
 
 .. image:: files/angle_types_q.png
@@ -16,8 +17,8 @@ Question page
 
 ----
 
-Answer page
-------------------
+Sample Answer page
+--------------------
 
 | A sample answer page file is shown below.
 
@@ -26,8 +27,8 @@ Answer page
 
 ----
 
-Tex and pdf files
---------------------
+Sample Tex and pdf files
+-----------------------------
 
 | Angle types question sheet:
 | :download:`angle_types_q.tex<files/angle_types_q.tex>`
@@ -50,13 +51,12 @@ Angle types in random order
 | :download:`angle_types_ans_template.tex<makers/angle_types_ans_template.tex>`
 
 | The python file, **angles_types_maker.py**, when run, will ask for these inputs:
-
-- Choose the file name base: ``""Enter the filename suffix to be added to the prefix angle_types_: "``. The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
+| Choose the file name base: ``""Enter the filename suffix to be added to the prefix angle_types_: "``. The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
 
 ----
 
-Angle types in random order: Tex and pdf files
--------------------------------------------------
+Sample Angle types in random order: Tex and pdf files
+-------------------------------------------------------
 
 | Angle types question sheet:
 | :download:`angle_types_1_q.tex<files/angle_types_1_q.tex>`
