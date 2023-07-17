@@ -58,6 +58,7 @@ PC-latex
     latex_maths/measuring_angles/measuring_angles.rst
     latex_maths/angle_types/angle_types.rst
     latex_maths/triangles/angles_in_triangles.rst
+    latex_maths/triangles/right_triangles.rst
     
     
 
