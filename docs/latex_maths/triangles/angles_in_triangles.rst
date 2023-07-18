@@ -32,11 +32,11 @@ Sample Question and answer diagrams
 Sample Tex and pdf files
 --------------------------------
 
-| Angles in a triangle question diagram files:
+| Question diagram files:
 | :download:`angles_in_triangle_1_q.tex<files/angles_in_triangle_1_q.tex>`
 | :download:`angles_in_triangle_1_q.pdf<files/angles_in_triangle_1_q.pdf>`
 
-| Angles in a triangle answer diagram files:
+| Answer diagram files:
 | :download:`angles_in_triangle_1_ans.tex<files/angles_in_triangle_1_ans.tex>`
 | :download:`angles_in_triangle_1_ans.pdf<files/angles_in_triangle_1_ans.pdf>`
 
@@ -62,11 +62,11 @@ Required files:
 Sample booklet Tex and pdf files
 -------------------------------------
 
-| Angles in a triangle question sheet:
+| Question sheet:
 | :download:`angles_in_triangle_Bk_20_q.tex<files/angles_in_triangle_Bk_20_q.tex>`
 | :download:`angles_in_triangle_Bk_20_q.pdf<files/angles_in_triangle_Bk_20_q.pdf>`
 
-| Angles in a triangle answer answer sheet:
+| Answer sheet:
 | :download:`angles_in_triangle_Bk_20_ans.tex<files/angles_in_triangle_Bk_20_ans.tex>`
 | :download:`angles_in_triangle_Bk_20_ans.pdf<files/angles_in_triangle_Bk_20_ans.pdf>`
 
@@ -97,11 +97,11 @@ Sample Question and answer diagrams
 Sample Tex and pdf files
 --------------------------------
 
-| Angles in a triangle question diagram files:
+| Question diagram files:
 | :download:`angles_in_triangle_xyz_q.tex<files/angles_in_triangle_xyz_q.tex>`
 | :download:`angles_in_triangle_xyz_q.pdf<files/angles_in_triangle_xyz_q.pdf>`
 
-| Angles in a triangle answer diagram files:
+| Answer diagram files:
 | :download:`angles_in_triangle_xyz_ans.tex<files/angles_in_triangle_xyz_ans.tex>`
 | :download:`angles_in_triangle_xyz_ans.pdf<files/angles_in_triangle_xyz_ans.pdf>`
 
@@ -127,11 +127,11 @@ Required files:
 Sample booklet Tex and pdf files
 -------------------------------------
 
-| Angles in a triangle question sheet:
+| Question sheet:
 | :download:`angles_in_triangle_Bk_20_v2_q.tex<files/angles_in_triangle_Bk_20_v2_q.tex>`
 | :download:`angles_in_triangle_Bk_20_v2_q.pdf<files/angles_in_triangle_Bk_20_v2_q.pdf>`
 
-| Angles in a triangle answer answer sheet:
+| Answer sheet:
 | :download:`angles_in_triangle_Bk_20_v2_ans.tex<files/angles_in_triangle_Bk_20_v2_ans.tex>`
 | :download:`angles_in_triangle_Bk_20_v2_ans.pdf<files/angles_in_triangle_Bk_20_v2_ans.pdf>`
 
