@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes}
+\usetikzlibrary{intersections}
+
+% Define variables for the angles, line lengths, and distance between lines
+\def\angle{54}
+\def\linelength{4}
+\def\paralleldistance{2}
+\def\transangle{0}
+\def\transprojectinglength{1.5}
+\def\rotationAngle{45}  %{90-\angle}
+% Calculate the translength
+\pgfmathsetmacro{\translength}{2*\transprojectinglength + \paralleldistance/cos((90-\angle) + \transangle)}
+
+% Calculate the x and y components of the first parallel line starting at 0, 0\
+\pgfmathsetmacro{\parIstartx}{0}
+\pgfmathsetmacro{\parIstarty}{0}
+\pgfmathsetmacro{\parIendx}{\linelength*cos(\angle)}
+\pgfmathsetmacro{\parIendy}{\linelength*sin(\angle)}
+
+% Calculate the x and y offsets for the second line; use x shift only
+\pgfmathsetmacro{\xoffset}{\paralleldistance/sin(\angle)}
+\pgfmathsetmacro{\yoffset}{0}
+
+% Calculate the x and y components of the second parallel line starting at 0, 0\
+\pgfmathsetmacro{\parIIstartx}{0 + \xoffset}
+\pgfmathsetmacro{\parIIstarty}{0 + \yoffset}
+\pgfmathsetmacro{\parIIendx}{\parIendx + \xoffset}
+\pgfmathsetmacro{\parIIendy}{\parIendy + \yoffset}
+
+% Calculate the x and y components of the transversal vector
+\pgfmathsetmacro{\transparIendx}{0.5*\translength*cos(\transangle)}
+\pgfmathsetmacro{\transparIendy}{0.5*\translength*sin(\transangle)}
+
+% Calculate the midpoint of the parallel lines
+\pgfmathsetmacro{\midpointx}{0.5*\parIendx + 0.5*\xoffset}
+\pgfmathsetmacro{\midpointy}{0.5*\parIendy}
+
+% Calculate the start and end points of the transversal
+\pgfmathsetmacro{\transstartx}{\midpointx -1* \transparIendx}
+\pgfmathsetmacro{\transstarty}{\midpointy -1* \transparIendy}
+\pgfmathsetmacro{\transendx}{\midpointx + \transparIendx}
+\pgfmathsetmacro{\transendy}{\midpointy + \transparIendy}
+
+
+% Draw the diagram
+\begin{document}
+    \begin{tikzpicture}
+    % \tikzset{dot/.style={circle,inner sep=1pt,fill,label={#1},name=#1}}
+    % Draw a grey 1cm grid behind the diagram
+    % \draw[step=1cm,gray,very thin] (-1,-1) grid (6,4);
+    
+      \begin{scope}[rotate=\rotationAngle]
+        % Draw the first line
+        \draw[<->>, name path=P1]  (0,0) -- (\parIendx, \parIendy);
+        
+        % Draw the second line with the calculated offsets
+        \draw[<->>, name path=P2] (\parIIstartx, \parIIstarty) -- (\parIIendx, \parIIendy);
+        
+        % Draw the transversal through the midpoint of one of the lines
+        \draw[<->, name path=P3] (\transstartx, \transstarty) -- (\transendx, \transendy);
+
+        \path [name intersections={of=P1 and P3,by=A}];
+        % \node [dot=A] at (A) {};
+        \path [name intersections={of=P2 and P3,by=B}];
+        % \node [dot=B] at (B) {};
+
+        % Draw the angle
+        \coordinate (p1s) at (0,0);
+        \coordinate (p1e) at (\parIendx, \parIendy);
+        \coordinate (p2s) at (0,0);
+        \coordinate (p2e) at (\parIIendx, \parIIendy);
+        \coordinate (ts) at (\transstartx, \transstarty);
+        \coordinate (te) at (\transendx, \transendy);
+        
+        \draw pic["$\alpha$", draw=red, -, angle eccentricity=1.4, angle radius=0.8cm] {angle=B--A--p1e};
+        
+         \draw pic["$\alpha$", draw=red, -, angle eccentricity=1.4, angle radius=0.8cm] {angle=te--B--p2e};
+         
+      \end{scope}
+    \end{tikzpicture}
+\end{document}
