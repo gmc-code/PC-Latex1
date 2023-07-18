@@ -3,7 +3,7 @@ Angles in isosceles triangles
 ====================================================
 
 | The diagrams below show an angle in an isosceles triangle, with the third angle to be calculated.
-| These are LaTeX generated only with the separate question and answer sheet pdfs.
+| These are LaTeX generated only with separate question and answer sheet pdfs.
 
 ----
 

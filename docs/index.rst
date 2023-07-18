@@ -60,7 +60,7 @@ PC-latex
     latex_maths/triangles/angles_in_triangles.rst
     latex_maths/right_triangles/right_triangles.rst
     latex_maths/isosceles_triangles/isosceles_triangles.rst
-
+    latex_maths/exterior_angle_to_triangle/exterior_angle_to_triangle.rst
 
 
 .. toctree::
