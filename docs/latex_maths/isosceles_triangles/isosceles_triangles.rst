@@ -42,12 +42,12 @@ Booklets using python
 
 Required files:
 
-| :download:`angles_in_iso_triangle_booklet_ans_template<makers_vertices/angles_in_iso_triangle_booklet_ans_template.tex>`
-| :download:`angles_in_iso_triangle_booklet_template<makers_vertices/angles_in_iso_triangle_booklet_template.tex>`
-| :download:`angles_in_iso_triangle_booklet_diagram_template<makers_vertices/angles_in_iso_triangle_booklet_diagram_template.tex>`
+| :download:`angles_in_iso_triangle_booklet_ans_template<makers/angles_in_iso_triangle_booklet_ans_template.tex>`
+| :download:`angles_in_iso_triangle_booklet_template<makers/angles_in_iso_triangle_booklet_template.tex>`
+| :download:`angles_in_iso_triangle_booklet_diagram_template<makers/angles_in_iso_triangle_booklet_diagram_template.tex>`
 
-| :download:`angles_in_iso_triangle_functions<makers_vertices/angles_in_iso_triangle_functions.py>`
-| :download:`angles_in_iso_triangle_booklet_diagram_maker<makers_vertices/angles_in_iso_triangle_booklet_diagram_maker.py>`
+| :download:`angles_in_iso_triangle_functions<makers/angles_in_iso_triangle_functions.py>`
+| :download:`angles_in_iso_triangle_booklet_diagram_maker<makers/angles_in_iso_triangle_booklet_diagram_maker.py>`
 
 
 ----
@@ -56,11 +56,11 @@ Sample booklet Tex and pdf files
 -------------------------------------
 
 | Angles in a triangle question sheet:
-| :download:`angles_in_iso_triangle_Bk_20_v2_q.tex<files/angles_in_iso_triangle_Bk_20_v2_q.tex>`
-| :download:`angles_in_iso_triangle_Bk_20_v2_q.pdf<files/angles_in_iso_triangle_Bk_20_v2_q.pdf>`
+| :download:`angles_in_iso_triangle_Bk_20_q.tex<files/angles_in_iso_triangle_Bk_20_q.tex>`
+| :download:`angles_in_iso_triangle_Bk_20_q.pdf<files/angles_in_iso_triangle_Bk_20_q.pdf>`
 
 | Angles in a triangle answer answer sheet:
-| :download:`angles_in_iso_triangle_Bk_20_v2_ans.tex<files/angles_in_iso_triangle_Bk_20_v2_ans.tex>`
-| :download:`angles_in_iso_triangle_Bk_20_v2_ans.pdf<files/angles_in_iso_triangle_Bk_20_v2_ans.pdf>`
+| :download:`angles_in_iso_triangle_Bk_20_ans.tex<files/angles_in_iso_triangle_Bk_20_ans.tex>`
+| :download:`angles_in_iso_triangle_Bk_20_ans.pdf<files/angles_in_iso_triangle_Bk_20_ans.pdf>`
 
 
