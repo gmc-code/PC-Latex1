@@ -2,7 +2,7 @@
 Angles in triangles
 ====================================================
 
-| The diagrams below show 2 angles in a triangle, with the third angle to be calcualted.
+| The diagrams below show 2 angles in a triangle, with the third angle to be calculated.
 | These are python generated via LaTeX with the separate question and answer sheet pdfs.
 
 ----
@@ -16,16 +16,6 @@ Simple orientation
 
 Sample Question and answer diagrams
 ------------------------------------------
-
-| A sample question diagram is shown below.
-
-.. image:: files/angles_in_triangle_q.png
-    :width: 600
-
-| A sample answer diagram is shown below.
-
-.. image:: files/angles_in_triangle_ans.png
-    :width: 600
 
 | A sample question diagram is shown below.
 

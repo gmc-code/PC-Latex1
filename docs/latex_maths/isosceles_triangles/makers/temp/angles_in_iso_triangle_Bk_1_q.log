@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  17 JUL 2023 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  18 JUL 2023 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/triangles/makers_vertices/angles_i
-n_triangle_Bk_1_ans.tex
+**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/isosceles_triangles/makers/angles_
+in_iso_triangle_Bk_1_q.tex
 
-(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/triangles/makers_vertices/angles_in
-_triangle_Bk_1_ans.tex
+(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/isosceles_triangles/makers/angles_i
+n_iso_triangle_Bk_1_q.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-04-20>
 (C:\Users\gmccarthy\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -509,9 +509,8 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count297
 \l__pdf_internal_box=\box67
 )
-(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\triangles\makers_vertices\temp\angl
-es_in_triangle_Bk_1_ans.aux)
-\openout1 = `angles_in_triangle_Bk_1_ans.aux'.
+No file angles_in_iso_triangle_Bk_1_q.aux.
+\openout1 = `angles_in_iso_triangle_Bk_1_q.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -619,27 +618,33 @@ Package fancyhdr Warning: \footskip is too small (6.0pt):
 (fancyhdr)                \setlength{\footskip}{14.49998pt}.
 
 [5]
-(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\triangles\makers_vertices\temp\angl
-es_in_triangle_Bk_1_ans.aux) ) 
+
+Package fancyhdr Warning: \footskip is too small (6.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[6]
+(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\isosceles_triangles\makers\temp\ang
+les_in_iso_triangle_Bk_1_q.aux) ) 
 Here is how much of TeX's memory you used:
- 13786 strings out of 477340
- 283559 string characters out of 5809005
- 1884068 words of memory out of 5000000
- 33906 multiletter control sequences out of 15000+600000
+ 13767 strings out of 477340
+ 283107 string characters out of 5809005
+ 1888068 words of memory out of 5000000
+ 33889 multiletter control sequences out of 15000+600000
  517248 words of font info for 50 fonts, out of 8000000 for 9000
  465 hyphenation exceptions out of 8191
- 102i,16n,104p,497b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gmccarthy/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gmccarthy/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/g
-mccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb>
-Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\triangles\makers_v
-ertices\angles_in_triangle_Bk_1_ans.pdf (5 pages, 67636 bytes).
+ 102i,16n,104p,500b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/gmccarthy/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gmccarthy/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gmccarthy/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb>
+Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\isosceles_triangle
+s\makers\angles_in_iso_triangle_Bk_1_q.pdf (6 pages, 69439 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

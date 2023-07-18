@@ -10,7 +10,7 @@ import wand_pdf_to_png
 
 # a raw r string is used since backslashes are normally escape characters
 # paste in windows pdf full file path
-pasted_pdf_file_path = r"C:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\right_triangles\files\angles_in_rt_triangle_1_ans.pdf"
+pasted_pdf_file_path = r"C:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\isosceles_triangles\files\angles_in_iso_triangle_1_ans.pdf"
 
 # get file path object
 pdf_file_path = pathlib.PureWindowsPath(pasted_pdf_file_path)

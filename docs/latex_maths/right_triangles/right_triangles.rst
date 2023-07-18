@@ -1,8 +1,8 @@
 ====================================================
-Right triangles
+Angles in Right triangles
 ====================================================
 
-| The diagrams below show a right angle and another angle in a triangle, with the third angle to be calcualted.
+| The diagrams below show a right angle and another angle in a triangle, with the third angle to be calculated.
 | These are python generated via LaTeX with the separate question and answer sheet pdfs.
 
 ----

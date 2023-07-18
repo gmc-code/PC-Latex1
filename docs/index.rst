@@ -59,7 +59,9 @@ PC-latex
     latex_maths/angle_types/angle_types.rst
     latex_maths/triangles/angles_in_triangles.rst
     latex_maths/right_triangles/right_triangles.rst
-    
+    latex_maths/isosceles_triangles/isosceles_triangles.rst
+
+
 
 .. toctree::
     :maxdepth: 2
