@@ -72,26 +72,26 @@ Python code
 | The folder_pdf_to_png.py file is shown below.
 
 .. literalinclude:: ../pdf_to_png_modules/folder_pdf_to_png.py
-   :language: python
-   :linenos:
+    :language: python
+    :linenos:
 
 | The convert_pdf_to_png.py file is shown below.
 
 .. literalinclude:: ../pdf_to_png_modules/convert_pdf_to_png.py
-   :language: python
-   :linenos:
+    :language: python
+    :linenos:
 
 | The magick_pdf_to_png.py module is shown below.
 
 .. literalinclude:: ../pdf_to_png_modules/magick_pdf_to_png.py
-   :language: python
-   :linenos:
+    :language: python
+    :linenos:
 
 | The wand_pdf_to_png.py module is shown below.
 
 .. literalinclude:: ../pdf_to_png_modules/wand_pdf_to_png.py
-   :language: python
-   :linenos:
+    :language: python
+    :linenos:
 
 ----
 
@@ -113,29 +113,29 @@ LaTeX-workshop.LaTeX.tools json
 
 .. code-block:: 
 
-   {
-      "name": "Python Script to Generate PNG",
-      "command": "python",
-      "args": [
-            "Full_Path_folder\\LaTeX_pdf_to_png.py",
-            "%DOCFILE%",
-            "%OUTDIR%"
-      ],
-      "env": {}
-   }
+    {
+        "name": "Python Script to Generate PNG",
+        "command": "python",
+        "args": [
+                "Full_Path_folder\\LaTeX_pdf_to_png.py",
+                "%DOCFILE%",
+                "%OUTDIR%"
+        ],
+        "env": {}
+    }
 
 
 
 | The json code block defines a custom tool that can be used to convert a LaTeX document to a PNG image. 
 | Here is what each key in the object does:
 
-   - `"name"`: name of the tool.
-   - `"command"`: the command that will be executed when the tool is run. In this case, it is the Python interpreter.
-   - `"args"`: These are the arguments that will be passed to the command when it is run. In this case, it is a list of three strings:
-  
-      - `"Full_Path_folder\\LaTeX_pdf_to_png.py"`: This is the path to the Python script that will be executed.
-      - `"%DOCFILE%"`: This is a placeholder that will be replaced with the name of the LaTeX document file.
-      - `"%OUTDIR%"`: This is a placeholder that will be replaced with the output directory for the PNG image. It is here in case it is needed for further actions in the python script that are yet to be scripted, such as copying the png to a pictures folder.
+    - `"name"`: name of the tool.
+    - `"command"`: the command that will be executed when the tool is run. In this case, it is the Python interpreter.
+    - `"args"`: These are the arguments that will be passed to the command when it is run. In this case, it is a list of three strings:
+    
+        - `"Full_Path_folder\\LaTeX_pdf_to_png.py"`: This is the path to the Python script that will be executed.
+        - `"%DOCFILE%"`: This is a placeholder that will be replaced with the name of the LaTeX document file.
+        - `"%OUTDIR%"`: This is a placeholder that will be replaced with the output directory for the PNG image. It is here in case it is needed for further actions in the python script that are yet to be scripted, such as copying the png to a pictures folder.
 
 LaTeX-workshop.LaTeX.recipes json
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,13 +146,13 @@ LaTeX-workshop.LaTeX.recipes json
 
 .. code-block:: 
 
-   {
-      "name": "PDF ➞ PNG",
-      "tools": [
-            "pdfLaTeX",
-            "Python Script to Generate PNG"
-      ]
-   }
+    {
+        "name": "PDF ➞ PNG",
+        "tools": [
+                "pdfLaTeX",
+                "Python Script to Generate PNG"
+        ]
+    }
 
 | The json code block above is a custom tool called "PDF ➞ PNG" and it has two tools: "pdfLaTeX" and "Python Script to Generate PNG". 
 | The tool is used to convert PDF files to PNG files. 
@@ -167,14 +167,14 @@ Python LaTeX_pdf_to_png.py
 
 .. code-block:: python
 
-   import sys
-   import subprocess
+    import sys
+    import subprocess
 
-   tex_filename = sys.argv[1] 
-   pdf_path = f'{tex_filename}.pdf'
-   png_path = f'{tex_filename}.png'
+    tex_filename = sys.argv[1] 
+    pdf_path = f'{tex_filename}.pdf'
+    png_path = f'{tex_filename}.png'
 
-   subprocess.run(['magick', '-quiet', '-background', 'white', '-alpha', 'off', '-quality', '100', '-density', '600', pdf_path, png_path])
+    subprocess.run(['magick', '-quiet', '-background', 'white', '-alpha', 'off', '-quality', '100', '-density', '600', pdf_path, png_path])
 
 
 | ``sys.argv`` is a list in Python that contains the command-line arguments passed to the script. |
@@ -192,3 +192,4 @@ Python LaTeX_pdf_to_png.py
 - `-density 600`: sets the resolution of the input PDF file to 600 DPI.
 - `pdf_path`: is the path of the input PDF file.
 - `png_path`: is the path of the output PNG file.
+
