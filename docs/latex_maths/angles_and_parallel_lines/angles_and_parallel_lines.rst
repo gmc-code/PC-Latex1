@@ -71,7 +71,7 @@ Sample Question and answer diagrams
 
         .. figure:: files/pla_alternate1_q.png
             :width: 600
-            :alt:pla_alternate1_q
+            :alt: pla_alternate1_q
             :figclass: align-center
 
     .. grid-item-card::
