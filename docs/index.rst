@@ -61,6 +61,7 @@ PC-latex
     latex_maths/right_triangles/right_triangles.rst
     latex_maths/isosceles_triangles/isosceles_triangles.rst
     latex_maths/exterior_angle_to_triangle/exterior_angle_to_triangle.rst
+    latex_maths/angles_and_parallel_lines/angles_and_parallel_lines.rst
 
 
 .. toctree::

@@ -31,32 +31,132 @@ Sample Question and answer diagrams
 
     .. grid-item-card::  
 
-        dp_pets
+        pla_corresponding1_q
         ^^^
-        :download:`png<files/dp_pets.png>`
-        :download:`pdf<files/dp_pets.pdf>`
-        :download:`tex<files/dp_pets.tex>`
-        :download:`txt<files/dp_pets.txt>`
+        :download:`png<files/pla_corresponding1_q.png>`
+        :download:`pdf<files/pla_corresponding1_q.pdf>`
+        :download:`tex<files/pla_corresponding1_q.tex>`
 
 
-    .. figure:: files/dp_pets.png
+    .. figure:: files/pla_corresponding1_q.png
         :width: 600
-        :alt: dp_pets
+        :alt: pla_corresponding1_q
         :figclass: align-center
 
    .. grid-item-card::
 
-      dp_vehicles
+      pla_corresponding1_ans
       ^^^
-      :download:`png<files/dp_vehicles.png>`
-      :download:`pdf<files/dp_vehicles.pdf>`
-      :download:`tex<files/dp_vehicles.tex>`
-      :download:`txt<files/dp_vehicles.txt>`
+      :download:`png<files/pla_corresponding1_ans.png>`
+      :download:`pdf<files/pla_corresponding1_ans.pdf>`
+      :download:`tex<files/pla_corresponding1_ans.tex>`
 
 
-      .. figure:: files/dp_vehicles.png
+      .. figure:: files/pla_corresponding1_ans.png
          :width: 600
-         :alt: dp_vehicles
+         :alt: pla_corresponding1_ans
+         :figclass: align-center
+
+
+.. grid:: 2
+    :gutter: 0
+    :margin: 0
+    :padding: 0
+
+    .. grid-item-card::  
+
+        pla_alternate1_q
+        ^^^
+        :download:`png<files/pla_alternate1_q.png>`
+        :download:`pdf<files/pla_alternate1_q.pdf>`
+        :download:`tex<files/pla_alternate1_q.tex>`
+
+
+    .. figure:: files/pla_alternate1_q.png
+        :width: 600
+        :alt:pla_alternate1_q_q
+        :figclass: align-center
+
+   .. grid-item-card::
+
+      pla_alternate1_ans
+      ^^^
+      :download:`png<files/pla_alternate1_ans.png>`
+      :download:`pdf<files/pla_alternate1_ans.pdf>`
+      :download:`tex<files/pla_alternate1_ans.tex>`
+
+
+      .. figure:: files/pla_alternate1_ans.png
+         :width: 600
+         :alt: pla_alternate1_ans
+         :figclass: align-center
+
+
+.. grid:: 2
+    :gutter: 0
+    :margin: 0
+    :padding: 0
+
+    .. grid-item-card::  
+
+        pla_cointerior1_q
+        ^^^
+        :download:`png<files/pla_cointerior1_q.png>`
+        :download:`pdf<files/pla_cointerior1_q.pdf>`
+        :download:`tex<files/pla_cointerior1_q.tex>`
+
+
+    .. figure:: files/pla_cointerior1_q.png
+        :width: 600
+        :alt: pla_cointerior1_q
+        :figclass: align-center
+
+   .. grid-item-card::
+
+      pla_cointerior1_ans
+      ^^^
+      :download:`png<files/pla_cointerior1_ans.png>`
+      :download:`pdf<files/pla_cointerior1_ans.pdf>`
+      :download:`tex<files/pla_cointerior1_ans.tex>`
+
+
+      .. figure:: files/pla_cointerior1_ans.png
+         :width: 600
+         :alt: pla_cointerior1_ans
+         :figclass: align-center
+
+
+.. grid:: 2
+    :gutter: 0
+    :margin: 0
+    :padding: 0
+
+    .. grid-item-card::  
+
+        pla_external1_q
+        ^^^
+        :download:`png<files/pla_external1_q.png>`
+        :download:`pdf<files/pla_external1_q.pdf>`
+        :download:`tex<files/pla_external1_q.tex>`
+
+
+    .. figure:: files/pla_external1_q.png
+        :width: 600
+        :alt: pla_external1_q
+        :figclass: align-center
+
+   .. grid-item-card::
+
+      pla_external1_ans
+      ^^^
+      :download:`png<files/pla_external1_ans.png>`
+      :download:`pdf<files/pla_external1_ans.pdf>`
+      :download:`tex<files/pla_external1_ans.tex>`
+
+
+      .. figure:: files/pla_external1_ans.png
+         :width: 600
+         :alt: pla_external1_ans
          :figclass: align-center
 
 
@@ -69,12 +169,12 @@ Booklets using python
 
 Required files:
 
-| :download:`angles_in_triangle_booklet_ans_template<makers/angles_in_triangle_booklet_ans_template.tex>`
-| :download:`angles_in_triangle_booklet_template<makers/angles_in_triangle_booklet_template.tex>`
-| :download:`angles_in_triangle_booklet_diagram_template<makers/angles_in_triangle_booklet_diagram_template.tex>`
+| :download:`parallel_lines_angles_booklet_ans_template<makers/parallel_lines_angles_booklet_ans_template.tex>`
+| :download:`parallel_lines_angles_booklet_template<makers/parallel_lines_angles_booklet_template.tex>`
+| :download:`parallel_lines_angles_booklet_diagram_template<makers/parallel_lines_angles_booklet_diagram_template.tex>`
 
-| :download:`angles_in_triangle_functions<makers/angles_in_triangle_functions.py>`
-| :download:`angles_in_triangle_booklet_diagram_maker<makers/angles_in_triangle_booklet_diagram_maker.py>`
+| :download:`parallel_lines_angles_functions<makers/parallel_lines_angles_functions.py>`
+| :download:`parallel_lines_angles_booklet_diagram_maker<makers/parallel_lines_angles_booklet_diagram_maker.py>`
 
 
 ----
@@ -83,11 +183,41 @@ Sample booklet Tex and pdf files
 -------------------------------------
 
 | Question sheet:
-| :download:`angles_in_triangle_Bk_20_q.tex<files/angles_in_triangle_Bk_20_q.tex>`
-| :download:`angles_in_triangle_Bk_20_q.pdf<files/angles_in_triangle_Bk_20_q.pdf>`
+| :download:`pla_Bk_corresponding4_q.tex<files/pla_Bk_corresponding4_q.tex>`
+| :download:`pla_Bk_corresponding4_q.pdf<files/pla_Bk_corresponding4_q.pdf>`
 
 | Answer sheet:
-| :download:`angles_in_triangle_Bk_20_ans.tex<files/angles_in_triangle_Bk_20_ans.tex>`
-| :download:`angles_in_triangle_Bk_20_ans.pdf<files/angles_in_triangle_Bk_20_ans.pdf>`
+| :download:`pla_Bk_corresponding4_ans.tex<files/pla_Bk_corresponding4_ans.tex>`
+| :download:`pla_Bk_corresponding4_ans.pdf<files/pla_Bk_corresponding4_ans.pdf>`
 
+| Question sheet:
+| :download:`pla_Bk_alternate4_q.tex<files/pla_Bk_alternate4_q.tex>`
+| :download:`pla_Bk_alternate4_q.pdf<files/pla_Bk_alternate4_q.pdf>`
 
+| Answer sheet:
+| :download:`pla_Bk_alternate4_ans.tex<files/pla_Bk_alternate4_ans.tex>`
+| :download:`pla_Bk_alternate4_ans.pdf<files/pla_Bk_alternate4_ans.pdf>`
+
+| Question sheet:
+| :download:`pla_Bk_cointerior4_q.tex<files/pla_Bk_cointerior4_q.tex>`
+| :download:`pla_Bk_cointerior4_q.pdf<files/pla_Bk_cointerior4_q.pdf>`
+
+| Answer sheet:
+| :download:`pla_Bk_cointerior4_ans.tex<files/pla_Bk_cointerior4_ans.tex>`
+| :download:`pla_Bk_cointerior4_ans.pdf<files/pla_Bk_cointerior4_ans.pdf>`
+
+| Question sheet:
+| :download:`pla_Bk_external4_q.tex<files/pla_Bk_external4_q.tex>`
+| :download:`pla_Bk_external4_q.pdf<files/pla_Bk_external4_q.pdf>`
+
+| Answer sheet:
+| :download:`pla_Bk_external4_ans.tex<files/pla_Bk_external4_ans.tex>`
+| :download:`pla_Bk_external4_ans.pdf<files/pla_Bk_external4_ans.pdf>`
+
+| Question sheet:
+| :download:`pla_Bk_random20_q.tex<files/pla_Bk_random20_q.tex>`
+| :download:`pla_Bk_random20_q.pdf<files/pla_Bk_random20_q.pdf>`
+
+| Answer sheet:
+| :download:`pla_Bk_random20_ans.tex<files/pla_Bk_random20_ans.tex>`
+| :download:`pla_Bk_random20_ans.pdf<files/pla_Bk_random20_ans.pdf>`
