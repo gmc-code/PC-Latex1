@@ -10,7 +10,7 @@ Angles and Parallel lines
 Angle names
 ------------------------------------------
 
-| THe base diagram for the coding is shown below. It has the names of angles and their placement.
+| The base diagram for the coding is shown below. It has the names of angles and their placement.
 
 .. image:: files/parallel_lines_angles.png
     :width: 600
