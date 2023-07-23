@@ -183,41 +183,41 @@ Sample booklet Tex and pdf files
 -------------------------------------
 
 | Question sheet:
-| :download:`pla_Bk_corresponding4_q.tex<files/pla_Bk_corresponding4_q.tex>`
-| :download:`pla_Bk_corresponding4_q.pdf<files/pla_Bk_corresponding4_q.pdf>`
+| :download:`pla_Bk_corresponding4_q.tex<booklets/pla_Bk_corresponding4_q.tex>`
+| :download:`pla_Bk_corresponding4_q.pdf<booklets/pla_Bk_corresponding4_q.pdf>`
 
 | Answer sheet:
-| :download:`pla_Bk_corresponding4_ans.tex<files/pla_Bk_corresponding4_ans.tex>`
-| :download:`pla_Bk_corresponding4_ans.pdf<files/pla_Bk_corresponding4_ans.pdf>`
+| :download:`pla_Bk_corresponding4_ans.tex<booklets/pla_Bk_corresponding4_ans.tex>`
+| :download:`pla_Bk_corresponding4_ans.pdf<booklets/pla_Bk_corresponding4_ans.pdf>`
 
 | Question sheet:
-| :download:`pla_Bk_alternate4_q.tex<files/pla_Bk_alternate4_q.tex>`
-| :download:`pla_Bk_alternate4_q.pdf<files/pla_Bk_alternate4_q.pdf>`
+| :download:`pla_Bk_alternate4_q.tex<booklets/pla_Bk_alternate4_q.tex>`
+| :download:`pla_Bk_alternate4_q.pdf<booklets/pla_Bk_alternate4_q.pdf>`
 
 | Answer sheet:
-| :download:`pla_Bk_alternate4_ans.tex<files/pla_Bk_alternate4_ans.tex>`
-| :download:`pla_Bk_alternate4_ans.pdf<files/pla_Bk_alternate4_ans.pdf>`
+| :download:`pla_Bk_alternate4_ans.tex<booklets/pla_Bk_alternate4_ans.tex>`
+| :download:`pla_Bk_alternate4_ans.pdf<booklets/pla_Bk_alternate4_ans.pdf>`
 
 | Question sheet:
-| :download:`pla_Bk_cointerior4_q.tex<files/pla_Bk_cointerior4_q.tex>`
-| :download:`pla_Bk_cointerior4_q.pdf<files/pla_Bk_cointerior4_q.pdf>`
+| :download:`pla_Bk_cointerior4_q.tex<booklets/pla_Bk_cointerior4_q.tex>`
+| :download:`pla_Bk_cointerior4_q.pdf<booklets/pla_Bk_cointerior4_q.pdf>`
 
 | Answer sheet:
-| :download:`pla_Bk_cointerior4_ans.tex<files/pla_Bk_cointerior4_ans.tex>`
-| :download:`pla_Bk_cointerior4_ans.pdf<files/pla_Bk_cointerior4_ans.pdf>`
+| :download:`pla_Bk_cointerior4_ans.tex<booklets/pla_Bk_cointerior4_ans.tex>`
+| :download:`pla_Bk_cointerior4_ans.pdf<booklets/pla_Bk_cointerior4_ans.pdf>`
 
 | Question sheet:
-| :download:`pla_Bk_external4_q.tex<files/pla_Bk_external4_q.tex>`
-| :download:`pla_Bk_external4_q.pdf<files/pla_Bk_external4_q.pdf>`
+| :download:`pla_Bk_external4_q.tex<booklets/pla_Bk_external4_q.tex>`
+| :download:`pla_Bk_external4_q.pdf<booklets/pla_Bk_external4_q.pdf>`
 
 | Answer sheet:
-| :download:`pla_Bk_external4_ans.tex<files/pla_Bk_external4_ans.tex>`
-| :download:`pla_Bk_external4_ans.pdf<files/pla_Bk_external4_ans.pdf>`
+| :download:`pla_Bk_external4_ans.tex<booklets/pla_Bk_external4_ans.tex>`
+| :download:`pla_Bk_external4_ans.pdf<booklets/pla_Bk_external4_ans.pdf>`
 
 | Question sheet:
-| :download:`pla_Bk_random20_q.tex<files/pla_Bk_random20_q.tex>`
-| :download:`pla_Bk_random20_q.pdf<files/pla_Bk_random20_q.pdf>`
+| :download:`pla_Bk_random20_q.tex<booklets/pla_Bk_random20_q.tex>`
+| :download:`pla_Bk_random20_q.pdf<booklets/pla_Bk_random20_q.pdf>`
 
 | Answer sheet:
-| :download:`pla_Bk_random20_ans.tex<files/pla_Bk_random20_ans.tex>`
-| :download:`pla_Bk_random20_ans.pdf<files/pla_Bk_random20_ans.pdf>`
+| :download:`pla_Bk_random20_ans.tex<booklets/pla_Bk_random20_ans.tex>`
+| :download:`pla_Bk_random20_ans.pdf<booklets/pla_Bk_random20_ans.pdf>`
