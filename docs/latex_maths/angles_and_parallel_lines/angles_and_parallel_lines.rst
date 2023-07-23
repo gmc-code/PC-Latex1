@@ -72,10 +72,10 @@ Sample Question and answer diagrams
         :download:`tex<files/pla_alternate1_q.tex>`
 
 
-    .. figure:: files/pla_alternate1_q.png
-        :width: 600
-        :alt:pla_alternate1_q_q
-        :figclass: align-center
+        .. figure:: files/pla_alternate1_q.png
+            :width: 600
+            :alt:pla_alternate1_q_q
+            :figclass: align-center
 
     .. grid-item-card::
 
@@ -106,10 +106,10 @@ Sample Question and answer diagrams
         :download:`tex<files/pla_cointerior1_q.tex>`
 
 
-    .. figure:: files/pla_cointerior1_q.png
-        :width: 600
-        :alt: pla_cointerior1_q
-        :figclass: align-center
+        .. figure:: files/pla_cointerior1_q.png
+            :width: 600
+            :alt: pla_cointerior1_q
+            :figclass: align-center
 
     .. grid-item-card::
 
@@ -140,18 +140,18 @@ Sample Question and answer diagrams
         :download:`tex<files/pla_external1_q.tex>`
 
 
-    .. figure:: files/pla_external1_q.png
-        :width: 600
-        :alt: pla_external1_q
-        :figclass: align-center
+        .. figure:: files/pla_external1_q.png
+            :width: 600
+            :alt: pla_external1_q
+            :figclass: align-center
 
-     .. grid-item-card::
+        .. grid-item-card::
 
-        pla_external1_ans
-        ^^^
-        :download:`png<files/pla_external1_ans.png>`
-        :download:`pdf<files/pla_external1_ans.pdf>`
-        :download:`tex<files/pla_external1_ans.tex>`
+            pla_external1_ans
+            ^^^
+            :download:`png<files/pla_external1_ans.png>`
+            :download:`pdf<files/pla_external1_ans.pdf>`
+            :download:`tex<files/pla_external1_ans.tex>`
 
 
         .. figure:: files/pla_external1_ans.png
