@@ -6,7 +6,7 @@
 # import sys
 import sphinx_rtd_theme
 project = 'PC-LaTeX'
-copyright = '2023-23, GMC'
+copyright = '2023-4, GMC'
 author = 'GMC'
 
 # sys.path.insert(0, os.path.abspath('../../'))
