@@ -8,9 +8,9 @@ Backtracking 2 step diagrams
 | The required LaTeX files are below.
 | :download:`backtrack_2step_template.tex<makers/backtrack_2step_template.tex>`
 | :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template.tex>`
-| :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template_1buildexp.tex>`
-| :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template_1invop.tex>`
-| :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template_blank.tex>`
+| :download:`backtrack_2step_diagram_template_1buildexp.tex<makers/backtrack_2step_diagram_template_1buildexp.tex>`
+| :download:`backtrack_2step_diagram_template_1invop.tex<makers/backtrack_2step_diagram_template_1invop.tex>`
+| :download:`backtrack_2step_diagram_template_blank.tex<makers/backtrack_2step_diagram_template_blank.tex>`
 
 | The 2 custom python modules required are:
 | :download:`backtracking_functions.py<makers/backtracking_functions.py>`
@@ -238,3 +238,10 @@ Example 2-step backtracking diagram: blank
          :alt: bt2_blank
          :figclass: align-center
 
+----
+
+2-step backtracking diagram: python
+----------------------------------------------------------------------------
+
+.. literalinclude:: makers/backtracking_2step_diagram_maker.py
+   :linenos:
