@@ -25,13 +25,14 @@ Backtracking 2 step diagrams
 | ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for 2nd process"``
 | Choose the file name base: 
 | ``"Enter the base filename to be added to the prefix :"``
-| THe prefix will be "bt2" for standard; "bt2_build" for build expressions; or "bt2_invop" for inverse operations.
+| The prefix will be "bt2" for standard; "bt2_build" for 1 row build expression; or "bt2_invop" for 1 row inverse operations.
+| The prefix will be "bt2_fromexp" for 1 row from expression; "bt2_solvefromexp" for solve from expression; or "bt2_blank" for blank.
 | The filename will have "_q" added for the question diagram and "_ans" for the answer diagram.
 
 ----
 
-A 2-step backtracking diagram with answers
---------------------------------------------
+Example 2-step backtracking diagram
+-------------------------------------
 
 .. grid:: 2
    :gutter: 0
@@ -40,28 +41,200 @@ A 2-step backtracking diagram with answers
 
    .. grid-item-card::  
 
-      addition_q
+      question
       ^^^
       :download:`png<diagrams/bt2_x+_q.png>`
       :download:`pdf<diagrams/bt2_x+_q.pdf>`
       :download:`tex<diagrams/bt2_x+_q.tex>`
 
+
       .. figure:: diagrams/bt2_x+_q.png
-         :width: 600
+         :width: 300
          :alt: bt2_x+_q
          :figclass: align-center
 
    .. grid-item-card::  
       
-      addition_ans
+      answer
       ^^^
       :download:`png<diagrams/bt2_x+_ans.png>`
       :download:`pdf<diagrams/bt2_x+_ans.pdf>`
       :download:`tex<diagrams/bt2_x+_ans.tex>`
 
       .. figure:: diagrams/bt2_x+_ans.png
-         :width: 600
+         :width: 300
          :alt: bt2_x+_ans
          :figclass: align-center
 
+----
+
+Example 2-step backtracking diagram: building the expression
+---------------------------------------------------------------
+
+.. grid:: 2
+   :gutter: 0
+   :margin: 0
+   :padding: 0
+
+   .. grid-item-card::  
+
+      question
+      ^^^
+      :download:`png<diagrams/bt2_build_x+_q.png>`
+      :download:`pdf<diagrams/bt2_build_x+_q.pdf>`
+      :download:`tex<diagrams/bt2_build_x+_q.tex>`
+
+
+      .. figure:: diagrams/bt2_build_x+_q.png
+         :width: 300
+         :alt: bt2_build_x+_q
+         :figclass: align-center
+
+   .. grid-item-card::  
+      
+      answer
+      ^^^
+      :download:`png<diagrams/bt2_build_x+_ans.png>`
+      :download:`pdf<diagrams/bt2_build_x+_ans.pdf>`
+      :download:`tex<diagrams/bt2_build_x+_ans.tex>`
+
+      .. figure:: diagrams/bt2_build_x+_ans.png
+         :width: 300
+         :alt: bt2_build_x+_ans
+         :figclass: align-center
+
+----
+
+Example 2-step backtracking diagram: inverse operations
+-----------------------------------------------------------
+
+.. grid:: 2
+   :gutter: 0
+   :margin: 0
+   :padding: 0
+
+   .. grid-item-card::  
+
+      question
+      ^^^
+      :download:`png<diagrams/bt2_invop_x+_q.png>`
+      :download:`pdf<diagrams/bt2_invop_x+_q.pdf>`
+      :download:`tex<diagrams/bt2_invop_x+_q.tex>`
+
+
+      .. figure:: diagrams/bt2_invop_x+_q.png
+         :width: 300
+         :alt: bt2_invop_x+_q
+         :figclass: align-center
+
+   .. grid-item-card::  
+      
+      answer
+      ^^^
+      :download:`png<diagrams/bt2_invop_x+_ans.png>`
+      :download:`pdf<diagrams/bt2_invop_x+_ans.pdf>`
+      :download:`tex<diagrams/bt2_invop_x+_ans.tex>`
+
+      .. figure:: diagrams/bt2_invop_x+_ans.png
+         :width: 300
+         :alt: bt2_invop_x+_ans
+         :figclass: align-center
+
+----
+
+Example 2-step backtracking diagram: from the expression
+-----------------------------------------------------------
+
+.. grid:: 2
+   :gutter: 0
+   :margin: 0
+   :padding: 0
+
+   .. grid-item-card::  
+
+      question
+      ^^^
+      :download:`png<diagrams/bt2_fromexp_build_x+_q.png>`
+      :download:`pdf<diagrams/bt2_fromexp_build_x+_q.pdf>`
+      :download:`tex<diagrams/bt2_fromexp_build_x+_q.tex>`
+
+
+      .. figure:: diagrams/bt2_fromexp_build_x+_q.png
+         :width: 300
+         :alt: bt2_fromexp_build_x+_q
+         :figclass: align-center
+
+   .. grid-item-card::  
+      
+      answer
+      ^^^
+      :download:`png<diagrams/bt2_fromexp_build_x+_ans.png>`
+      :download:`pdf<diagrams/bt2_fromexp_build_x+_ans.pdf>`
+      :download:`tex<diagrams/bt2_fromexp_build_x+_ans.tex>`
+
+      .. figure:: diagrams/bt2_fromexp_build_x+_ans.png
+         :width: 300
+         :alt: bt2_fromexp_build_x+_ans
+         :figclass: align-center
+
+----
+
+Example 2-step backtracking diagram: solve from the expression
+-----------------------------------------------------------------
+
+.. grid:: 2
+   :gutter: 0
+   :margin: 0
+   :padding: 0
+
+   .. grid-item-card::  
+
+      question
+      ^^^
+      :download:`png<diagrams/bt2_solvefromexp_build_x+_q.png>`
+      :download:`pdf<diagrams/bt2_solvefromexp_build_x+_q.pdf>`
+      :download:`tex<diagrams/bt2_solvefromexp_build_x+_q.tex>`
+
+
+      .. figure:: diagrams/bt2_solvefromexp_build_x+_q.png
+         :width: 300
+         :alt: bt2_solvefromexp_build_x+_q
+         :figclass: align-center
+
+   .. grid-item-card::  
+      
+      answer
+      ^^^
+      :download:`png<diagrams/bt2_solvefromexp_build_x+_ans.png>`
+      :download:`pdf<diagrams/bt2_solvefromexp_build_x+_ans.pdf>`
+      :download:`tex<diagrams/bt2_solvefromexp_build_x+_ans.tex>`
+
+      .. figure:: diagrams/bt2_solvefromexp_build_x+_ans.png
+         :width: 300
+         :alt: bt2_solvefromexp_build_x+_ans
+         :figclass: align-center
+
+----
+
+Example 2-step backtracking diagram: blank
+----------------------------------------------
+
+.. grid:: 1
+   :gutter: 0
+   :margin: 0
+   :padding: 0
+
+   .. grid-item-card::  
+
+      blank
+      ^^^
+      :download:`png<diagrams/bt2_blank.png>`
+      :download:`pdf<diagrams/bt2_blank.pdf>`
+      :download:`tex<diagrams/bt2_blank.tex>`
+
+
+      .. figure:: diagrams/bt2_blank.png
+         :width: 300
+         :alt: bt2_blank
+         :figclass: align-center
 
