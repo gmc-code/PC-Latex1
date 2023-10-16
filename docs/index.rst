@@ -15,71 +15,6 @@ PC-latex
     introduction/producing_images.rst
 
 
-
-.. toctree::
-    :maxdepth: 2
-    :caption: 🦘 biology
-    :numbered:
-
-    latex_science/biology/classification_keys.rst
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: 🧪 chemistry
-    :numbered:
-
-    latex_science/chemistry/chemistry_types_of_reactions.rst
-    latex_science/chemistry/chemistry_acid_base_reactions.rst
-    latex_science/chemistry/chemistry_balancing_equations.rst
-    latex_science/chemistry/chemistry_isotope_equations.rst
-    latex_science/chemistry/chemistry_chemfig.rst
-    latex_science/chemistry/chemistry_bohr_atoms.rst
-    latex_science/chemistry/chemistry_periodic_table.rst
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: 💡 physics
-    :numbered:
-
-    latex_science/physics/circuits.rst
-    latex_science/physics/optics.rst
-    latex_science/physics/levers.rst
-
-
-
-    
-.. toctree::
-    :maxdepth: 2
-    :caption: 🛆 geometry
-    :numbered:
-
-    latex_maths/measuring_angles/measuring_angles.rst
-    latex_maths/angle_types/angle_types.rst
-    latex_maths/triangles/angles_in_triangles.rst
-    latex_maths/right_triangles/right_triangles.rst
-    latex_maths/isosceles_triangles/isosceles_triangles.rst
-    latex_maths/exterior_angle_to_triangle/exterior_angle_to_triangle.rst
-    latex_maths/angles_and_parallel_lines/angles_and_parallel_lines.rst
-
-
-..    latex_maths/adjacent_angles/angles_and_parallel_lines.rst
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: ⚈ decimals
-    :numbered:
-
-    latex_maths/decimals/decimals_intro.rst
-    latex_maths/decimals/decimals_diagram_manual.rst
-    latex_maths/decimals/decimals_diagram_automated.rst
-    latex_maths/decimals/decimals_booklet_latex.rst
-    latex_maths/decimals/decimals_booklet_python.rst
-    latex_maths/recurring_decimals/recurring_decimals.rst
-
-
 .. toctree::
     :maxdepth: 2
     :caption: 🔁 backtracking - 1step
@@ -103,6 +38,36 @@ PC-latex
     latex_maths/backtracking_2step/backtracking_2step_diagrams.rst
     latex_maths/backtracking_2step/backtracking_2step_worksheets.rst
     latex_maths/backtracking_2step/backtracking_2step_booklets.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 🛆 geometry
+    :numbered:
+
+    latex_maths/measuring_angles/measuring_angles.rst
+    latex_maths/angle_types/angle_types.rst
+    latex_maths/triangles/angles_in_triangles.rst
+    latex_maths/right_triangles/right_triangles.rst
+    latex_maths/isosceles_triangles/isosceles_triangles.rst
+    latex_maths/exterior_angle_to_triangle/exterior_angle_to_triangle.rst
+    latex_maths/angles_and_parallel_lines/angles_and_parallel_lines.rst
+
+
+..   latex_maths/adjacent_angles/adjacent_angles.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: ⚈ decimals
+    :numbered:
+
+    latex_maths/decimals/decimals_intro.rst
+    latex_maths/decimals/decimals_diagram_manual.rst
+    latex_maths/decimals/decimals_diagram_automated.rst
+    latex_maths/decimals/decimals_booklet_latex.rst
+    latex_maths/decimals/decimals_booklet_python.rst
+    latex_maths/recurring_decimals/recurring_decimals.rst
 
 
 .. toctree::
@@ -158,3 +123,35 @@ PC-latex
 
 
     
+.. toctree::
+    :maxdepth: 2
+    :caption: 🦘 biology
+    :numbered:
+
+    latex_science/biology/classification_keys.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 🧪 chemistry
+    :numbered:
+
+    latex_science/chemistry/chemistry_types_of_reactions.rst
+    latex_science/chemistry/chemistry_acid_base_reactions.rst
+    latex_science/chemistry/chemistry_balancing_equations.rst
+    latex_science/chemistry/chemistry_isotope_equations.rst
+    latex_science/chemistry/chemistry_chemfig.rst
+    latex_science/chemistry/chemistry_bohr_atoms.rst
+    latex_science/chemistry/chemistry_periodic_table.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 💡 physics
+    :numbered:
+
+    latex_science/physics/circuits.rst
+    latex_science/physics/optics.rst
+    latex_science/physics/levers.rst
+
+
