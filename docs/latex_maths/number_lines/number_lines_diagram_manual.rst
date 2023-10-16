@@ -194,7 +194,7 @@ Diagram parts
 These LaTeX lines create a graphic element using the **tikzpicture** environment, which is part of the **TikZ** package for creating diagrams. The lines do the following:
 
 - ``\begin{tikzpicture}[scale=0.75]`` starts the tikzpicture environment and sets the scale option to 0.80, which means that the graphic will be scaled down by 20%. This enables the line to be drawn with one tick every 1 cm before scaling it to fit on an A4 page.
-- ``\draw[{To[scale=1.3]}-{To[scale=1.3]}, line width=1pt] (-10.4, 0) -- (10.4, 0)``draws a horizontal line from (-10.4, 0) to (10.4, 0) with a thickness of 1pt and arrow tips at both ends. The arrow tips are customized using the **arrows.meta** library and the **To** shape with a scale of 1.3.
+- ``\draw[{To[scale=1.3]}-{To[scale=1.3]}, line width=1pt] (-10.4, 0) -- (10.4, 0)`` draws a horizontal line from (-10.4, 0) to (10.4, 0) with a thickness of 1pt and arrow tips at both ends. The arrow tips are customized using the **arrows.meta** library and the **To** shape with a scale of 1.3.
 - ``\foreach \x in {-10,-9,...,10}`` starts a loop that assigns values to the variable \x from -10 to 10 with increments of 1.
 - ``\draw[shift={(\x,0)},color=black, line width=1pt] (0pt,-14pt) -- (0pt,0pt)`` draws a vertical line segment from (0pt,-14pt) to (0pt,0pt) for each value of \x, shifting the origin to (\x,0) and using black color and 1pt thickness.
 - ``\foreach \x in {-10,0,10}`` starts another loop that assigns values to the variable \x for -10, 0 and 10.

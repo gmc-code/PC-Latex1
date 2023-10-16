@@ -5,13 +5,13 @@ Dot plots
 | To build dot plots diagrams, python uses a .txt file and a .tex template.
 
 | The python file to make dot plots is below.
-| :download:`dot_plot_maker.py<files/dot_plot_maker.py>`
+| :download:`dot_plot_maker.py<makers/dot_plot_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`dot_plot_template.tex<files/dot_plot_template.tex>`
+| :download:`dot_plot_template.tex<makers/dot_plot_template.tex>`
 
 | The custom python modules required are:
-| :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
+| :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | A sample text file is below:
 | :download:`dp_pets.txt<files/dp_pets.txt>`
@@ -164,7 +164,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/dot_plot_template.tex
+.. literalinclude:: makers/dot_plot_template.tex
    :language: LaTeX
 
 | ``\documentclass[border = 3mmm]{standalone}`` specifies the document class as standalone and sets the border around the plot to 3mm.
@@ -215,5 +215,5 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/dot_plot_maker.py
+.. literalinclude:: makers/dot_plot_maker.py
    :language: python

@@ -133,7 +133,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/pie_chart_template.tex
+.. literalinclude:: makers/pie_chart_template.tex
    :language: LaTeX
 
 ----
@@ -171,5 +171,5 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/pie_chart_maker.py
+.. literalinclude:: makers/pie_chart_maker.py
    :language: python

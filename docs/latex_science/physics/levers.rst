@@ -69,7 +69,8 @@ Booklet: First Class levers Fd=Fd
 Maker files
 -------------
 
- The python below requires the following .tex files:
+The python below requires the following .tex files:
+
 | :download:`lever_booklet_template<levers_makers/lever_booklet_template.tex>`
 | :download:`lever_booklet_ans_template<levers_makers/lever_booklet_ans_template.tex>`
 | :download:`lever_booklet_diagram_template<levers_makers/lever_booklet_diagram_template.tex>`
@@ -88,7 +89,7 @@ Maker files
 - Choose the file name base: ``"Enter the base filename to be added to the prefix lever_Bk_:"``. 
 - The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
 
-.. literalinclude:: makers/lever_booklet_diagram_maker.py
+.. literalinclude:: levers_makers/lever_booklet_diagram_maker.py
    :linenos:
 
 

@@ -63,7 +63,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/stem_and_leaf_btb_template.tex
+.. literalinclude:: makers/stem_and_leaf_btb_maker.py
    :language: LaTeX
 
 ----

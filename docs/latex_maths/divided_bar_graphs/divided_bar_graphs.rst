@@ -5,13 +5,13 @@ Divided Bar graphs
 | Divided bar graphs are a bar graph in sections, which often total to 100. (100%)
 
 | The python file to make divided bar graphs is below.
-| :download:`divided_bar_chart_maker.py<files/divided_bar_chart_maker.py>`
+| :download:`divided_bar_chart_maker.py<makers/divided_bar_chart_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`divided_bar_chart_template.tex<files/divided_bar_chart_template.tex>`
+| :download:`divided_bar_chart_template.tex<makers/divided_bar_chart_template.tex>`
 
 | The custom python modules required are:
-| :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
+| :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | A sample text file is below:
 | :download:`dbc_zoo.txt<files/dbc_zoo.txt>`
@@ -23,10 +23,10 @@ patterns
 | For patterns instead of filled colours use:
 
 | The python file to make divided bar graphs is below.
-| :download:`divided_bar_chart_patterns_maker.py<files/divided_bar_chart_patterns_maker.py>`
+| :download:`divided_bar_chart_patterns_maker.py<makers/divided_bar_chart_patterns_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`divided_bar_chart_patterns_template.tex<files/divided_bar_chart_patterns_template.tex>`
+| :download:`divided_bar_chart_patterns_template.tex<makers/divided_bar_chart_patterns_template.tex>`
 
 ----
 
@@ -154,12 +154,12 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/divided_bar_chart_template.tex
+.. literalinclude:: makers/divided_bar_chart_template.tex
    :language: LaTeX
 
 | The .tex file patterns template is shown below.
 
-.. literalinclude:: files/divided_bar_chart_patterns_template.tex
+.. literalinclude:: makers/divided_bar_chart_patterns_template.tex
    :language: LaTeX
 
 ----
@@ -197,10 +197,10 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/divided_bar_chart_maker.py
+.. literalinclude:: makers/divided_bar_chart_maker.py
    :language: python
 
 | The python code for patterns is the same as above except for the template used within it.
 
-.. literalinclude:: files/divided_bar_chart_patterns_maker.py
+.. literalinclude:: makers/divided_bar_chart_patterns_maker.py
    :language: python

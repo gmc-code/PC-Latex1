@@ -5,13 +5,13 @@ Parallel Overlay Dot plots
 | To build parallel overlay dot plots diagrams, with one daigram below the other, python uses a .txt file and a .tex template.
 
 | The python file to make parallel overlay dot plots is below.
-| :download:`parallel_overlay_dot_plot_maker.py<files/parallel_overlay_dot_plot_maker.py>`
+| :download:`parallel_overlay_dot_plot_maker.py<makers/parallel_overlay_dot_plot_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`parallel_overlay_dot_plot_template.tex<files/parallel_overlay_dot_plot_template.tex>`
+| :download:`parallel_overlay_dot_plot_template.tex<makers/parallel_overlay_dot_plot_template.tex>`
 
 | The custom python modules required are:
-| :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
+| :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | A sample text file is below:
 | :download:`pdp_goals.txt<files/pdp_goals.txt>`
@@ -23,7 +23,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/parallel_overlay_dot_plot_template.tex
+.. literalinclude:: makers/parallel_overlay_dot_plot_template.tex
    :language: LaTeX
 
 ----
@@ -60,5 +60,5 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/parallel_overlay_dot_plot_maker.py
+.. literalinclude:: makers/parallel_overlay_dot_plot_maker.py
    :language: python

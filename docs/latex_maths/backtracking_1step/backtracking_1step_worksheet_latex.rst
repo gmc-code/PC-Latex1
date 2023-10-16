@@ -181,9 +181,10 @@ Worksheet template
 
 | ``\usepackage{multicol}`` is a LaTeX package that allows multi-column layouts in documents. It defines the ``multicols`` environment, which takes one argument that specifies the total number of columns, such as ``\begin{multicols}{2}``.
 
-| The page heading is set by: 
-`\def \HeadingQuestions {\section*{\Large Name: \underline{\hspace{8cm}} \hfill Date: \underline{\hspace{3cm}}} \vspace{-3mm}
-{1-step backtracking: Questions} \vspace{1pt}\hrule}`
+| The page heading is set by:
+
+`\def \HeadingQuestions {\section*{\Large Name: \underline{\hspace{8cm}} \hfill Date: \underline{\hspace{3cm}}}`
+`\vspace{-3mm} {1-step backtracking: Questions} \vspace{1pt}\hrule}`
 
 | The macro ``\HeadingQuestions`` creates a section heading with the text "Name: " in very large bold text with an underline, followed by an umderlined space of 8cm, followed by the text "Date: " in bold text with an underlined space of 3cm, followed by a horizontal line.
 

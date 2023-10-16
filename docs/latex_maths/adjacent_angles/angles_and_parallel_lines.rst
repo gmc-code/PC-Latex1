@@ -1,8 +1,8 @@
 ====================================================
-Angles and Parallel lines
+Adjacent lines
 ====================================================
 
-| The diagrams below show 2 parallel lines wiht a traversal and 2 angles.
+| The diagrams below show 2 parallel lines with a traversal and 2 angles.
 | These are python generated via LaTeX with separate question and answer sheet pdfs.
 
 ----

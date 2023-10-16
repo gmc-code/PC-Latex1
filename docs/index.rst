@@ -64,6 +64,9 @@ PC-latex
     latex_maths/angles_and_parallel_lines/angles_and_parallel_lines.rst
 
 
+..    latex_maths/adjacent_angles/angles_and_parallel_lines.rst
+
+
 .. toctree::
     :maxdepth: 2
     :caption: ⚈ decimals

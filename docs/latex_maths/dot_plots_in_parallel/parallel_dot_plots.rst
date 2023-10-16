@@ -5,13 +5,13 @@ Parallel Dot plots
 | To build parallel dot plots diagrams, with one daigram below the other, python uses a .txt file and a .tex template.
 
 | The python file to make parallel dot plots is below.
-| :download:`parallel_dot_plot_maker.py<files/parallel_dot_plot_maker.py>`
+| :download:`parallel_dot_plot_maker.py<makers/parallel_dot_plot_maker.py>`
 
 | The required LaTeX files are below.
-| :download:`parallel_dot_plot_template.tex<files/parallel_dot_plot_template.tex>`
+| :download:`parallel_dot_plot_template.tex<makers/parallel_dot_plot_template.tex>`
 
 | The custom python modules required are:
-| :download:`magick_pdf_to_png.py<files/magick_pdf_to_png.py>`
+| :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | A sample text file is below:
 | :download:`pdp_plants.txt<files/pdp_plants.txt>`
@@ -107,7 +107,7 @@ LaTeX
 
 | The .tex file template is shown below.
 
-.. literalinclude:: files/parallel_dot_plot_template.tex
+.. literalinclude:: makers/parallel_dot_plot_template.tex
    :language: LaTeX
 
 ----
@@ -144,5 +144,5 @@ Python code
 
 | The python code is shown below.
 
-.. literalinclude:: files/parallel_dot_plot_maker.py
+.. literalinclude:: makers/parallel_dot_plot_maker.py
    :language: python
