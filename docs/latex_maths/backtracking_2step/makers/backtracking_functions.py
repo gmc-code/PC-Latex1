@@ -18,6 +18,7 @@ def get_1step_process_dict(num):
             return div_dict()
 
 
+
 def add_dict():
     # bb = nx + na
     nx = random.randint(1, 10)

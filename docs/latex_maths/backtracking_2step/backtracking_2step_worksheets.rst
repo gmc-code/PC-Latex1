@@ -2,7 +2,7 @@
 Backtracking 2-step worksheets
 ====================================================
 
-| The python file to make 2-step backtracking worksheets is below.
+| The python file to make single page, 2-step backtracking worksheets is below.
 | :download:`backtracking_2step_worksheet_maker.py<makers/backtracking_2step_worksheet_maker.py>`
 
 | The required LaTeX files are below.

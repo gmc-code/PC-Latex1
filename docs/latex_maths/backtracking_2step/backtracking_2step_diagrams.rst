@@ -8,18 +8,24 @@ Backtracking 2 step diagrams
 | The required LaTeX files are below.
 | :download:`backtrack_2step_template.tex<makers/backtrack_2step_template.tex>`
 | :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template.tex>`
+| :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template_1buildexp.tex>`
+| :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template_1invop.tex>`
+| :download:`backtrack_2step_diagram_template.tex<makers/backtrack_2step_diagram_template_blank.tex>`
 
 | The 2 custom python modules required are:
 | :download:`backtracking_functions.py<makers/backtracking_functions.py>`
 | :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
 | The python file, **backtracking_2step_diagram_maker.py**, when run, will ask for 3 inputs:
+| Choose the type of diagrams: 
+| ``"Enter 1, 2, 3, 4, 5 or 6 for standard, 1 row build expression, 1 row inverse operations, 1 row from expression, solve from expression, blank "``
 | Choose the first arithmetic process: 
-| ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for 1st process"``.
+| ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for 1st process"``
 | Choose the second arithmetic process: 
 | ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for 2nd process"``
 | Choose the file name base: 
-| ``"Enter the base filename to be added to the prefix bt2_:"``.
+| ``"Enter the base filename to be added to the prefix :"``
+| THe prefix will be "bt2" for standard; "bt2_build" for build expressions; or "bt2_invop" for inverse operations.
 | The filename will have "_q" added for the question diagram and "_ans" for the answer diagram.
 
 ----

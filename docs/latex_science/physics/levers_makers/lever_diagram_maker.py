@@ -59,7 +59,7 @@ def main():
 
     filename = input("Enter the base filename to be added to the prefix lever_: \n")
     if not filename:
-        filename = "1st"  # "lever_1st_q and lever_1st_ans as default file"
+        filename = "1"  # "lever_1_q and lever_1_ans as default file"
     # set names of files that are made
     # questions
     tex_output_path = currfile_dir / f"lever_{filename}_q.tex"

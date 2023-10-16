@@ -160,7 +160,7 @@ def main():
         num = 6  # random by default
     filename = input("Enter the base filename to be added to the prefix nlWS_: \n")
     if not filename:
-        filename = "nlWS_1st"  # "nlWS_1st_q and nlWS_1st_ans as default file"
+        filename = "1"  # "nlWS_1_q and nlWS_1_ans as default file"
     # set names of files that are made
     # questions
       # questions
