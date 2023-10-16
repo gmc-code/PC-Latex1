@@ -68,8 +68,8 @@ Example 2-step backtracking diagram
 
 ----
 
-Example 2-step backtracking diagram: building the expression
----------------------------------------------------------------
+Example 2-step backtracking diagram: 1 row; building the expression
+----------------------------------------------------------------------------
 
 .. grid:: 2
    :gutter: 0
@@ -105,8 +105,8 @@ Example 2-step backtracking diagram: building the expression
 
 ----
 
-Example 2-step backtracking diagram: inverse operations
------------------------------------------------------------
+Example 2-step backtracking diagram: 1 row; inverse operations
+----------------------------------------------------------------------------
 
 .. grid:: 2
    :gutter: 0
@@ -142,8 +142,8 @@ Example 2-step backtracking diagram: inverse operations
 
 ----
 
-Example 2-step backtracking diagram: from the expression
------------------------------------------------------------
+Example 2-step backtracking diagram: 1 row; from the expression
+----------------------------------------------------------------------------
 
 .. grid:: 2
    :gutter: 0
@@ -180,7 +180,7 @@ Example 2-step backtracking diagram: from the expression
 ----
 
 Example 2-step backtracking diagram: solve from the expression
------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 .. grid:: 2
    :gutter: 0
@@ -217,7 +217,7 @@ Example 2-step backtracking diagram: solve from the expression
 ----
 
 Example 2-step backtracking diagram: blank
-----------------------------------------------
+----------------------------------------------------------------------------
 
 .. grid:: 1
    :gutter: 0
