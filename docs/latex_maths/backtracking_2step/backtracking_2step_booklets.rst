@@ -9,6 +9,9 @@ Backtracking 2-step booklet python
 | :download:`backtrack_2step_booklet_template.tex<makers/backtrack_2step_booklet_template.tex>`
 | :download:`backtrack_2step_booklet_ans_template.tex<makers/backtrack_2step_booklet_ans_template.tex>`
 | :download:`backtrack_2step_booklet_diagram_template.tex<makers/backtrack_2step_booklet_diagram_template.tex>`
+| :download:`backtrack_2step_booklet_diagram_template_1buildexp.tex<makers/backtrack_2step_booklet_diagram_template_1buildexp.tex>`
+| :download:`backtrack_2step_booklet_diagram_template_1invop.tex<makers/backtrack_2step_booklet_diagram_template_1invop.tex>`
+| :download:`backtrack_2step_booklet_diagram_template_blank.tex<makers/backtrack_2step_booklet_diagram_template_blank.tex>`
 
 | The 2 custom python modules required are:
 | :download:`backtracking_functions.py<makers/backtracking_functions.py>`

@@ -188,27 +188,27 @@ def main():
     match bt_type:
         case 1:
             tex_diagram_template_path = tex_diagram_standard_template_path
-            fileprefix = "bt2bk"
+            fileprefix = "bt2Bk"
             q_parts_to_fill = tex_keys_q
         case 2:
             tex_diagram_template_path = tex_diagram_buildexp_template_path
-            fileprefix = "bt2bk_build"
+            fileprefix = "bt2Bk_build"
             q_parts_to_fill = tex_keys_q
         case 3:
             tex_diagram_template_path = tex_diagram_invop_template_path
-            fileprefix = "bt2bk_invop"
+            fileprefix = "bt2Bk_invop"
             q_parts_to_fill = tex_keys_q
         case 4:
             tex_diagram_template_path = tex_diagram_fromexp_template_path
-            fileprefix = "bt2bk_fromexp"
+            fileprefix = "bt2Bk_fromexp"
             q_parts_to_fill = tex_keys_q_fromexp
         case 5:
             tex_diagram_template_path = tex_diagram_solvefromexp_template_path
-            fileprefix = "bt2bk_solvefromexp"
+            fileprefix = "bt2Bk_solvefromexp"
             q_parts_to_fill = tex_keys_q_solvefromexp
         case 6:
             tex_diagram_template_path = tex_diagram_blank_template_path
-            fileprefix = "bt2bk_blank"
+            fileprefix = "bt2Bk_blank"
             q_parts_to_fill = tex_keys_q
 
     #
