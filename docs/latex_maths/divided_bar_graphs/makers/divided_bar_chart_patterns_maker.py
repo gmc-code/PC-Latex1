@@ -9,6 +9,21 @@ tex_template_path = currfile_dir / "divided_bar_chart_patterns_template.tex"
 
 
 def convert_to_pdf(tex_path, currfile_dir, aux_path):
+    """
+    Converts a TeX file to PDF format using pdfLaTeX.
+
+    Args:
+        tex_path (str): The path to the TeX file.
+        currfile_dir (str): The path to the directory where the TeX file is located.
+        aux_path (str): The path to the directory where auxiliary files will be stored.
+
+    Returns:
+        subprocess.CompletedProcess: A subprocess.CompletedProcess object containing information about the completed process.
+
+    Raises:
+        FileNotFoundError: If the TeX file does not exist.
+        subprocess.CalledProcessError: If pdfLaTeX returns a non-zero exit code.
+    """
     result = subprocess.run(
         [
             "pdfLaTeX",

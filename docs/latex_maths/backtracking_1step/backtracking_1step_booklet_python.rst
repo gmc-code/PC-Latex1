@@ -17,7 +17,7 @@ Backtracking 1-step booklet python
 | The python file, **backtracking_1step_booklet_maker.py**, when run, will ask for these inputs:
 
 - Choose the arithmetic process: ``"Enter 1, 2, 3, 4 or 5 for +, -, X, /, random"``.
-- Choose the number of questions form 1 to 100: ``"Enter the number of questions from 1 to 100"``
+- Choose the number of questions from 1 to 100: ``"Enter the number of questions from 1 to 100"``
 - Choose the file name base: ``"Enter the base filename to be added to the prefix bt1Bk_:"``. The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
 
 

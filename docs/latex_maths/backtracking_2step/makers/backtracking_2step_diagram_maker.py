@@ -30,6 +30,21 @@ tex_diagram_blank_template_path = (
 
 
 def convert_to_pdf(tex_path, currfile_dir, aux_path):
+    """
+    Converts a TeX file to PDF format using pdfLaTeX.
+
+    Args:
+        tex_path (str): The path to the TeX file.
+        currfile_dir (str): The path to the directory where the TeX file is located.
+        aux_path (str): The path to the directory where auxiliary files will be stored.
+
+    Returns:
+        subprocess.CompletedProcess: A subprocess.CompletedProcess object containing information about the completed process.
+
+    Raises:
+        FileNotFoundError: If the TeX file does not exist.
+        subprocess.CalledProcessError: If pdfLaTeX returns a non-zero exit code.
+    """
     result = subprocess.run(
         [
             "pdfLaTeX",
@@ -89,7 +104,7 @@ def main():
         num1 = input("Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for 1st process \n")
         if num1.strip().isdigit():
             num1 = int(num1)
-            if not num1 in [1, 2, 3, 4, 5]:
+            if num1 not in [1, 2, 3, 4, 5]:
                 num1 = 5  # random by default
         else:
             num1 = 5  # random by default
@@ -97,7 +112,7 @@ def main():
         num2 = input("Enter 1, 2, 3, 4 or 5 for +, -, X, /, random for 2nd process \n")
         if num2.strip().isdigit():
             num2 = int(num2)
-            if not num2 in [1, 2, 3, 4, 5]:
+            if num2 not in [1, 2, 3, 4, 5]:
                 num2 = 5  # random by default
         else:
             num2 = 5  # random by default

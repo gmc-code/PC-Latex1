@@ -18,7 +18,7 @@ Python to create a 2 page booklet of number lines worksheets
 
 | The python file, **number_lines_booklet_maker.py**, when run, will ask for these inputs:
 | Choose the arithmetic process: ``"Enter 1,2,3,4,5 or 6 for plus,minus_neg,minus,minus_pos,plus_neg,random"``.
-| Choose the number of questions form 1 to 100: ``"Enter the number of questions from 1 to 80"``
+| Choose the number of questions from 1 to 100: ``"Enter the number of questions from 1 to 80"``
 | Choose the file name base: ``""Enter the base filename to be added to the prefix nlBk:"``.
 | The filename will have "_q" added for the question booklet and "_ans" for the answer booklet.
 

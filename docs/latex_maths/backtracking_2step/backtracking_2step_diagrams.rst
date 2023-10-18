@@ -16,7 +16,7 @@ Backtracking 2 step diagrams
 | :download:`backtracking_functions.py<makers/backtracking_functions.py>`
 | :download:`magick_pdf_to_png.py<makers/magick_pdf_to_png.py>`
 
-| The python file, **backtracking_2step_diagram_maker.py**, when run, will ask for 3 inputs:
+| The python file, **backtracking_2step_diagram_maker.py**, when run, will ask for these inputs:
 | Choose the type of diagrams: 
 | ``"Enter 1, 2, 3, 4, 5 or 6 for standard, 1 row build expression, 1 row inverse operations, 1 row from expression, solve from expression, blank "``
 | Choose the first arithmetic process: 

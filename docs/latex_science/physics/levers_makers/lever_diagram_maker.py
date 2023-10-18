@@ -11,6 +11,21 @@ tex_diagram_template_path = currfile_dir / "lever_diagram_template.tex"
 
 
 def convert_to_pdf(tex_path, currfile_dir, aux_path):
+    """
+    Converts a TeX file to PDF format using pdfLaTeX.
+
+    Args:
+        tex_path (str): The path to the TeX file.
+        currfile_dir (str): The path to the directory where the TeX file is located.
+        aux_path (str): The path to the directory where auxiliary files will be stored.
+
+    Returns:
+        subprocess.CompletedProcess: A subprocess.CompletedProcess object containing information about the completed process.
+
+    Raises:
+        FileNotFoundError: If the TeX file does not exist.
+        subprocess.CalledProcessError: If pdfLaTeX returns a non-zero exit code.
+    """
     result = subprocess.run(
         [
             "pdfLaTeX",
@@ -52,7 +67,7 @@ def main():
     num1 = input("Enter 1, 2, 3 or 4 for 1st, 2nd, 3rd class levers or random \n")
     if num1.strip().isdigit():
         num1 = int(num1)
-        if not num1 in [1, 2, 3, 4]:
+        if num1 not in [1, 2, 3, 4]:
             num1 = 4  # random by default
     else:
         num1 = 4  # random by default
