@@ -42,6 +42,14 @@ PC-latex
 
 .. toctree::
     :maxdepth: 2
+    :caption: 🔁 equations - 1step
+    :numbered:
+
+    latex_maths/equations/equations_1step_intro.rst
+
+
+.. toctree::
+    :maxdepth: 2
     :caption: 🛆 geometry
     :numbered:
 

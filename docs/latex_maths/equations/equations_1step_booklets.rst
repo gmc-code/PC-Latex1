@@ -1,5 +1,5 @@
 ====================================================
-Backtracking 2-step booklet python
+Equations 1-step booklet python
 ====================================================
 
 | The python file to make 2-step backtracking booklets is below.
