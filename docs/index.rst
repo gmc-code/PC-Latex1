@@ -46,7 +46,7 @@ PC-latex
     :numbered:
 
     latex_maths/equations/equations_1step_intro.rst
-
+    latex_maths/equations/equations_1step_diagrams.rst
 
 .. toctree::
     :maxdepth: 2
