@@ -1,12 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  23 OCT 2023 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.10)  24 OCT 2023 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/equations/equation_makers/invop1_+
-_q.tex
-
-(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/equations/equation_makers/invop1_+_
-q.tex
+**c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/equations/makers/invop1_+_ans.tex
+(c:/PC_RTD_GITHUB/PC_latex/docs/latex_maths/equations/makers/invop1_+_ans.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-04-20>
 (C:\Users\gmccarthy\AppData\Local\Programs\MiKTeX\tex/latex/standalone\standalo
@@ -174,9 +171,9 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box59
 )
-(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\equations\equation_makers\temp\invo
-p1_+_q.aux)
-\openout1 = `invop1_+_q.aux'.
+(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\equations\makers\temp\invop1_+_ans.
+aux)
+\openout1 = `invop1_+_ans.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -197,22 +194,22 @@ Preview: Fontsize 10pt
 Preview: PDFoutput 1
 Preview: Tightpage -32891 -32891 32891 32891
 [1{C:/Users/gmccarthy/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\equations\equation_makers\temp\invo
-p1_+_q.aux) ) 
+(c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\equations\makers\temp\invop1_+_ans.
+aux) ) 
 Here is how much of TeX's memory you used:
  2068 strings out of 477340
- 36310 string characters out of 5809005
+ 36226 string characters out of 5809005
  1852068 words of memory out of 5000000
  22417 multiletter control sequences out of 15000+600000
  512847 words of font info for 35 fonts, out of 8000000 for 9000
  465 hyphenation exceptions out of 8191
- 57i,17n,71p,397b,325s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gmccarthy/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\equations\equation
-_makers\invop1_+_q.pdf (1 page, 28920 bytes).
+ 57i,15n,71p,390b,301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Users/gmccarthy/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on c:\PC_RTD_GITHUB\PC_latex\docs\latex_maths\equations\makers\i
+nvop1_+_ans.pdf (1 page, 27827 bytes).
 PDF statistics:
  21 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
