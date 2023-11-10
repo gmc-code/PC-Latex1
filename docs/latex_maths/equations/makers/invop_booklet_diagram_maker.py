@@ -2,7 +2,7 @@ from pathlib import Path
 import subprocess
 import time
 # import magick_pdf_to_png
-import invop_functions as levf
+import invop_functions as iof
 
 currfile_dir = Path(__file__).parent
 tex_template_path = currfile_dir / "invop_booklet_template.tex"
@@ -41,12 +41,13 @@ def convert_to_pdf(tex_path, currfile_dir, aux_path):
 
 # % end modify values for invop 
 # tex_keys = ['ans_force_l','ans_force_e','ans_dist_l', 'ans_dist_e', 'effort_vector','fulc_c', 'fulc_l', 'fulc_r' ]
-tex_keys_q = ["force_l", "force_e", "dist_l", "dist_e", 'effort_vector','fulc_c', 'fulc_l', 'fulc_r']
+tex_keys_q = ['line1_LHS', 'line1_RHS', 'line2_LHSq', 'line2_RHSq', 'line3_LHS', 'line3_RHSq']
+
 
 
 def make1_diagram(tex_diagram_template_txt, num1,):
     tex_diagram_template_txt_ans = tex_diagram_template_txt
-    kv = levf.get_invop_dict(num1)
+    kv = iof.get_1step_process_dict(num1)
     for key, value in kv.items():
         tex_diagram_template_txt_ans = tex_diagram_template_txt_ans.replace(
             "<<" + key + ">>", value
@@ -58,19 +59,19 @@ def make1_diagram(tex_diagram_template_txt, num1,):
             )
         else:
             tex_diagram_template_txt = tex_diagram_template_txt.replace(
-                "<<" + key + ">>", "\dotuline{~~~~~~~}"  # non breaking spaces for gaps
+                "<<" + key + ">>", kv[f'{key}q']
             )
     return tex_diagram_template_txt, tex_diagram_template_txt_ans
 
 
 def main():
-    num1 = input("Enter 1, 2, 3 or 4 for 1st, 2nd, 3rd class invops or random \n")
+    num1 = input("Enter 1, 2, 3, 4 or 5 for +, -, X, /, random \n")
     if num1.strip().isdigit():
         num1 = int(num1)
-        if num1 not in [1, 2, 3, 4]:
-            num1 = 4  # random by default
+        if not num1 in [1, 2, 3, 4, 5]:
+            num1 = 5  # random by default
     else:
-        num1 = 4  # random by default
+        num1 = 5  # random by default
     #
     numq = input("Enter the number of questions from 1 to 20 \n")
     if numq.strip().isdigit():
